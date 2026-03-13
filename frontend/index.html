@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClawSocial - OpenClaw Agent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <meta name="description" content="Intent-Safe Autonomous Social Media Agent powered by OpenClaw">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="ri-robot-2-fill text-gradient"></i>
+                <h2>ClawSocial</h2>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#dashboard" class="nav-item active">
+                    <i class="ri-dashboard-line"></i> Dashboard
+                </a>
+                <a href="#policy" class="nav-item">
+                    <i class="ri-shield-check-line"></i> ArmorClaw Policy
+                </a>
+                <a href="#logs" class="nav-item">
+                    <i class="ri-file-list-3-line"></i> Audit Logs
+                </a>
+            </nav>
+
+            <div class="sys-status">
+                <div class="status-indicator online"></div>
+                <span>Gateway Connected</span>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="header-left">
+                    <h1>Intent-Safe Autonomous Agent</h1>
+                    <p class="subtitle">Powered by OpenClaw Framework</p>
+                </div>
+                <div class="header-right">
+                    <button id="theme-toggle" class="icon-btn">
+                        <i class="ri-sun-line"></i>
+                    </button>
+                    <div class="profile-chip">
+                        <img src="https://ui-avatars.com/api/?name=Admin&background=random" alt="Admin">
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-grid">
+                
+                <!-- Left Column -->
+                <div class="col-main">
+                    <!-- Task Input Card -->
+                    <div class="glass-card task-input-card">
+                        <div class="card-header">
+                            <h3><i class="ri-command-line"></i> Agent Instruction</h3>
+                            <div class="quick-actions">
+                                <button class="btn btn-outline btn-sm action-demo" data-type="allowed">Allowed Demo</button>
+                                <button class="btn btn-outline btn-sm action-demo" data-type="blocked">Blocked Demo</button>
+                                <button class="btn btn-outline btn-sm action-demo" data-type="delegation">Delegated Demo</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form id="task-form">
+                                <div class="input-group">
+                                    <textarea id="task-instruction" placeholder="E.g., Reply to comments on Instagram today..." rows="3" required></textarea>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary" id="btn-submit">
+                                        <i class="ri-send-plane-fill"></i> Execute Task
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Pipeline Visualization (Live) -->
+                    <div class="glass-card pipeline-card">
+                        <div class="card-header">
+                            <h3><i class="ri-flow-chart"></i> Execution Pipeline</h3>
+                            <span class="badge" id="pipeline-status">Waiting</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="pipeline-stages">
+                                <!-- Intent -->
+                                <div class="stage" id="stage-intent">
+                                    <div class="stage-icon"><i class="ri-brain-line"></i></div>
+                                    <div class="stage-content">
+                                        <h4>Intent Parsing</h4>
+                                        <p class="stage-detail">Waiting...</p>
+                                    </div>
+                                    <div class="connector"></div>
+                                </div>
+                                
+                                <!-- Reasoning -->
+                                <div class="stage" id="stage-reasoning">
+                                    <div class="stage-icon"><i class="ri-node-tree"></i></div>
+                                    <div class="stage-content">
+                                        <h4>Task Decomposition</h4>
+                                        <p class="stage-detail">Waiting...</p>
+                                    </div>
+                                    <div class="connector"></div>
+                                </div>
+
+                                <!-- Policy -->
+                                <div class="stage" id="stage-policy">
+                                    <div class="stage-icon"><i class="ri-shield-keyhole-line"></i></div>
+                                    <div class="stage-content">
+                                        <h4>ArmorClaw Policy</h4>
+                                        <p class="stage-detail">Waiting...</p>
+                                    </div>
+                                    <div class="connector"></div>
+                                </div>
+
+                                <!-- Execution -->
+                                <div class="stage" id="stage-executor">
+                                    <div class="stage-icon"><i class="ri-robot-line"></i></div>
+                                    <div class="stage-content">
+                                        <h4>OpenClaw Execution</h4>
+                                        <p class="stage-detail">Waiting...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-side">
+                    <!-- Live Console -->
+                    <div class="glass-card console-card">
+                        <div class="card-header">
+                            <h3><i class="ri-terminal-window-line"></i> Activity Log</h3>
+                            <button id="clear-logs" class="icon-btn-sm"><i class="ri-delete-bin-line"></i></button>
+                        </div>
+                        <div class="card-body console-body" id="console-output">
+                            <div class="log-entry sys">System initialized. Ready for instructions.</div>
+                        </div>
+                    </div>
+
+                    <!-- Active Policy Summary -->
+                    <div class="glass-card mini-policy-card">
+                        <div class="card-header">
+                            <h3><i class="ri-shield-star-line"></i> Active Policy Rules</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="policy-list" id="policy-summary">
+                                <li>Loading...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="static/app.js"></script>
+</body>
+</html>

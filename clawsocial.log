@@ -1,0 +1,35 @@
+[2026-03-13 23:29:14] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-13 23:29:14] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=['read_comments', 'reply_comment']
+[2026-03-13 23:29:14] clawsocial.agent INFO  Reasoning produced 2 action proposals
+[2026-03-13 23:29:14] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-13 23:29:14] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-13 23:29:14] clawsocial.executor INFO  [DRY RUN] openclaw browser open --url https://www.instagram.com
+[2026-03-13 23:29:14] clawsocial.executor INFO  [DRY RUN] openclaw browser snapshot
+[2026-03-13 23:29:14] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-13 23:29:14] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-13 23:29:14] clawsocial.agent INFO  ━━━ Pipeline complete: 500c9e61a14e
+[2026-03-13 23:29:14] clawsocial.agent INFO  ━━━ Pipeline start: Post this tweet on Twitter.
+[2026-03-13 23:29:14] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=['publish_post']
+[2026-03-13 23:29:14] clawsocial.agent INFO  Reasoning produced 2 action proposals
+[2026-03-13 23:29:14] clawsocial.policy WARNING  [BLOCK] generate_caption on twitter — Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-13 23:29:14] clawsocial.policy WARNING  [BLOCK] publish_post on twitter — Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-13 23:29:14] clawsocial INFO  [BLOCKED] action=generate_caption platform=twitter | Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-13 23:29:14] clawsocial INFO  [BLOCKED] action=publish_post platform=twitter | Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-13 23:29:14] clawsocial.agent INFO  ━━━ Pipeline complete: 74e82d5af1da
+[2026-03-13 23:29:14] clawsocial.policy INFO  ArmorClaw initialised — allowed platforms: ['instagram'], allowed actions: ['read_comments', 'reply_comment']
+[2026-03-13 23:29:14] clawsocial.delegation INFO  Sub-agent 'EngagementAgent' created — allowed: ['read_comments', 'reply_comment'], can_publish=False
+[2026-03-13 23:29:14] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=['publish_post']
+[2026-03-13 23:29:14] clawsocial.policy WARNING  [BLOCK] generate_caption on instagram — Forbidden action: generate_caption
+[2026-03-13 23:29:14] clawsocial.policy WARNING  [BLOCK] publish_post on instagram — Forbidden action: publish_post
+[2026-03-13 23:29:14] clawsocial INFO  [BLOCKED] action=generate_caption platform=instagram | [EngagementAgent] Forbidden action: generate_caption — outside delegated authority
+[2026-03-13 23:29:14] clawsocial INFO  [BLOCKED] action=publish_post platform=instagram | [EngagementAgent] Forbidden action: publish_post — outside delegated authority
+[2026-03-13 23:37:20] clawsocial.agent INFO  ━━━ Pipeline start: Handle comments on Instagram today
+[2026-03-13 23:37:20] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=['read_comments', 'reply_comment']
+[2026-03-13 23:37:20] clawsocial.agent INFO  Reasoning produced 2 action proposals
+[2026-03-13 23:37:20] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-13 23:37:20] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-13 23:37:20] clawsocial.executor INFO  [DRY RUN] openclaw browser open --url https://www.instagram.com
+[2026-03-13 23:37:20] clawsocial.executor INFO  [DRY RUN] openclaw browser snapshot
+[2026-03-13 23:37:20] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-13 23:37:20] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-13 23:37:20] clawsocial.agent INFO  ━━━ Pipeline complete: 1b72842e9f88

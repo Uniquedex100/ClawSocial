@@ -1,0 +1,20 @@
+{
+    "platform_restrictions": ["instagram"],
+    "blocked_words": ["politics", "religion", "violence", "drugs"],
+    "max_posts_per_day": 3,
+    "max_replies_per_hour": 20,
+    "allowed_actions": [
+        "read_comments",
+        "reply_comment",
+        "schedule_post",
+        "generate_caption",
+        "suggest_hashtags",
+        "hide_comment",
+        "report_comment"
+    ],
+    "forbidden_actions": [
+        "delete_post",
+        "send_dm",
+        "change_profile"
+    ]
+}

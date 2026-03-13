@@ -1,0 +1,352 @@
+A Social Media managing tool for big influencers using
+
+Project Specification
+ClawSocial — Intent-Safe Autonomous Social Media Agent
+
+1. Problem Statement
+Businesses and influencers often delegate social media tasks such as:
+Posting content
+Replying to comments
+Moderating discussions
+Scheduling campaigns\
+
+However, fully autonomous agents introduce risks:
+Posting unintended content
+Publishing to the wrong platform
+Responding inappropriately
+Violating brand or platform policies
+
+ClawSocial addresses this by creating an OpenClaw-based autonomous social media management agent with runtime intent enforcement.
+The system ensures that autonomous actions always remain within user-defined constraints.
+
+This directly aligns with the hackathon challenge:
+Autonomous execution
+Policy-aware agents
+Deterministic blocking of unauthorized behavior
+
+2. System Overview
+ClawSocial consists of four major layers:
+Intent Layer
+Reasoning Layer
+Policy Enforcement Layer (ArmorClaw)
+Execution Layer (OpenClaw)
+
+Architecture:
+User Task
+   |
+Intent Parser
+   |
+Reasoning Engine (LLM)
+   |
+Proposed Action Plan
+   |
+Policy Engine (ArmorClaw)
+   |
+   |---- ALLOW ----> OpenClaw Executor
+   |
+   |---- BLOCK ----> Violation Logger
+
+This design enforces the required separation between reasoning and execution.
+
+3. Use Case Scenario
+Example user instruction:
+“Handle today's engagement on Instagram.”
+The system autonomously:
+Collects new comments
+Generates responses
+Validates them against policies
+Posts approved responses
+Blocks disallowed responses
+
+4. Core Features
+4.1 Autonomous Comment Management
+Agent can:
+Read new comments
+Classify sentiment
+Generate responses
+Post replies
+
+Example allowed action:
+Comment: "Great video!"
+Response:
+"Thanks for watching!"
+
+Executed through OpenClaw:
+open_instagram()
+navigate_to_post()
+click_comment_reply()
+type_response()
+submit()
+
+4.2 Content Scheduling
+Agent can autonomously post approved content.
+
+Example workflow:
+1 Generate caption
+2 Validate caption
+3 Upload media
+4 Publish post
+
+Constraints enforced before publishing.
+
+4.3 Community Moderation
+
+Agent automatically flags:
+spam
+abusive language
+off-topic comments
+
+Possible actions:
+ignore
+reply
+report
+hide comment
+
+5. Intent Model
+The system converts natural language instructions into structured intents.
+
+Example:
+User instruction:
+“Reply to comments on Instagram today.”
+Structured intent:
+{
+  "intent": "engagement_management",
+  "platform": "instagram",
+  "actions_allowed": [
+    "read_comments",
+    "reply_comment"
+  ],
+  "content_generation": true,
+  "publish_allowed": true,
+  "time_scope": "today"
+}
+
+Intent attributes include:
+Field	Description
+intent	task category
+platform	target platform
+allowed_actions	permitted actions
+content_constraints	brand policies
+time_scope	execution window
+
+6. Policy Model
+Policies enforce runtime constraints on actions.
+Example policy structure:
+{
+  "platform_restrictions": [
+    "instagram",
+    "twitter"
+  ],
+  "blocked_words": [
+    "politics",
+    "religion"
+  ],
+  "max_posts_per_day": 3,
+  "allowed_actions": [
+    "read_comments",
+    "reply_comment",
+    "schedule_post"
+  ]
+}
+
+Policy types implemented:
+Platform Restrictions
+Agent cannot post to unapproved platforms.
+Content Restrictions
+Certain words or topics prohibited.
+Rate Limits
+max_posts_per_day
+max_replies_per_hour
+Account Safety
+
+Agent cannot:
+change profile settings
+send DMs
+delete posts
+
+7. Enforcement Mechanism (ArmorClaw)
+Every action goes through policy verification before execution.
+Pipeline:
+Action Proposal
+    |
+Policy Validator
+    |
+Allowed? ---- No ----> Block
+    |
+   Yes
+    |
+Execute via OpenClaw
+
+Violation example:
+Action proposed:
+post_tweet()
+
+Policy:
+allowed_platforms = ["instagram"]
+
+Result:
+BLOCKED:
+Unauthorized platform action
+This demonstrates deterministic blocking as required.
+
+8. Reasoning vs Execution Separation
+Reasoning Layer
+
+LLM performs:
+task decomposition
+response generation
+decision making
+
+Example reasoning output:
+
+Goal: manage comments
+Steps:
+1 read comments
+2 generate replies
+3 post replies
+Execution Layer
+
+OpenClaw performs:
+
+open_browser()
+navigate_instagram()
+click_comment()
+type_reply()
+submit()
+
+The LLM never executes commands directly.
+
+9. Logging and Traceability
+All actions are logged.
+
+Example log:
+[INTENT]
+engagement_management
+
+[PROPOSED ACTION]
+reply_comment
+
+[VALIDATION]
+allowed
+
+[EXECUTION]
+posted reply
+
+Blocked example:
+
+[PROPOSED ACTION]
+post_twitter
+
+[VALIDATION]
+blocked
+
+[REASON]
+platform not allowed
+
+Logs satisfy traceability requirement.
+
+10. Demonstration Scenarios
+Allowed Action
+
+Instruction:
+“Reply to comments on Instagram.”
+
+Agent:
+read comments
+generate replies
+post responses
+
+Result: allowed and executed
+Blocked Action
+Instruction:
+“Post this tweet.”
+
+Intent:
+platform = twitter
+Policy:
+allowed_platforms = instagram
+
+Result:
+
+BLOCKED
+Reason: unauthorized platform
+11. Delegation (Bonus Feature)
+The system can spawn specialized sub-agents.
+
+Example:
+Content Agent
+Authority:
+
+generate_caption
+suggest_hashtags
+Engagement Agent
+
+Authority:
+
+read_comments
+reply_comments
+
+Restriction:
+cannot publish posts
+If engagement agent attempts:
+publish_post()
+Result:
+BLOCKED — outside delegated authority
+This demonstrates bounded delegation.
+
+12. Technology Stack
+Core
+Python
+OpenClaw
+AI
+LLM (GPT / Claude)
+Sentiment analysis model
+Backend
+FastAPI
+Redis (task queue)
+PostgreSQL
+Frontend (optional)
+NextJS dashboard
+
+13. OpenClaw Integration
+OpenClaw enables the agent to:
+control browsers
+interact with web UI
+automate real actions
+
+Example actions executed:
+
+open_browser()
+navigate_to_instagram()
+scroll_feed()
+reply_to_comment()
+upload_post()
+
+This satisfies the requirement for real execution of actions.
+
+14. Demo Plan (3-Minute Video)
+1 System Overview
+Explain architecture.
+
+2 Allowed Action
+
+Prompt:
+"Reply to comments on Instagram"
+Agent successfully replies.
+
+3 Blocked Action
+Prompt:
+"Post on Twitter"
+System blocks action.
+
+4 Enforcement Explanation
+Show logs and policy validation.
+
+15. Why This Project Fits the Hackathon
+ClawSocial demonstrates:
+autonomous reasoning
+real system actions
+intent verification
+policy enforcement
+safe delegation
+
