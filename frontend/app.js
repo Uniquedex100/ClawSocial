@@ -15,6 +15,7 @@ const navItems = document.querySelectorAll('.nav-item[data-view]');
 const appViews = {
     dashboard: document.getElementById('view-dashboard'),
     policy: document.getElementById('view-policy'),
+    history: document.getElementById('view-history'),
     logs: document.getElementById('view-logs')
 };
 
@@ -33,9 +34,37 @@ const logsRefreshBtn = document.getElementById('logs-refresh-btn');
 const logsExportBtn = document.getElementById('logs-export-btn');
 const logsClearBtn = document.getElementById('logs-clear-btn');
 
+// History View Elements
+const historyRefreshBtn = document.getElementById('history-refresh-btn');
+const historyClearBtn = document.getElementById('history-clear-btn');
+const interactionHistoryList = document.getElementById('interaction-history-list');
+const interactionHistoryEmpty = document.getElementById('interaction-history-empty');
+const statTotalInteractions = document.getElementById('stat-total-interactions');
+const statExecutedActions = document.getElementById('stat-executed-actions');
+const statBlockedActions = document.getElementById('stat-blocked-actions');
+const statSuccessRate = document.getElementById('stat-success-rate');
+const statTopAction = document.getElementById('stat-top-action');
+const statTopPlatform = document.getElementById('stat-top-platform');
+
+// Sidebar Handle Target Elements
+const targetPlatformSelect = document.getElementById('target-platform');
+const targetAccountSelect = document.getElementById('target-account-select');
+const targetHandleInput = document.getElementById('target-handle');
+const targetHandleSaveBtn = document.getElementById('target-handle-save');
+const targetHandleStatus = document.getElementById('target-handle-status');
+
 // Chat View Elements
 const chatThread = document.getElementById('chat-thread');
 const clearChatBtn = document.getElementById('clear-chat');
+
+const TARGET_STORAGE_KEY = 'clawsocial-target-handle';
+const TARGET_ACCOUNTS_STORAGE_KEY = 'clawsocial-target-accounts';
+const HISTORY_STORAGE_KEY = 'clawsocial-interaction-history';
+let interactionHistory = [];
+let targetAccounts = {
+    twitter: [],
+    instagram: []
+};
 
 // Pipeline Stages
 const stages = {
@@ -54,6 +83,228 @@ function logToConsole(message, type = 'info') {
     
     consoleOutput.appendChild(el);
     consoleOutput.scrollTop = consoleOutput.scrollHeight;
+}
+
+function normalizeHandle(raw) {
+    return String(raw || '').trim().replace(/^@+/, '').toLowerCase();
+}
+
+function ensurePlatformAccounts(platform) {
+    if (!targetAccounts[platform]) {
+        targetAccounts[platform] = [];
+    }
+}
+
+function loadTargetAccounts() {
+    try {
+        const parsed = JSON.parse(localStorage.getItem(TARGET_ACCOUNTS_STORAGE_KEY) || '{}');
+        targetAccounts = {
+            twitter: Array.isArray(parsed.twitter) ? parsed.twitter.map(normalizeHandle).filter(Boolean) : [],
+            instagram: Array.isArray(parsed.instagram) ? parsed.instagram.map(normalizeHandle).filter(Boolean) : []
+        };
+    } catch (_) {
+        targetAccounts = { twitter: [], instagram: [] };
+    }
+}
+
+function persistTargetAccounts() {
+    localStorage.setItem(TARGET_ACCOUNTS_STORAGE_KEY, JSON.stringify(targetAccounts));
+}
+
+function populateTargetAccountOptions(platform, selectedHandle = '') {
+    if (!targetAccountSelect) return;
+    ensurePlatformAccounts(platform);
+    const handles = targetAccounts[platform];
+    const options = ['<option value="">No saved account</option>']
+        .concat(handles.map(h => `<option value="${escapeHtml(h)}">@${escapeHtml(h)}</option>`));
+    targetAccountSelect.innerHTML = options.join('');
+
+    const target = normalizeHandle(selectedHandle);
+    if (target && handles.includes(target)) {
+        targetAccountSelect.value = target;
+    }
+}
+
+function loadTargetPreference() {
+    try {
+        const stored = JSON.parse(localStorage.getItem(TARGET_STORAGE_KEY) || '{}');
+        const platform = stored.platform || 'twitter';
+        const handle = normalizeHandle(stored.handle || '');
+        ensurePlatformAccounts(platform);
+        if (handle && !targetAccounts[platform].includes(handle)) {
+            targetAccounts[platform].push(handle);
+            persistTargetAccounts();
+        }
+        if (targetPlatformSelect) targetPlatformSelect.value = platform;
+        populateTargetAccountOptions(platform, handle);
+        if (targetHandleInput) targetHandleInput.value = handle;
+        updateTargetStatus(platform, handle);
+    } catch (_) {
+        const platform = 'twitter';
+        populateTargetAccountOptions(platform, '');
+        updateTargetStatus('twitter', '');
+    }
+}
+
+function saveTargetPreference() {
+    const platform = targetPlatformSelect?.value || 'twitter';
+    const typedHandle = normalizeHandle(targetHandleInput?.value || '');
+    const selectedHandle = normalizeHandle(targetAccountSelect?.value || '');
+    const handle = typedHandle || selectedHandle;
+
+    if (!handle) {
+        updateTargetStatus(platform, '');
+        return;
+    }
+
+    ensurePlatformAccounts(platform);
+    if (!targetAccounts[platform].includes(handle)) {
+        targetAccounts[platform].push(handle);
+        targetAccounts[platform].sort((a, b) => a.localeCompare(b));
+        persistTargetAccounts();
+    }
+
+    localStorage.setItem(TARGET_STORAGE_KEY, JSON.stringify({ platform, handle }));
+    populateTargetAccountOptions(platform, handle);
+    if (targetAccountSelect) targetAccountSelect.value = handle;
+    if (targetHandleInput) targetHandleInput.value = handle;
+    updateTargetStatus(platform, handle);
+}
+
+function updateTargetStatus(platform, handle) {
+    if (!targetHandleStatus) return;
+    if (!handle) {
+        targetHandleStatus.textContent = 'No default handle set.';
+        return;
+    }
+    targetHandleStatus.textContent = `Active target: @${handle} on ${platform}`;
+}
+
+function applyTargetHandleToInstruction(instruction) {
+    let prepared = String(instruction || '').trim();
+    if (!prepared) return prepared;
+
+    const platform = targetPlatformSelect?.value || 'twitter';
+    const handle = normalizeHandle(targetHandleInput?.value || '');
+    if (!handle) return prepared;
+    if (/@[A-Za-z0-9_]{1,15}/.test(prepared)) return prepared;
+
+    const lower = prepared.toLowerCase();
+    const twitterish = /(twitter|tweet|x\.com|watchlist|repost|like|reply|comment|summarize|thread|suggest)/i.test(lower);
+    const instagramish = /(instagram|insta|post|publish|caption|hashtag|comment|reply)/i.test(lower);
+
+    if (platform === 'twitter' && twitterish) {
+        if (!/(twitter|tweet|x\.com)/i.test(lower)) {
+            prepared = `${prepared} on twitter`;
+        }
+        prepared = `${prepared} by @${handle}`;
+    }
+
+    if (platform === 'instagram' && instagramish) {
+        if (!/(instagram|insta)/i.test(lower)) {
+            prepared = `${prepared} on instagram`;
+        }
+        prepared = `${prepared} by @${handle}`;
+    }
+    return prepared;
+}
+
+function loadInteractionHistory() {
+    try {
+        interactionHistory = JSON.parse(localStorage.getItem(HISTORY_STORAGE_KEY) || '[]');
+        if (!Array.isArray(interactionHistory)) interactionHistory = [];
+    } catch (_) {
+        interactionHistory = [];
+    }
+}
+
+function persistInteractionHistory() {
+    localStorage.setItem(HISTORY_STORAGE_KEY, JSON.stringify(interactionHistory.slice(-200)));
+}
+
+function addInteractionHistoryEntry(entry) {
+    interactionHistory.push(entry);
+    persistInteractionHistory();
+}
+
+function renderInteractionHistory() {
+    if (!interactionHistoryList || !interactionHistoryEmpty) return;
+    if (!interactionHistory.length) {
+        interactionHistoryList.innerHTML = '';
+        interactionHistoryEmpty.style.display = 'block';
+        return;
+    }
+
+    interactionHistoryEmpty.style.display = 'none';
+    interactionHistoryList.innerHTML = interactionHistory
+        .slice()
+        .reverse()
+        .map(item => {
+            const statusClass = item.blockedCount > 0 ? 'blocked' : 'success';
+            const when = new Date(item.timestamp).toLocaleString();
+            return `
+                <article class="interaction-item">
+                    <header>
+                        <span>${when}</span>
+                        <span>Task ${escapeHtml(item.taskId || 'N/A')}</span>
+                    </header>
+                    <div class="interaction-command">${escapeHtml(item.instruction)}</div>
+                    <div class="interaction-pill-row">
+                        <span class="interaction-pill ${statusClass}">${item.blockedCount > 0 ? 'Policy Blocks' : 'Completed'}</span>
+                        <span class="interaction-pill">Executed: ${item.executedCount}</span>
+                        <span class="interaction-pill">Proposals: ${item.proposalCount}</span>
+                    </div>
+                </article>
+            `;
+        })
+        .join('');
+}
+
+function renderInteractionStats(logs) {
+    const totalInteractions = interactionHistory.length;
+    const executedActions = logs.filter(l => !!l.executed).length;
+    const blockedActions = logs.filter(l => l.verdict === 'BLOCK').length;
+    const totalActions = logs.length;
+    const successRate = totalActions > 0 ? Math.round((executedActions / totalActions) * 100) : 0;
+
+    const countBy = (rows, key) => {
+        const map = new Map();
+        rows.forEach(r => map.set(r[key], (map.get(r[key]) || 0) + 1));
+        return map;
+    };
+
+    const topFromMap = (m) => {
+        if (!m.size) return '-';
+        let topKey = '-';
+        let topValue = -1;
+        m.forEach((v, k) => {
+            if (v > topValue) {
+                topValue = v;
+                topKey = k;
+            }
+        });
+        return `${topKey} (${topValue})`;
+    };
+
+    if (statTotalInteractions) statTotalInteractions.textContent = String(totalInteractions);
+    if (statExecutedActions) statExecutedActions.textContent = String(executedActions);
+    if (statBlockedActions) statBlockedActions.textContent = String(blockedActions);
+    if (statSuccessRate) statSuccessRate.textContent = `${successRate}%`;
+    if (statTopAction) statTopAction.textContent = topFromMap(countBy(logs, 'action_type'));
+    if (statTopPlatform) statTopPlatform.textContent = topFromMap(countBy(logs, 'platform'));
+}
+
+async function loadInteractionInsights() {
+    try {
+        const res = await fetch(`${API_BASE}/logs`);
+        if (!res.ok) throw new Error(`Logs fetch failed (${res.status})`);
+        const logs = await res.json();
+        renderInteractionStats(Array.isArray(logs) ? logs : []);
+        renderInteractionHistory();
+    } catch (err) {
+        renderInteractionStats([]);
+        renderInteractionHistory();
+    }
 }
 
 function escapeHtml(value) {
@@ -185,6 +436,9 @@ function switchView(viewName) {
     }
     if (viewName === 'logs') {
         loadAuditLogs();
+    }
+    if (viewName === 'history') {
+        loadInteractionInsights();
     }
 }
 
@@ -470,11 +724,12 @@ async function exportServerLogs() {
 }
 
 async function submitTask(instruction, endpoint = '/task') {
-    input.value = instruction;
+    const preparedInstruction = applyTargetHandleToInstruction(instruction);
+    input.value = preparedInstruction;
     submitBtn.disabled = true;
     resetPipeline();
-    logToConsole(`New instruction: "${instruction}"`, 'sys');
-    addChatMessage('user', instruction);
+    logToConsole(`New instruction: "${preparedInstruction}"`, 'sys');
+    addChatMessage('user', preparedInstruction);
     
     // 1. Intent Phase (simulated typing animation for UI feel)
     updateStage('intent', 'active', 'Parsing natural language...');
@@ -483,7 +738,7 @@ async function submitTask(instruction, endpoint = '/task') {
         const res = await fetch(`${API_BASE}${endpoint}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ instruction })
+            body: JSON.stringify({ instruction: preparedInstruction })
         });
         
         const data = await res.json();
@@ -550,6 +805,15 @@ async function submitTask(instruction, endpoint = '/task') {
                         submitBtn.disabled = false;
                         logToConsole(`Task finished: ${data.task_id}`, 'sys');
                         addChatMessage('assistant', buildAssistantReply(data), { html: true });
+                        addInteractionHistoryEntry({
+                            timestamp: new Date().toISOString(),
+                            instruction: preparedInstruction,
+                            taskId: data.task_id,
+                            executedCount: (data.execution_results || []).length,
+                            blockedCount: (data.policy_results || []).filter(p => p.verdict === 'BLOCK').length,
+                            proposalCount: (data.proposals || []).length
+                        });
+                        loadInteractionInsights();
                         loadAuditLogs();
                         
                     }, 800);
@@ -563,6 +827,15 @@ async function submitTask(instruction, endpoint = '/task') {
         pipelineStatus.className = 'badge error';
         logToConsole(`System Error: ${err.message}`, 'block');
         addChatMessage('assistant', `Error: ${err.message}`);
+        addInteractionHistoryEntry({
+            timestamp: new Date().toISOString(),
+            instruction: preparedInstruction,
+            taskId: 'error',
+            executedCount: 0,
+            blockedCount: 0,
+            proposalCount: 0
+        });
+        loadInteractionInsights();
         submitBtn.disabled = false;
     }
 }
@@ -613,6 +886,41 @@ if (logsClearBtn) {
 if (logsExportBtn) {
     logsExportBtn.addEventListener('click', exportServerLogs);
 }
+if (historyRefreshBtn) {
+    historyRefreshBtn.addEventListener('click', loadInteractionInsights);
+}
+if (historyClearBtn) {
+    historyClearBtn.addEventListener('click', () => {
+        interactionHistory = [];
+        persistInteractionHistory();
+        renderInteractionHistory();
+        renderInteractionStats([]);
+        addChatMessage('assistant', 'Local interaction history cleared.');
+    });
+}
+if (targetHandleSaveBtn) {
+    targetHandleSaveBtn.addEventListener('click', () => {
+        saveTargetPreference();
+        addChatMessage('assistant', `Command target updated to ${targetPlatformSelect.value}: @${normalizeHandle(targetHandleInput.value || targetAccountSelect?.value) || 'none'}.`);
+    });
+}
+if (targetPlatformSelect) {
+    targetPlatformSelect.addEventListener('change', () => {
+        const platform = targetPlatformSelect.value || 'twitter';
+        populateTargetAccountOptions(platform, '');
+        const selected = normalizeHandle(targetAccountSelect?.value || '');
+        if (targetHandleInput) targetHandleInput.value = selected;
+        updateTargetStatus(platform, selected);
+    });
+}
+if (targetAccountSelect) {
+    targetAccountSelect.addEventListener('change', () => {
+        const selected = normalizeHandle(targetAccountSelect.value || '');
+        if (targetHandleInput) targetHandleInput.value = selected;
+        const platform = targetPlatformSelect?.value || 'twitter';
+        updateTargetStatus(platform, selected);
+    });
+}
 if (clearChatBtn && chatThread) {
     clearChatBtn.addEventListener('click', () => {
         chatThread.innerHTML = '';
@@ -629,9 +937,13 @@ window.addEventListener('hashchange', () => {
 
 // Init
 window.addEventListener('DOMContentLoaded', () => {
+    loadTargetAccounts();
+    loadTargetPreference();
+    loadInteractionHistory();
     const initialView = window.location.hash.replace('#', '') || 'dashboard';
     switchView(appViews[initialView] ? initialView : 'dashboard');
     loadPolicy();
     loadAuditLogs();
+    loadInteractionInsights();
     logToConsole('UI loaded. Backend metrics synchronized.', 'sys');
 });

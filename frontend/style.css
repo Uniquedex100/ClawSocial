@@ -133,6 +133,10 @@ body {
     color: var(--text-secondary);
 }
 
+.handle-help {
+    opacity: 0.85;
+}
+
 .nav-item {
     display: flex;
     align-items: center;

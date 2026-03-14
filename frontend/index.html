@@ -45,13 +45,19 @@
                         <option value="instagram">Instagram</option>
                     </select>
 
+                    <label class="handle-label" for="target-account-select">Saved Accounts</label>
+                    <select id="target-account-select" class="handle-input">
+                        <option value="">No saved account</option>
+                    </select>
+
                     <label class="handle-label" for="target-handle">Handle</label>
-                    <input id="target-handle" class="handle-input" type="text" placeholder="narendramodi" />
+                    <input id="target-handle" class="handle-input" type="text" placeholder="your_handle" />
 
                     <button id="target-handle-save" class="btn btn-primary btn-sm handle-save-btn" type="button">
-                        Apply Target
+                        Save + Apply Target
                     </button>
                     <p id="target-handle-status" class="handle-status">No default handle set.</p>
+                    <p class="handle-status handle-help">Tip: pick platform first, then save your account handle for that platform.</p>
                 </div>
             </div>
 

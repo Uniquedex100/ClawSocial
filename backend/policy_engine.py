@@ -27,7 +27,7 @@ class ArmorClaw:
         elif policy_file and Path(policy_file).exists():
             self.policy = self._load_policy(policy_file)
         else:
-            self.policy = Policy()  # sensible defaults
+            self.policy = Policy()  
 
         # Rate-limit counters
         self._posts_today: int = 0
