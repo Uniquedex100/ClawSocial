@@ -9,22 +9,38 @@ from pydantic import Field
 class Settings(BaseSettings):
     """Central configuration for ClawSocial."""
 
-    # ── LLM ──────────────────────────────────────────────
-    llm_provider: str = Field("openai", description="openai | anthropic")
-    llm_api_key: str = Field("", description="API key for the LLM provider")
-    llm_model: str = Field("gpt-4o-mini", description="Model identifier")
+    # ── LLM (Gemini) ────────────────────────────────────────
+    llm_provider: str = Field("gemini", description="LLM provider (gemini)")
+    llm_api_key: str = Field("", description="Gemini API key")
+    llm_model: str = Field("gemini-2.5-flash", description="Model identifier")
 
-    # ── OpenClaw ─────────────────────────────────────────
+    # ── OpenClaw ─────────────────────────────────────────────
     openclaw_gateway_url: str = Field(
-        "http://localhost:3000",
+        "http://localhost:18789",
         description="OpenClaw gateway base URL",
     )
+    openclaw_gateway_token: str = Field(
+        "",
+        description="OpenClaw gateway auth token",
+    )
     openclaw_browser_profile: str = Field(
-        "chrome",
+        "openclaw",
         description="Browser profile name for OpenClaw",
     )
+    openclaw_cli_path: str = Field(
+        "openclaw",
+        description="Path to OpenClaw CLI (openclaw.mjs or binary)",
+    )
 
-    # ── App ──────────────────────────────────────────────
+    # ── ArmorIQ ─────────────────────────────────────────────
+    armoriq_development_key: str = Field(
+        "",
+        description="ArmorIQ API key"
+    )
+    armoriq_user_id: str = Field("admin", description="ArmorIQ User ID")
+    armoriq_agent_id: str = Field("clawsocial-agent", description="ArmorIQ Agent ID")
+
+    # ── App ──────────────────────────────────────────────────
     log_level: str = Field("INFO")
     log_file: str = Field("clawsocial.log")
     policy_file: str = Field("default_policy.json")

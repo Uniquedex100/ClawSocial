@@ -1,0 +1,2677 @@
+[2026-03-14 12:01:08] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 12:01:08] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 12:01:08] STDOUT:
+{
+  "targetId": "754B7D03302F7EB73ADE103161B9E929",
+  "title": "",
+  "url": "https://www.instagram.com/",
+  "wsUrl": "ws://127.0.0.1:18800/devtools/page/754B7D03302F7EB73ADE103161B9E929",
+  "type": "page"
+}
+[2026-03-14 12:01:08] ------------------------------
+[2026-03-14 12:01:10] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 12:01:10] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json
+[2026-03-14 12:01:10] STDOUT:
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "754B7D03302F7EB73ADE103161B9E929",
+  "url": "https://www.instagram.com/",
+  "snapshot": "- generic [ref=e4]:\n  - generic [ref=e9]:\n    - generic [ref=e12]:\n      - link \"Instagram\" [ref=e17] [cursor=pointer]:\n        - /url: /\n        - img \"Instagram\" [ref=e22]\n      - generic [ref=e25]:\n        - link \"Home\" [ref=e30] [cursor=pointer]:\n          - /url: /\n          - img \"Home\" [ref=e35]\n        - link \"Reels\" [ref=e40] [cursor=pointer]:\n          - /url: /reels/\n          - img \"Reels\" [ref=e45]\n        - link \"Messages\" [ref=e52] [cursor=pointer]:\n          - /url: /direct/inbox/\n          - img \"Messages\" [ref=e57]\n        - link \"Search\" [ref=e63] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Search\" [ref=e68]\n        - link \"Explore\" [ref=e74] [cursor=pointer]:\n          - /url: /explore/\n          - img \"Explore\" [ref=e79]\n        - link \"Notifications\" [ref=e87] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Notifications\" [ref=e92]\n        - link \"New post\" [ref=e98] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"New post\" [ref=e103]\n        - link \"socialbeei's profile picture\" [ref=e109] [cursor=pointer]:\n          - /url: /socialbeei/\n          - link \"socialbeei's profile picture\" [ref=e114]:\n            - img \"socialbeei's profile picture\" [ref=e115]\n      - generic [ref=e116]:\n        - link \"Settings\" [ref=e119] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Settings\" [ref=e124]\n        - link \"Also from Meta\" [ref=e127] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Also from Meta\" [ref=e132]\n    - generic [ref=e135]:\n      - main [ref=e136]:\n        - generic [ref=e141]:\n          - generic [ref=e143]:\n            - generic [ref=e145]:\n              - status \"Loading...\" [ref=e146]\n              - generic [ref=e147]:\n                - status \"Loading...\" [ref=e148]\n                - status \"Loading...\" [ref=e149]\n            - status \"Loading...\" [ref=e150]\n          - generic [ref=e152]:\n            - generic [ref=e154]:\n              - status \"Loading...\" [ref=e155]\n              - generic [ref=e156]:\n                - status \"Loading...\" [ref=e157]\n                - status \"Loading...\" [ref=e158]\n            - status \"Loading...\" [ref=e159]\n      - contentinfo [ref=e160]:\n        - generic [ref=e161]:\n          - generic [ref=e163]:\n            - link \"Meta\" [ref=e165] [cursor=pointer]:\n              - /url: https://about.meta.com/\n              - generic [ref=e166]: Meta\n            - link \"About\" [ref=e168] [cursor=pointer]:\n              - /url: https://about.instagram.com/\n              - generic [ref=e169]: About\n            - link \"Blog\" [ref=e171] [cursor=pointer]:\n              - /url: https://about.instagram.com/blog/\n              - generic [ref=e172]: Blog\n            - link \"Jobs\" [ref=e174] [cursor=pointer]:\n              - /url: https://about.instagram.com/about-us/careers\n              - generic [ref=e175]: Jobs\n            - link \"Help\" [ref=e177] [cursor=pointer]:\n              - /url: https://help.instagram.com/\n              - generic [ref=e178]: Help\n            - link \"API\" [ref=e180] [cursor=pointer]:\n              - /url: https://developers.facebook.com/docs/instagram\n              - generic [ref=e181]: API\n            - link \"Privacy\" [ref=e183] [cursor=pointer]:\n              - /url: /legal/privacy/\n              - generic [ref=e184]: Privacy\n            - link \"Terms\" [ref=e186] [cursor=pointer]:\n              - /url: /legal/terms/\n              - generic [ref=e187]: Terms\n            - link \"Locations\" [ref=e189] [cursor=pointer]:\n              - /url: /explore/locations/\n              - generic [ref=e190]: Locations\n            - link \"Instagram Lite\" [ref=e192] [cursor=pointer]:\n              - /url: /web/lite/\n              - generic [ref=e193]: Instagram Lite\n            - link \"Meta AI\" [ref=e195] [cursor=pointer]:\n              - /url: https://www.meta.ai/?utm_source=foa_web_footer\n              - generic [ref=e196]: Meta AI\n            - link \"Threads\" [ref=e198] [cursor=pointer]:\n              - /url: https://www.threads.com/\n              - generic [ref=e199]: Threads\n            - link \"Contact Uploading & Non-Users\" [ref=e201] [cursor=pointer]:\n              - /url: https://www.facebook.com/help/instagram/261704639352628\n              - generic [ref=e202]: Contact Uploading & Non-Users\n            - link \"Meta Verified\" [ref=e204] [cursor=pointer]:\n              - /url: /accounts/meta_verified/?entrypoint=web_footer\n              - generic [ref=e205]: Meta Verified\n          - generic [ref=e206]:\n            - generic [ref=e207] [cursor=pointer]:\n              - generic [ref=e208]:\n                - generic [ref=e209]: English\n                - img \"Down chevron icon\" [ref=e212]\n              - combobox \"Switch Display Language\" [ref=e214]:\n                - option \"Afrikaans\"\n                - option \"العربية\"\n                - option \"Čeština\"\n                - option \"Dansk\"\n                - option \"Deutsch\"\n                - option \"Ελληνικά\"\n                - option \"English\" [selected]\n                - option \"English (UK)\"\n                - option \"Español (España)\"\n                - option \"Español\"\n                - option \"فارسی\"\n                - option \"Suomi\"\n                - option \"Français\"\n                - option \"עברית\"\n                - option \"Bahasa Indonesia\"\n                - option \"Italiano\"\n                - option \"日本語\"\n                - option \"한국어\"\n                - option \"Bahasa Melayu\"\n                - option \"Norsk\"\n                - option \"Nederlands\"\n                - option \"Polski\"\n                - option \"Português (Brasil)\"\n                - option \"Português (Portugal)\"\n                - option \"Русский\"\n                - option \"Svenska\"\n                - option \"ภาษาไทย\"\n                - option \"Filipino\"\n                - option \"Türkçe\"\n                - option \"中文(简体)\"\n                - option \"中文(台灣)\"\n                - option \"বাংলা\"\n                - option \"ગુજરાતી\"\n                - option \"हिन्दी\"\n                - option \"Hrvatski\"\n                - option \"Magyar\"\n                - option \"ಕನ್ನಡ\"\n                - option \"മലയാളം\"\n                - option \"मराठी\"\n                - option \"नेपाली\"\n                - option \"ਪੰਜਾਬੀ\"\n                - option \"සිංහල\"\n                - option \"Slovenčina\"\n                - option \"தமிழ்\"\n                - option \"తెలుగు\"\n                - option \"اردو\"\n                - option \"Tiếng Việt\"\n                - option \"中文(香港)\"\n                - option \"Български\"\n                - option \"Français (Canada)\"\n                - option \"Română\"\n                - option \"Српски\"\n                - option \"Українська\"\n            - generic [ref=e216]: © 2026 Instagram from Meta\n  - button \"Messages Messages\" [ref=e218] [cursor=pointer]:\n    - generic [ref=e220]:\n      - img \"Messages\" [ref=e222]\n      - generic [ref=e225]: Messages",
+  "refs": {
+    "e4": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "generic"
+    },
+    "e12": {
+      "role": "generic"
+    },
+    "e17": {
+      "role": "link",
+      "name": "Instagram"
+    },
+    "e22": {
+      "role": "img",
+      "name": "Instagram"
+    },
+    "e25": {
+      "role": "generic"
+    },
+    "e30": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e35": {
+      "role": "img",
+      "name": "Home"
+    },
+    "e40": {
+      "role": "link",
+      "name": "Reels"
+    },
+    "e45": {
+      "role": "img",
+      "name": "Reels"
+    },
+    "e52": {
+      "role": "link",
+      "name": "Messages"
+    },
+    "e57": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e63": {
+      "role": "link",
+      "name": "Search"
+    },
+    "e68": {
+      "role": "img",
+      "name": "Search"
+    },
+    "e74": {
+      "role": "link",
+      "name": "Explore"
+    },
+    "e79": {
+      "role": "img",
+      "name": "Explore"
+    },
+    "e87": {
+      "role": "link",
+      "name": "Notifications"
+    },
+    "e92": {
+      "role": "img",
+      "name": "Notifications"
+    },
+    "e98": {
+      "role": "link",
+      "name": "New post"
+    },
+    "e103": {
+      "role": "img",
+      "name": "New post"
+    },
+    "e109": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e114": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e115": {
+      "role": "img",
+      "name": "socialbeei's profile picture"
+    },
+    "e116": {
+      "role": "generic"
+    },
+    "e119": {
+      "role": "link",
+      "name": "Settings"
+    },
+    "e124": {
+      "role": "img",
+      "name": "Settings"
+    },
+    "e127": {
+      "role": "link",
+      "name": "Also from Meta"
+    },
+    "e132": {
+      "role": "img",
+      "name": "Also from Meta"
+    },
+    "e135": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "main"
+    },
+    "e141": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "generic"
+    },
+    "e145": {
+      "role": "generic"
+    },
+    "e146": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e147": {
+      "role": "generic"
+    },
+    "e148": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e149": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e150": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e152": {
+      "role": "generic"
+    },
+    "e154": {
+      "role": "generic"
+    },
+    "e155": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e156": {
+      "role": "generic"
+    },
+    "e157": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e158": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e159": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e160": {
+      "role": "contentinfo"
+    },
+    "e161": {
+      "role": "generic"
+    },
+    "e163": {
+      "role": "generic"
+    },
+    "e165": {
+      "role": "link",
+      "name": "Meta"
+    },
+    "e166": {
+      "role": "generic"
+    },
+    "e168": {
+      "role": "link",
+      "name": "About"
+    },
+    "e169": {
+      "role": "generic"
+    },
+    "e171": {
+      "role": "link",
+      "name": "Blog"
+    },
+    "e172": {
+      "role": "generic"
+    },
+    "e174": {
+      "role": "link",
+      "name": "Jobs"
+    },
+    "e175": {
+      "role": "generic"
+    },
+    "e177": {
+      "role": "link",
+      "name": "Help"
+    },
+    "e178": {
+      "role": "generic"
+    },
+    "e180": {
+      "role": "link",
+      "name": "API"
+    },
+    "e181": {
+      "role": "generic"
+    },
+    "e183": {
+      "role": "link",
+      "name": "Privacy"
+    },
+    "e184": {
+      "role": "generic"
+    },
+    "e186": {
+      "role": "link",
+      "name": "Terms"
+    },
+    "e187": {
+      "role": "generic"
+    },
+    "e189": {
+      "role": "link",
+      "name": "Locations"
+    },
+    "e190": {
+      "role": "generic"
+    },
+    "e192": {
+      "role": "link",
+      "name": "Instagram Lite"
+    },
+    "e193": {
+      "role": "generic"
+    },
+    "e195": {
+      "role": "link",
+      "name": "Meta AI"
+    },
+    "e196": {
+      "role": "generic"
+    },
+    "e198": {
+      "role": "link",
+      "name": "Threads"
+    },
+    "e199": {
+      "role": "generic"
+    },
+    "e201": {
+      "role": "link",
+      "name": "Contact Uploading & Non-Users"
+    },
+    "e202": {
+      "role": "generic"
+    },
+    "e204": {
+      "role": "link",
+      "name": "Meta Verified"
+    },
+    "e205": {
+      "role": "generic"
+    },
+    "e206": {
+      "role": "generic"
+    },
+    "e207": {
+      "role": "generic"
+    },
+    "e208": {
+      "role": "generic"
+    },
+    "e209": {
+      "role": "generic"
+    },
+    "e212": {
+      "role": "img",
+      "name": "Down chevron icon"
+    },
+    "e214": {
+      "role": "combobox",
+      "name": "Switch Display Language"
+    },
+    "e216": {
+      "role": "generic"
+    },
+    "e218": {
+      "role": "button",
+      "name": "Messages Messages"
+    },
+    "e220": {
+      "role": "generic"
+    },
+    "e222": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e225": {
+      "role": "generic"
+    }
+  }
+}
+[2026-03-14 12:01:10] ------------------------------
+[2026-03-14 12:01:13] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 12:01:13] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 12:01:13] STDOUT:
+{
+  "targetId": "3A477EA51CE3275861CB948FF1827809",
+  "title": "",
+  "url": "https://www.instagram.com/",
+  "wsUrl": "ws://127.0.0.1:18800/devtools/page/3A477EA51CE3275861CB948FF1827809",
+  "type": "page"
+}
+[2026-03-14 12:01:13] ------------------------------
+[2026-03-14 12:01:17] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 12:01:17] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json
+[2026-03-14 12:01:17] STDOUT:
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "3A477EA51CE3275861CB948FF1827809",
+  "url": "https://www.instagram.com/",
+  "snapshot": "- generic [ref=e4]:\n  - generic [ref=e9]:\n    - generic [ref=e12]:\n      - link \"Instagram\" [ref=e17] [cursor=pointer]:\n        - /url: /\n        - img \"Instagram\" [ref=e22]\n      - generic [ref=e26]:\n        - link \"Home Home\" [ref=e31] [cursor=pointer]:\n          - /url: /\n          - generic [ref=e32]:\n            - img \"Home\" [ref=e36]\n            - generic [ref=e42]: Home\n        - link \"Reels Reels\" [ref=e46] [cursor=pointer]:\n          - /url: /reels/\n          - generic [ref=e47]:\n            - img \"Reels\" [ref=e51]\n            - generic [ref=e57]: Reels\n        - link \"Messages Messages\" [ref=e63] [cursor=pointer]:\n          - /url: /direct/inbox/\n          - generic [ref=e64]:\n            - img \"Messages\" [ref=e68]\n            - generic [ref=e75]: Messages\n        - link \"Search Search\" [ref=e79] [cursor=pointer]:\n          - /url: \"#\"\n          - generic [ref=e80]:\n            - img \"Search\" [ref=e84]\n            - generic [ref=e91]: Search\n        - link \"Explore Explore\" [ref=e95] [cursor=pointer]:\n          - /url: /explore/\n          - generic [ref=e96]:\n            - img \"Explore\" [ref=e100]\n            - generic [ref=e108]: Explore\n        - link \"Notifications Notifications\" [ref=e113] [cursor=pointer]:\n          - /url: \"#\"\n          - generic [ref=e114]:\n            - img \"Notifications\" [ref=e118]\n            - generic [ref=e126]: Notifications\n        - link \"New post Create\" [ref=e131] [cursor=pointer]:\n          - /url: \"#\"\n          - generic [ref=e132]:\n            - img \"New post\" [ref=e136]\n            - generic [ref=e142]: Create\n        - link \"socialbeei's profile picture Profile\" [ref=e147] [cursor=pointer]:\n          - /url: /socialbeei/\n          - generic [ref=e148]:\n            - link \"socialbeei's profile picture\" [ref=e152]:\n              - img \"socialbeei's profile picture\" [ref=e153]\n            - generic [ref=e158]: Profile\n      - generic [ref=e159]:\n        - link \"Settings More\" [ref=e162] [cursor=pointer]:\n          - /url: \"#\"\n          - generic [ref=e163]:\n            - img \"Settings\" [ref=e167]\n            - generic [ref=e172]: More\n        - link \"Also from Meta Also from Meta\" [ref=e175] [cursor=pointer]:\n          - /url: \"#\"\n          - generic [ref=e176]:\n            - img \"Also from Meta\" [ref=e180]\n            - generic [ref=e186]: Also from Meta\n    - generic [ref=e188]:\n      - main [ref=e189]:\n        - generic [ref=e194]:\n          - generic [ref=e196]:\n            - article [ref=e197]:\n              - generic [ref=e198]:\n                - generic [ref=e200]:\n                  - button \"adamschefter's profile picture\" [disabled] [ref=e205]:\n                    - link \"adamschefter's profile picture\" [disabled] [ref=e207] [cursor=pointer]:\n                      - img \"adamschefter's profile picture\" [ref=e208]\n                  - generic [ref=e211]:\n                    - generic [ref=e213]:\n                      - generic [ref=e215]:\n                        - link \"adamschefter\" [ref=e221] [cursor=pointer]:\n                          - /url: /adamschefter/\n                          - generic [ref=e224]: adamschefter\n                        - img \"Verified\" [ref=e226]\n                      - generic [ref=e228]:\n                        - generic [ref=e230]: •\n                        - link \"1d\" [ref=e232] [cursor=pointer]:\n                          - /url: /p/DVySjVZFHDx/\n                          - time [ref=e234]: 1d\n                    - button \"Follow\" [ref=e236] [cursor=pointer]\n                  - button \"More options\" [ref=e239] [cursor=pointer]:\n                    - img \"More options\" [ref=e242]\n                - button [ref=e249]:\n                  - img [ref=e255]\n                - generic [ref=e259]:\n                  - generic [ref=e260]:\n                    - generic [ref=e261]:\n                      - button \"Like\" [ref=e264] [cursor=pointer]:\n                        - img \"Like\" [ref=e267]\n                      - button \"9.8K\" [ref=e269] [cursor=pointer]\n                      - button \"Share\" [ref=e270] [cursor=pointer]:\n                        - img \"Share\" [ref=e271]\n                    - button \"Save\" [ref=e276] [cursor=pointer]:\n                      - button \"Save\" [ref=e277]:\n                        - img \"Save\" [ref=e279]\n                  - generic [ref=e281]:\n                    - link \"adamschefter Verified\" [ref=e286] [cursor=pointer]:\n                      - /url: /adamschefter/\n                      - generic [ref=e288]:\n                        - generic [ref=e289]: adamschefter\n                        - img \"Verified\" [ref=e291]\n                    - generic [ref=e294]: Bengals today signed OT Orlando Brown Jr. to a two-year contract extension through the 2028 season.\n            - article [ref=e295]:\n              - generic [ref=e296]:\n                - generic [ref=e298]:\n                  - button \"photosbytimrosier's profile picture\" [ref=e303] [cursor=pointer]:\n                    - link \"photosbytimrosier's profile picture\" [ref=e305]:\n                      - img \"photosbytimrosier's profile picture\" [ref=e306]\n                  - generic [ref=e309]:\n                    - generic [ref=e310]:\n                      - generic [ref=e311]:\n                        - link \"photosbytimrosier\" [ref=e319] [cursor=pointer]:\n                          - /url: /photosbytimrosier/\n                          - generic [ref=e322]: photosbytimrosier\n                        - generic [ref=e323]:\n                          - generic [ref=e325]: •\n                          - link \"12h\" [ref=e327] [cursor=pointer]:\n                            - /url: /p/DV1Xt7rjL9j/\n                            - time [ref=e329]: 12h\n                      - link \"Avon Beach\" [ref=e333] [cursor=pointer]:\n                        - /url: /explore/locations/101322918365468/avon-beach/\n                    - button \"Follow\" [ref=e335] [cursor=pointer]\n                  - button \"More options\" [ref=e338] [cursor=pointer]:\n                    - img \"More options\" [ref=e341]\n                - button [ref=e348]:\n                  - img [ref=e354]\n                - generic [ref=e358]:\n                  - generic [ref=e359]:\n                    - generic [ref=e360]:\n                      - button \"Like\" [ref=e363] [cursor=pointer]:\n                        - img \"Like\" [ref=e366]\n                      - button \"351\" [ref=e368] [cursor=pointer]\n                      - button \"Comment\" [ref=e370] [cursor=pointer]:\n                        - img \"Comment\" [ref=e372]\n                      - button \"126\" [ref=e374] [cursor=pointer]\n                      - button \"Share\" [ref=e375] [cursor=pointer]:\n                        - img \"Share\" [ref=e376]\n                    - button \"Save\" [ref=e381] [cursor=pointer]:\n                      - button \"Save\" [ref=e382]:\n                        - img \"Save\" [ref=e384]\n                  - generic [ref=e386]:\n                    - link \"photosbytimrosier\" [ref=e391] [cursor=pointer]:\n                      - /url: /photosbytimrosier/\n                      - generic [ref=e394]: photosbytimrosier\n                    - generic [ref=e395]:\n                      - generic [ref=e396]: Another sunrise image from Avon Beach, this is a great spot to watch the sunrise and at certain times of the year it\n                      - generic [ref=e397]:\n                        - text: ...\n                        - button \"more\" [ref=e398] [cursor=pointer]:\n                          - generic [ref=e399]: more\n            - article [ref=e400]:\n              - generic [ref=e401]:\n                - generic [ref=e403]:\n                  - button \"f1's profile picture\" [ref=e408] [cursor=pointer]:\n                    - link \"f1's profile picture\" [ref=e410]:\n                      - img \"f1's profile picture\" [ref=e411]\n                  - generic [ref=e414]:\n                    - generic [ref=e415]:\n                      - generic [ref=e416]:\n                        - generic [ref=e418]:\n                          - link \"f1\" [ref=e424] [cursor=pointer]:\n                            - /url: /f1/\n                            - generic [ref=e427]: f1\n                          - img \"Verified\" [ref=e429]\n                        - generic [ref=e431]:\n                          - generic [ref=e433]: •\n                          - link \"3w\" [ref=e435] [cursor=pointer]:\n                            - /url: /p/DU811gEAgVf/\n                            - time [ref=e437]: 3w\n                      - link \"Original audio\" [ref=e441] [cursor=pointer]:\n                        - /url: /reels/audio/33794950913483131/\n                        - generic [ref=e444]: Original audio\n                    - button \"Follow\" [ref=e446] [cursor=pointer]\n                  - button \"More options\" [ref=e449] [cursor=pointer]:\n                    - img \"More options\" [ref=e452]\n                - button [ref=e459]:\n                  - group [ref=e470]:\n                    - button [ref=e473] [cursor=pointer]:\n                      - img [ref=e475]\n                - generic [ref=e479]:\n                  - generic [ref=e480]:\n                    - generic [ref=e481]:\n                      - button \"Like\" [ref=e484] [cursor=pointer]:\n                        - img \"Like\" [ref=e487]\n                      - button \"434K\" [ref=e489] [cursor=pointer]\n                      - button \"Comment\" [ref=e491] [cursor=pointer]:\n                        - img \"Comment\" [ref=e493]\n                      - button \"889\" [ref=e495] [cursor=pointer]\n                      - button \"Share\" [ref=e496] [cursor=pointer]:\n                        - img \"Share\" [ref=e497]\n                    - button \"Save\" [ref=e502] [cursor=pointer]:\n                      - button \"Save\" [ref=e503]:\n                        - img \"Save\" [ref=e505]\n                  - generic [ref=e507]:\n                    - link \"f1 Verified\" [ref=e512] [cursor=pointer]:\n                      - /url: /f1/\n                      - generic [ref=e514]:\n                        - generic [ref=e515]: f1\n                        - img \"Verified\" [ref=e517]\n                    - generic [ref=e519]:\n                      - generic [ref=e521]: Another stormer of a lap from Kimi Antonelli - he clocks the fastest time, late in Day 2 of Week 2 🔥\n                      - generic [ref=e522]:\n                        - text: ...\n                        - button \"more\" [ref=e523] [cursor=pointer]:\n                          - generic [ref=e524]: more\n          - progressbar [ref=e526]:\n            - img \"Loading...\" [ref=e527]\n      - contentinfo [ref=e540]:\n        - generic [ref=e541]:\n          - generic [ref=e543]:\n            - link \"Meta\" [ref=e545] [cursor=pointer]:\n              - /url: https://about.meta.com/\n              - generic [ref=e546]: Meta\n            - link \"About\" [ref=e548] [cursor=pointer]:\n              - /url: https://about.instagram.com/\n              - generic [ref=e549]: About\n            - link \"Blog\" [ref=e551] [cursor=pointer]:\n              - /url: https://about.instagram.com/blog/\n              - generic [ref=e552]: Blog\n            - link \"Jobs\" [ref=e554] [cursor=pointer]:\n              - /url: https://about.instagram.com/about-us/careers\n              - generic [ref=e555]: Jobs\n            - link \"Help\" [ref=e557] [cursor=pointer]:\n              - /url: https://help.instagram.com/\n              - generic [ref=e558]: Help\n            - link \"API\" [ref=e560] [cursor=pointer]:\n              - /url: https://developers.facebook.com/docs/instagram\n              - generic [ref=e561]: API\n            - link \"Privacy\" [ref=e563] [cursor=pointer]:\n              - /url: /legal/privacy/\n              - generic [ref=e564]: Privacy\n            - link \"Terms\" [ref=e566] [cursor=pointer]:\n              - /url: /legal/terms/\n              - generic [ref=e567]: Terms\n            - link \"Locations\" [ref=e569] [cursor=pointer]:\n              - /url: /explore/locations/\n              - generic [ref=e570]: Locations\n            - link \"Instagram Lite\" [ref=e572] [cursor=pointer]:\n              - /url: /web/lite/\n              - generic [ref=e573]: Instagram Lite\n            - link \"Meta AI\" [ref=e575] [cursor=pointer]:\n              - /url: https://www.meta.ai/?utm_source=foa_web_footer\n              - generic [ref=e576]: Meta AI\n            - link \"Threads\" [ref=e578] [cursor=pointer]:\n              - /url: https://www.threads.com/\n              - generic [ref=e579]: Threads\n            - link \"Contact Uploading & Non-Users\" [ref=e581] [cursor=pointer]:\n              - /url: https://www.facebook.com/help/instagram/261704639352628\n              - generic [ref=e582]: Contact Uploading & Non-Users\n            - link \"Meta Verified\" [ref=e584] [cursor=pointer]:\n              - /url: /accounts/meta_verified/?entrypoint=web_footer\n              - generic [ref=e585]: Meta Verified\n          - generic [ref=e586]:\n            - generic [ref=e587] [cursor=pointer]:\n              - generic [ref=e588]:\n                - generic [ref=e589]: English\n                - img \"Down chevron icon\" [ref=e592]\n              - combobox \"Switch Display Language\" [ref=e594]:\n                - option \"Afrikaans\"\n                - option \"العربية\"\n                - option \"Čeština\"\n                - option \"Dansk\"\n                - option \"Deutsch\"\n                - option \"Ελληνικά\"\n                - option \"English\" [selected]\n                - option \"English (UK)\"\n                - option \"Español (España)\"\n                - option \"Español\"\n                - option \"فارسی\"\n                - option \"Suomi\"\n                - option \"Français\"\n                - option \"עברית\"\n                - option \"Bahasa Indonesia\"\n                - option \"Italiano\"\n                - option \"日本語\"\n                - option \"한국어\"\n                - option \"Bahasa Melayu\"\n                - option \"Norsk\"\n                - option \"Nederlands\"\n                - option \"Polski\"\n                - option \"Português (Brasil)\"\n                - option \"Português (Portugal)\"\n                - option \"Русский\"\n                - option \"Svenska\"\n                - option \"ภาษาไทย\"\n                - option \"Filipino\"\n                - option \"Türkçe\"\n                - option \"中文(简体)\"\n                - option \"中文(台灣)\"\n                - option \"বাংলা\"\n                - option \"ગુજરાતી\"\n                - option \"हिन्दी\"\n                - option \"Hrvatski\"\n                - option \"Magyar\"\n                - option \"ಕನ್ನಡ\"\n                - option \"മലയാളം\"\n                - option \"मराठी\"\n                - option \"नेपाली\"\n                - option \"ਪੰਜਾਬੀ\"\n                - option \"සිංහල\"\n                - option \"Slovenčina\"\n                - option \"தமிழ்\"\n                - option \"తెలుగు\"\n                - option \"اردو\"\n                - option \"Tiếng Việt\"\n                - option \"中文(香港)\"\n                - option \"Български\"\n                - option \"Français (Canada)\"\n                - option \"Română\"\n                - option \"Српски\"\n                - option \"Українська\"\n            - generic [ref=e596]: © 2026 Instagram from Meta\n  - button \"Messages Messages\" [ref=e598] [cursor=pointer]:\n    - generic [ref=e600]:\n      - img \"Messages\" [ref=e602]\n      - generic [ref=e605]: Messages",
+  "refs": {
+    "e4": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "generic"
+    },
+    "e12": {
+      "role": "generic"
+    },
+    "e17": {
+      "role": "link",
+      "name": "Instagram"
+    },
+    "e22": {
+      "role": "img",
+      "name": "Instagram"
+    },
+    "e26": {
+      "role": "generic"
+    },
+    "e31": {
+      "role": "link",
+      "name": "Home Home"
+    },
+    "e32": {
+      "role": "generic"
+    },
+    "e36": {
+      "role": "img",
+      "name": "Home"
+    },
+    "e42": {
+      "role": "generic"
+    },
+    "e46": {
+      "role": "link",
+      "name": "Reels Reels"
+    },
+    "e47": {
+      "role": "generic"
+    },
+    "e51": {
+      "role": "img",
+      "name": "Reels"
+    },
+    "e57": {
+      "role": "generic"
+    },
+    "e63": {
+      "role": "link",
+      "name": "Messages Messages"
+    },
+    "e64": {
+      "role": "generic"
+    },
+    "e68": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e75": {
+      "role": "generic"
+    },
+    "e79": {
+      "role": "link",
+      "name": "Search Search"
+    },
+    "e80": {
+      "role": "generic"
+    },
+    "e84": {
+      "role": "img",
+      "name": "Search"
+    },
+    "e91": {
+      "role": "generic"
+    },
+    "e95": {
+      "role": "link",
+      "name": "Explore Explore"
+    },
+    "e96": {
+      "role": "generic"
+    },
+    "e100": {
+      "role": "img",
+      "name": "Explore"
+    },
+    "e108": {
+      "role": "generic"
+    },
+    "e113": {
+      "role": "link",
+      "name": "Notifications Notifications"
+    },
+    "e114": {
+      "role": "generic"
+    },
+    "e118": {
+      "role": "img",
+      "name": "Notifications"
+    },
+    "e126": {
+      "role": "generic"
+    },
+    "e131": {
+      "role": "link",
+      "name": "New post Create"
+    },
+    "e132": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "img",
+      "name": "New post"
+    },
+    "e142": {
+      "role": "generic"
+    },
+    "e147": {
+      "role": "link",
+      "name": "socialbeei's profile picture Profile"
+    },
+    "e148": {
+      "role": "generic"
+    },
+    "e152": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e153": {
+      "role": "img",
+      "name": "socialbeei's profile picture"
+    },
+    "e158": {
+      "role": "generic"
+    },
+    "e159": {
+      "role": "generic"
+    },
+    "e162": {
+      "role": "link",
+      "name": "Settings More"
+    },
+    "e163": {
+      "role": "generic"
+    },
+    "e167": {
+      "role": "img",
+      "name": "Settings"
+    },
+    "e172": {
+      "role": "generic"
+    },
+    "e175": {
+      "role": "link",
+      "name": "Also from Meta Also from Meta"
+    },
+    "e176": {
+      "role": "generic"
+    },
+    "e180": {
+      "role": "img",
+      "name": "Also from Meta"
+    },
+    "e186": {
+      "role": "generic"
+    },
+    "e188": {
+      "role": "generic"
+    },
+    "e189": {
+      "role": "main"
+    },
+    "e194": {
+      "role": "generic"
+    },
+    "e196": {
+      "role": "generic"
+    },
+    "e197": {
+      "role": "article"
+    },
+    "e198": {
+      "role": "generic"
+    },
+    "e200": {
+      "role": "generic"
+    },
+    "e205": {
+      "role": "button",
+      "name": "adamschefter's profile picture"
+    },
+    "e207": {
+      "role": "link",
+      "name": "adamschefter's profile picture"
+    },
+    "e208": {
+      "role": "img",
+      "name": "adamschefter's profile picture"
+    },
+    "e211": {
+      "role": "generic"
+    },
+    "e213": {
+      "role": "generic"
+    },
+    "e215": {
+      "role": "generic"
+    },
+    "e221": {
+      "role": "link",
+      "name": "adamschefter"
+    },
+    "e224": {
+      "role": "generic"
+    },
+    "e226": {
+      "role": "img",
+      "name": "Verified"
+    },
+    "e228": {
+      "role": "generic"
+    },
+    "e230": {
+      "role": "generic"
+    },
+    "e232": {
+      "role": "link",
+      "name": "1d"
+    },
+    "e234": {
+      "role": "time"
+    },
+    "e236": {
+      "role": "button",
+      "name": "Follow"
+    },
+    "e239": {
+      "role": "button",
+      "name": "More options"
+    },
+    "e242": {
+      "role": "img",
+      "name": "More options"
+    },
+    "e249": {
+      "role": "button"
+    },
+    "e255": {
+      "role": "img"
+    },
+    "e259": {
+      "role": "generic"
+    },
+    "e260": {
+      "role": "generic"
+    },
+    "e261": {
+      "role": "generic"
+    },
+    "e264": {
+      "role": "button",
+      "name": "Like"
+    },
+    "e267": {
+      "role": "img",
+      "name": "Like"
+    },
+    "e269": {
+      "role": "button",
+      "name": "9.8K"
+    },
+    "e270": {
+      "role": "button",
+      "name": "Share"
+    },
+    "e271": {
+      "role": "img",
+      "name": "Share"
+    },
+    "e276": {
+      "role": "button",
+      "name": "Save"
+    },
+    "e277": {
+      "role": "button",
+      "name": "Save"
+    },
+    "e279": {
+      "role": "img",
+      "name": "Save"
+    },
+    "e281": {
+      "role": "generic"
+    },
+    "e286": {
+      "role": "link",
+      "name": "adamschefter Verified"
+    },
+    "e288": {
+      "role": "generic"
+    },
+    "e289": {
+      "role": "generic"
+    },
+    "e291": {
+      "role": "img",
+      "name": "Verified"
+    },
+    "e294": {
+      "role": "generic"
+    },
+    "e295": {
+      "role": "article"
+    },
+    "e296": {
+      "role": "generic"
+    },
+    "e298": {
+      "role": "generic"
+    },
+    "e303": {
+      "role": "button",
+      "name": "photosbytimrosier's profile picture"
+    },
+    "e305": {
+      "role": "link",
+      "name": "photosbytimrosier's profile picture"
+    },
+    "e306": {
+      "role": "img",
+      "name": "photosbytimrosier's profile picture"
+    },
+    "e309": {
+      "role": "generic"
+    },
+    "e310": {
+      "role": "generic"
+    },
+    "e311": {
+      "role": "generic"
+    },
+    "e319": {
+      "role": "link",
+      "name": "photosbytimrosier"
+    },
+    "e322": {
+      "role": "generic"
+    },
+    "e323": {
+      "role": "generic"
+    },
+    "e325": {
+      "role": "generic"
+    },
+    "e327": {
+      "role": "link",
+      "name": "12h"
+    },
+    "e329": {
+      "role": "time"
+    },
+    "e333": {
+      "role": "link",
+      "name": "Avon Beach"
+    },
+    "e335": {
+      "role": "button",
+      "name": "Follow"
+    },
+    "e338": {
+      "role": "button",
+      "name": "More options"
+    },
+    "e341": {
+      "role": "img",
+      "name": "More options"
+    },
+    "e348": {
+      "role": "button"
+    },
+    "e354": {
+      "role": "img"
+    },
+    "e358": {
+      "role": "generic"
+    },
+    "e359": {
+      "role": "generic"
+    },
+    "e360": {
+      "role": "generic"
+    },
+    "e363": {
+      "role": "button",
+      "name": "Like"
+    },
+    "e366": {
+      "role": "img",
+      "name": "Like"
+    },
+    "e368": {
+      "role": "button",
+      "name": "351"
+    },
+    "e370": {
+      "role": "button",
+      "name": "Comment"
+    },
+    "e372": {
+      "role": "img",
+      "name": "Comment"
+    },
+    "e374": {
+      "role": "button",
+      "name": "126"
+    },
+    "e375": {
+      "role": "button",
+      "name": "Share"
+    },
+    "e376": {
+      "role": "img",
+      "name": "Share"
+    },
+    "e381": {
+      "role": "button",
+      "name": "Save"
+    },
+    "e382": {
+      "role": "button",
+      "name": "Save"
+    },
+    "e384": {
+      "role": "img",
+      "name": "Save"
+    },
+    "e386": {
+      "role": "generic"
+    },
+    "e391": {
+      "role": "link",
+      "name": "photosbytimrosier"
+    },
+    "e394": {
+      "role": "generic"
+    },
+    "e395": {
+      "role": "generic"
+    },
+    "e396": {
+      "role": "generic"
+    },
+    "e397": {
+      "role": "generic"
+    },
+    "e398": {
+      "role": "button",
+      "name": "more"
+    },
+    "e399": {
+      "role": "generic"
+    },
+    "e400": {
+      "role": "article"
+    },
+    "e401": {
+      "role": "generic"
+    },
+    "e403": {
+      "role": "generic"
+    },
+    "e408": {
+      "role": "button",
+      "name": "f1's profile picture"
+    },
+    "e410": {
+      "role": "link",
+      "name": "f1's profile picture"
+    },
+    "e411": {
+      "role": "img",
+      "name": "f1's profile picture"
+    },
+    "e414": {
+      "role": "generic"
+    },
+    "e415": {
+      "role": "generic"
+    },
+    "e416": {
+      "role": "generic"
+    },
+    "e418": {
+      "role": "generic"
+    },
+    "e424": {
+      "role": "link",
+      "name": "f1"
+    },
+    "e427": {
+      "role": "generic"
+    },
+    "e429": {
+      "role": "img",
+      "name": "Verified"
+    },
+    "e431": {
+      "role": "generic"
+    },
+    "e433": {
+      "role": "generic"
+    },
+    "e435": {
+      "role": "link",
+      "name": "3w"
+    },
+    "e437": {
+      "role": "time"
+    },
+    "e441": {
+      "role": "link",
+      "name": "Original audio"
+    },
+    "e444": {
+      "role": "generic"
+    },
+    "e446": {
+      "role": "button",
+      "name": "Follow"
+    },
+    "e449": {
+      "role": "button",
+      "name": "More options"
+    },
+    "e452": {
+      "role": "img",
+      "name": "More options"
+    },
+    "e459": {
+      "role": "button"
+    },
+    "e470": {
+      "role": "group"
+    },
+    "e473": {
+      "role": "button"
+    },
+    "e475": {
+      "role": "img"
+    },
+    "e479": {
+      "role": "generic"
+    },
+    "e480": {
+      "role": "generic"
+    },
+    "e481": {
+      "role": "generic"
+    },
+    "e484": {
+      "role": "button",
+      "name": "Like"
+    },
+    "e487": {
+      "role": "img",
+      "name": "Like"
+    },
+    "e489": {
+      "role": "button",
+      "name": "434K"
+    },
+    "e491": {
+      "role": "button",
+      "name": "Comment"
+    },
+    "e493": {
+      "role": "img",
+      "name": "Comment"
+    },
+    "e495": {
+      "role": "button",
+      "name": "889"
+    },
+    "e496": {
+      "role": "button",
+      "name": "Share"
+    },
+    "e497": {
+      "role": "img",
+      "name": "Share"
+    },
+    "e502": {
+      "role": "button",
+      "name": "Save"
+    },
+    "e503": {
+      "role": "button",
+      "name": "Save"
+    },
+    "e505": {
+      "role": "img",
+      "name": "Save"
+    },
+    "e507": {
+      "role": "generic"
+    },
+    "e512": {
+      "role": "link",
+      "name": "f1 Verified"
+    },
+    "e514": {
+      "role": "generic"
+    },
+    "e515": {
+      "role": "generic"
+    },
+    "e517": {
+      "role": "img",
+      "name": "Verified"
+    },
+    "e519": {
+      "role": "generic"
+    },
+    "e521": {
+      "role": "generic"
+    },
+    "e522": {
+      "role": "generic"
+    },
+    "e523": {
+      "role": "button",
+      "name": "more"
+    },
+    "e524": {
+      "role": "generic"
+    },
+    "e526": {
+      "role": "progressbar"
+    },
+    "e527": {
+      "role": "img",
+      "name": "Loading..."
+    },
+    "e540": {
+      "role": "contentinfo"
+    },
+    "e541": {
+      "role": "generic"
+    },
+    "e543": {
+      "role": "generic"
+    },
+    "e545": {
+      "role": "link",
+      "name": "Meta"
+    },
+    "e546": {
+      "role": "generic"
+    },
+    "e548": {
+      "role": "link",
+      "name": "About"
+    },
+    "e549": {
+      "role": "generic"
+    },
+    "e551": {
+      "role": "link",
+      "name": "Blog"
+    },
+    "e552": {
+      "role": "generic"
+    },
+    "e554": {
+      "role": "link",
+      "name": "Jobs"
+    },
+    "e555": {
+      "role": "generic"
+    },
+    "e557": {
+      "role": "link",
+      "name": "Help"
+    },
+    "e558": {
+      "role": "generic"
+    },
+    "e560": {
+      "role": "link",
+      "name": "API"
+    },
+    "e561": {
+      "role": "generic"
+    },
+    "e563": {
+      "role": "link",
+      "name": "Privacy"
+    },
+    "e564": {
+      "role": "generic"
+    },
+    "e566": {
+      "role": "link",
+      "name": "Terms"
+    },
+    "e567": {
+      "role": "generic"
+    },
+    "e569": {
+      "role": "link",
+      "name": "Locations"
+    },
+    "e570": {
+      "role": "generic"
+    },
+    "e572": {
+      "role": "link",
+      "name": "Instagram Lite"
+    },
+    "e573": {
+      "role": "generic"
+    },
+    "e575": {
+      "role": "link",
+      "name": "Meta AI"
+    },
+    "e576": {
+      "role": "generic"
+    },
+    "e578": {
+      "role": "link",
+      "name": "Threads"
+    },
+    "e579": {
+      "role": "generic"
+    },
+    "e581": {
+      "role": "link",
+      "name": "Contact Uploading & Non-Users"
+    },
+    "e582": {
+      "role": "generic"
+    },
+    "e584": {
+      "role": "link",
+      "name": "Meta Verified"
+    },
+    "e585": {
+      "role": "generic"
+    },
+    "e586": {
+      "role": "generic"
+    },
+    "e587": {
+      "role": "generic"
+    },
+    "e588": {
+      "role": "generic"
+    },
+    "e589": {
+      "role": "generic"
+    },
+    "e592": {
+      "role": "img",
+      "name": "Down chevron icon"
+    },
+    "e594": {
+      "role": "combobox",
+      "name": "Switch Display Language"
+    },
+    "e596": {
+      "role": "generic"
+    },
+    "e598": {
+      "role": "button",
+      "name": "Messages Messages"
+    },
+    "e600": {
+      "role": "generic"
+    },
+    "e602": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e605": {
+      "role": "generic"
+    }
+  }
+}
+[2026-03-14 12:01:17] ------------------------------
+[2026-03-14 12:01:27] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 12:01:27] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw comment-input Thanks! --submit --json
+[2026-03-14 12:01:27] STDERR:
+GatewayClientRequestError: TimeoutError: locator.fill: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator('aria-ref=comment-input')
+[2026-03-14 12:01:27] ------------------------------
+[2026-03-14 13:22:29] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:22:29] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:22:29] STDERR:
+Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:22:29] ------------------------------
+[2026-03-14 13:22:45] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:22:45] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:22:45] STDERR:
+Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:22:45] ------------------------------
+[2026-03-14 13:24:55] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:24:55] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:24:55] STDERR:
+Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:24:55] ------------------------------
+[2026-03-14 13:25:10] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:25:10] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:25:10] STDERR:
+Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:25:10] ------------------------------
+[2026-03-14 13:30:17] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:30:17] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:30:17] STDERR:
+Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:30:17] ------------------------------
+[2026-03-14 13:30:33] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:30:33] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:30:33] STDERR:
+Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:30:33] ------------------------------
+[2026-03-14 13:39:11] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:39:11] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:39:11] STDOUT:
+{
+  "targetId": "332352D7C52A949E94D041D8212DAA07",
+  "title": "",
+  "url": "https://www.instagram.com/",
+  "wsUrl": "ws://127.0.0.1:18800/devtools/page/332352D7C52A949E94D041D8212DAA07",
+  "type": "page"
+}
+[2026-03-14 13:39:11] ------------------------------
+[2026-03-14 13:39:13] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:39:13] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json
+[2026-03-14 13:39:13] STDOUT:
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "332352D7C52A949E94D041D8212DAA07",
+  "url": "https://www.instagram.com/",
+  "snapshot": "- generic [ref=e4]:\n  - generic [ref=e9]:\n    - generic [ref=e12]:\n      - link \"Instagram\" [ref=e17] [cursor=pointer]:\n        - /url: /\n        - img \"Instagram\" [ref=e22]\n      - generic [ref=e25]:\n        - link \"Home\" [ref=e30] [cursor=pointer]:\n          - /url: /\n          - img \"Home\" [ref=e35]\n        - link \"Reels\" [ref=e40] [cursor=pointer]:\n          - /url: /reels/\n          - img \"Reels\" [ref=e45]\n        - link \"Messages\" [ref=e52] [cursor=pointer]:\n          - /url: /direct/inbox/\n          - img \"Messages\" [ref=e57]\n        - link \"Search\" [ref=e63] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Search\" [ref=e68]\n        - link \"Explore\" [ref=e74] [cursor=pointer]:\n          - /url: /explore/\n          - img \"Explore\" [ref=e79]\n        - link \"Notifications\" [ref=e87] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Notifications\" [ref=e92]\n        - link \"New post\" [ref=e98] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"New post\" [ref=e103]\n        - link \"socialbeei's profile picture\" [ref=e109] [cursor=pointer]:\n          - /url: /socialbeei/\n          - link \"socialbeei's profile picture\" [ref=e114]:\n            - img \"socialbeei's profile picture\" [ref=e115]\n      - generic [ref=e116]:\n        - link \"Settings\" [ref=e119] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Settings\" [ref=e124]\n        - link \"Also from Meta\" [ref=e127] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Also from Meta\" [ref=e132]\n    - generic [ref=e135]:\n      - main [ref=e136]:\n        - generic [ref=e139]:\n          - generic [ref=e141]:\n            - status \"Loading...\" [ref=e143]\n            - status \"Loading...\" [ref=e145]\n            - status \"Loading...\" [ref=e147]\n            - status \"Loading...\" [ref=e149]\n            - status \"Loading...\" [ref=e151]\n            - status \"Loading...\" [ref=e153]\n            - status \"Loading...\" [ref=e155]\n            - status \"Loading...\" [ref=e157]\n            - status \"Loading...\" [ref=e159]\n          - generic [ref=e161]:\n            - generic [ref=e163]:\n              - generic [ref=e165]:\n                - status \"Loading...\" [ref=e166]\n                - generic [ref=e167]:\n                  - status \"Loading...\" [ref=e168]\n                  - status \"Loading...\" [ref=e169]\n              - status \"Loading...\" [ref=e170]\n            - generic [ref=e172]:\n              - generic [ref=e174]:\n                - status \"Loading...\" [ref=e175]\n                - generic [ref=e176]:\n                  - status \"Loading...\" [ref=e177]\n                  - status \"Loading...\" [ref=e178]\n              - status \"Loading...\" [ref=e179]\n      - contentinfo [ref=e180]:\n        - generic [ref=e181]:\n          - generic [ref=e183]:\n            - link \"Meta\" [ref=e185] [cursor=pointer]:\n              - /url: https://about.meta.com/\n              - generic [ref=e186]: Meta\n            - link \"About\" [ref=e188] [cursor=pointer]:\n              - /url: https://about.instagram.com/\n              - generic [ref=e189]: About\n            - link \"Blog\" [ref=e191] [cursor=pointer]:\n              - /url: https://about.instagram.com/blog/\n              - generic [ref=e192]: Blog\n            - link \"Jobs\" [ref=e194] [cursor=pointer]:\n              - /url: https://about.instagram.com/about-us/careers\n              - generic [ref=e195]: Jobs\n            - link \"Help\" [ref=e197] [cursor=pointer]:\n              - /url: https://help.instagram.com/\n              - generic [ref=e198]: Help\n            - link \"API\" [ref=e200] [cursor=pointer]:\n              - /url: https://developers.facebook.com/docs/instagram\n              - generic [ref=e201]: API\n            - link \"Privacy\" [ref=e203] [cursor=pointer]:\n              - /url: /legal/privacy/\n              - generic [ref=e204]: Privacy\n            - link \"Terms\" [ref=e206] [cursor=pointer]:\n              - /url: /legal/terms/\n              - generic [ref=e207]: Terms\n            - link \"Locations\" [ref=e209] [cursor=pointer]:\n              - /url: /explore/locations/\n              - generic [ref=e210]: Locations\n            - link \"Instagram Lite\" [ref=e212] [cursor=pointer]:\n              - /url: /web/lite/\n              - generic [ref=e213]: Instagram Lite\n            - link \"Meta AI\" [ref=e215] [cursor=pointer]:\n              - /url: https://www.meta.ai/?utm_source=foa_web_footer\n              - generic [ref=e216]: Meta AI\n            - link \"Threads\" [ref=e218] [cursor=pointer]:\n              - /url: https://www.threads.com/\n              - generic [ref=e219]: Threads\n            - link \"Contact Uploading & Non-Users\" [ref=e221] [cursor=pointer]:\n              - /url: https://www.facebook.com/help/instagram/261704639352628\n              - generic [ref=e222]: Contact Uploading & Non-Users\n            - link \"Meta Verified\" [ref=e224] [cursor=pointer]:\n              - /url: /accounts/meta_verified/?entrypoint=web_footer\n              - generic [ref=e225]: Meta Verified\n          - generic [ref=e226]:\n            - generic [ref=e227] [cursor=pointer]:\n              - generic [ref=e228]:\n                - generic [ref=e229]: English\n                - img \"Down chevron icon\" [ref=e232]\n              - combobox \"Switch Display Language\" [ref=e234]:\n                - option \"Afrikaans\"\n                - option \"العربية\"\n                - option \"Čeština\"\n                - option \"Dansk\"\n                - option \"Deutsch\"\n                - option \"Ελληνικά\"\n                - option \"English\" [selected]\n                - option \"English (UK)\"\n                - option \"Español (España)\"\n                - option \"Español\"\n                - option \"فارسی\"\n                - option \"Suomi\"\n                - option \"Français\"\n                - option \"עברית\"\n                - option \"Bahasa Indonesia\"\n                - option \"Italiano\"\n                - option \"日本語\"\n                - option \"한국어\"\n                - option \"Bahasa Melayu\"\n                - option \"Norsk\"\n                - option \"Nederlands\"\n                - option \"Polski\"\n                - option \"Português (Brasil)\"\n                - option \"Português (Portugal)\"\n                - option \"Русский\"\n                - option \"Svenska\"\n                - option \"ภาษาไทย\"\n                - option \"Filipino\"\n                - option \"Türkçe\"\n                - option \"中文(简体)\"\n                - option \"中文(台灣)\"\n                - option \"বাংলা\"\n                - option \"ગુજરાતી\"\n                - option \"हिन्दी\"\n                - option \"Hrvatski\"\n                - option \"Magyar\"\n                - option \"ಕನ್ನಡ\"\n                - option \"മലയാളം\"\n                - option \"मराठी\"\n                - option \"नेपाली\"\n                - option \"ਪੰਜਾਬੀ\"\n                - option \"සිංහල\"\n                - option \"Slovenčina\"\n                - option \"தமிழ்\"\n                - option \"తెలుగు\"\n                - option \"اردو\"\n                - option \"Tiếng Việt\"\n                - option \"中文(香港)\"\n                - option \"Български\"\n                - option \"Français (Canada)\"\n                - option \"Română\"\n                - option \"Српски\"\n                - option \"Українська\"\n            - generic [ref=e236]: © 2026 Instagram from Meta\n  - button \"Messages Messages\" [ref=e238] [cursor=pointer]:\n    - generic [ref=e240]:\n      - img \"Messages\" [ref=e242]\n      - generic [ref=e245]: Messages",
+  "refs": {
+    "e4": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "generic"
+    },
+    "e12": {
+      "role": "generic"
+    },
+    "e17": {
+      "role": "link",
+      "name": "Instagram"
+    },
+    "e22": {
+      "role": "img",
+      "name": "Instagram"
+    },
+    "e25": {
+      "role": "generic"
+    },
+    "e30": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e35": {
+      "role": "img",
+      "name": "Home"
+    },
+    "e40": {
+      "role": "link",
+      "name": "Reels"
+    },
+    "e45": {
+      "role": "img",
+      "name": "Reels"
+    },
+    "e52": {
+      "role": "link",
+      "name": "Messages"
+    },
+    "e57": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e63": {
+      "role": "link",
+      "name": "Search"
+    },
+    "e68": {
+      "role": "img",
+      "name": "Search"
+    },
+    "e74": {
+      "role": "link",
+      "name": "Explore"
+    },
+    "e79": {
+      "role": "img",
+      "name": "Explore"
+    },
+    "e87": {
+      "role": "link",
+      "name": "Notifications"
+    },
+    "e92": {
+      "role": "img",
+      "name": "Notifications"
+    },
+    "e98": {
+      "role": "link",
+      "name": "New post"
+    },
+    "e103": {
+      "role": "img",
+      "name": "New post"
+    },
+    "e109": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e114": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e115": {
+      "role": "img",
+      "name": "socialbeei's profile picture"
+    },
+    "e116": {
+      "role": "generic"
+    },
+    "e119": {
+      "role": "link",
+      "name": "Settings"
+    },
+    "e124": {
+      "role": "img",
+      "name": "Settings"
+    },
+    "e127": {
+      "role": "link",
+      "name": "Also from Meta"
+    },
+    "e132": {
+      "role": "img",
+      "name": "Also from Meta"
+    },
+    "e135": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "main"
+    },
+    "e139": {
+      "role": "generic"
+    },
+    "e141": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e145": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e147": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e149": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e151": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e153": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e155": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e157": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e159": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e161": {
+      "role": "generic"
+    },
+    "e163": {
+      "role": "generic"
+    },
+    "e165": {
+      "role": "generic"
+    },
+    "e166": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e167": {
+      "role": "generic"
+    },
+    "e168": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e169": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e170": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e172": {
+      "role": "generic"
+    },
+    "e174": {
+      "role": "generic"
+    },
+    "e175": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e176": {
+      "role": "generic"
+    },
+    "e177": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e178": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e179": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e180": {
+      "role": "contentinfo"
+    },
+    "e181": {
+      "role": "generic"
+    },
+    "e183": {
+      "role": "generic"
+    },
+    "e185": {
+      "role": "link",
+      "name": "Meta"
+    },
+    "e186": {
+      "role": "generic"
+    },
+    "e188": {
+      "role": "link",
+      "name": "About"
+    },
+    "e189": {
+      "role": "generic"
+    },
+    "e191": {
+      "role": "link",
+      "name": "Blog"
+    },
+    "e192": {
+      "role": "generic"
+    },
+    "e194": {
+      "role": "link",
+      "name": "Jobs"
+    },
+    "e195": {
+      "role": "generic"
+    },
+    "e197": {
+      "role": "link",
+      "name": "Help"
+    },
+    "e198": {
+      "role": "generic"
+    },
+    "e200": {
+      "role": "link",
+      "name": "API"
+    },
+    "e201": {
+      "role": "generic"
+    },
+    "e203": {
+      "role": "link",
+      "name": "Privacy"
+    },
+    "e204": {
+      "role": "generic"
+    },
+    "e206": {
+      "role": "link",
+      "name": "Terms"
+    },
+    "e207": {
+      "role": "generic"
+    },
+    "e209": {
+      "role": "link",
+      "name": "Locations"
+    },
+    "e210": {
+      "role": "generic"
+    },
+    "e212": {
+      "role": "link",
+      "name": "Instagram Lite"
+    },
+    "e213": {
+      "role": "generic"
+    },
+    "e215": {
+      "role": "link",
+      "name": "Meta AI"
+    },
+    "e216": {
+      "role": "generic"
+    },
+    "e218": {
+      "role": "link",
+      "name": "Threads"
+    },
+    "e219": {
+      "role": "generic"
+    },
+    "e221": {
+      "role": "link",
+      "name": "Contact Uploading & Non-Users"
+    },
+    "e222": {
+      "role": "generic"
+    },
+    "e224": {
+      "role": "link",
+      "name": "Meta Verified"
+    },
+    "e225": {
+      "role": "generic"
+    },
+    "e226": {
+      "role": "generic"
+    },
+    "e227": {
+      "role": "generic"
+    },
+    "e228": {
+      "role": "generic"
+    },
+    "e229": {
+      "role": "generic"
+    },
+    "e232": {
+      "role": "img",
+      "name": "Down chevron icon"
+    },
+    "e234": {
+      "role": "combobox",
+      "name": "Switch Display Language"
+    },
+    "e236": {
+      "role": "generic"
+    },
+    "e238": {
+      "role": "button",
+      "name": "Messages Messages"
+    },
+    "e240": {
+      "role": "generic"
+    },
+    "e242": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e245": {
+      "role": "generic"
+    }
+  }
+}
+[2026-03-14 13:39:13] ------------------------------
+[2026-03-14 13:39:15] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:39:15] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:39:15] STDOUT:
+{
+  "targetId": "AAD23F7F08D2785366FB8AFA5F822CD9",
+  "title": "",
+  "url": "https://www.instagram.com/",
+  "wsUrl": "ws://127.0.0.1:18800/devtools/page/AAD23F7F08D2785366FB8AFA5F822CD9",
+  "type": "page"
+}
+[2026-03-14 13:39:15] ------------------------------
+[2026-03-14 13:39:18] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:39:18] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json
+[2026-03-14 13:39:18] STDOUT:
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "AAD23F7F08D2785366FB8AFA5F822CD9",
+  "url": "https://www.instagram.com/",
+  "snapshot": "- generic [ref=e4]:\n  - generic [ref=e9]:\n    - generic [ref=e12]:\n      - link \"Instagram\" [ref=e17] [cursor=pointer]:\n        - /url: /\n        - img \"Instagram\" [ref=e22]\n      - generic [ref=e25]:\n        - link \"Home\" [ref=e30] [cursor=pointer]:\n          - /url: /\n          - img \"Home\" [ref=e35]\n        - link \"Reels\" [ref=e40] [cursor=pointer]:\n          - /url: /reels/\n          - img \"Reels\" [ref=e45]\n        - link \"Messages\" [ref=e52] [cursor=pointer]:\n          - /url: /direct/inbox/\n          - img \"Messages\" [ref=e57]\n        - link \"Search\" [ref=e63] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Search\" [ref=e68]\n        - link \"Explore\" [ref=e74] [cursor=pointer]:\n          - /url: /explore/\n          - img \"Explore\" [ref=e79]\n        - link \"Notifications\" [ref=e87] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Notifications\" [ref=e92]\n        - link \"New post\" [ref=e98] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"New post\" [ref=e103]\n        - link \"socialbeei's profile picture\" [ref=e109] [cursor=pointer]:\n          - /url: /socialbeei/\n          - link \"socialbeei's profile picture\" [ref=e114]:\n            - img \"socialbeei's profile picture\" [ref=e115]\n      - generic [ref=e116]:\n        - link \"Settings\" [ref=e119] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Settings\" [ref=e124]\n        - link \"Also from Meta\" [ref=e127] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Also from Meta\" [ref=e132]\n    - generic [ref=e135]:\n      - main [ref=e136]:\n        - generic [ref=e139]:\n          - generic [ref=e141]:\n            - status \"Loading...\" [ref=e143]\n            - status \"Loading...\" [ref=e145]\n            - status \"Loading...\" [ref=e147]\n            - status \"Loading...\" [ref=e149]\n            - status \"Loading...\" [ref=e151]\n            - status \"Loading...\" [ref=e153]\n            - status \"Loading...\" [ref=e155]\n            - status \"Loading...\" [ref=e157]\n            - status \"Loading...\" [ref=e159]\n          - generic [ref=e161]:\n            - generic [ref=e163]:\n              - generic [ref=e165]:\n                - status \"Loading...\" [ref=e166]\n                - generic [ref=e167]:\n                  - status \"Loading...\" [ref=e168]\n                  - status \"Loading...\" [ref=e169]\n              - status \"Loading...\" [ref=e170]\n            - generic [ref=e172]:\n              - generic [ref=e174]:\n                - status \"Loading...\" [ref=e175]\n                - generic [ref=e176]:\n                  - status \"Loading...\" [ref=e177]\n                  - status \"Loading...\" [ref=e178]\n              - status \"Loading...\" [ref=e179]\n      - contentinfo [ref=e180]:\n        - generic [ref=e181]:\n          - generic [ref=e183]:\n            - link \"Meta\" [ref=e185] [cursor=pointer]:\n              - /url: https://about.meta.com/\n              - generic [ref=e186]: Meta\n            - link \"About\" [ref=e188] [cursor=pointer]:\n              - /url: https://about.instagram.com/\n              - generic [ref=e189]: About\n            - link \"Blog\" [ref=e191] [cursor=pointer]:\n              - /url: https://about.instagram.com/blog/\n              - generic [ref=e192]: Blog\n            - link \"Jobs\" [ref=e194] [cursor=pointer]:\n              - /url: https://about.instagram.com/about-us/careers\n              - generic [ref=e195]: Jobs\n            - link \"Help\" [ref=e197] [cursor=pointer]:\n              - /url: https://help.instagram.com/\n              - generic [ref=e198]: Help\n            - link \"API\" [ref=e200] [cursor=pointer]:\n              - /url: https://developers.facebook.com/docs/instagram\n              - generic [ref=e201]: API\n            - link \"Privacy\" [ref=e203] [cursor=pointer]:\n              - /url: /legal/privacy/\n              - generic [ref=e204]: Privacy\n            - link \"Terms\" [ref=e206] [cursor=pointer]:\n              - /url: /legal/terms/\n              - generic [ref=e207]: Terms\n            - link \"Locations\" [ref=e209] [cursor=pointer]:\n              - /url: /explore/locations/\n              - generic [ref=e210]: Locations\n            - link \"Instagram Lite\" [ref=e212] [cursor=pointer]:\n              - /url: /web/lite/\n              - generic [ref=e213]: Instagram Lite\n            - link \"Meta AI\" [ref=e215] [cursor=pointer]:\n              - /url: https://www.meta.ai/?utm_source=foa_web_footer\n              - generic [ref=e216]: Meta AI\n            - link \"Threads\" [ref=e218] [cursor=pointer]:\n              - /url: https://www.threads.com/\n              - generic [ref=e219]: Threads\n            - link \"Contact Uploading & Non-Users\" [ref=e221] [cursor=pointer]:\n              - /url: https://www.facebook.com/help/instagram/261704639352628\n              - generic [ref=e222]: Contact Uploading & Non-Users\n            - link \"Meta Verified\" [ref=e224] [cursor=pointer]:\n              - /url: /accounts/meta_verified/?entrypoint=web_footer\n              - generic [ref=e225]: Meta Verified\n          - generic [ref=e226]:\n            - generic [ref=e227] [cursor=pointer]:\n              - generic [ref=e228]:\n                - generic [ref=e229]: English\n                - img \"Down chevron icon\" [ref=e232]\n              - combobox \"Switch Display Language\" [ref=e234]:\n                - option \"Afrikaans\"\n                - option \"العربية\"\n                - option \"Čeština\"\n                - option \"Dansk\"\n                - option \"Deutsch\"\n                - option \"Ελληνικά\"\n                - option \"English\" [selected]\n                - option \"English (UK)\"\n                - option \"Español (España)\"\n                - option \"Español\"\n                - option \"فارسی\"\n                - option \"Suomi\"\n                - option \"Français\"\n                - option \"עברית\"\n                - option \"Bahasa Indonesia\"\n                - option \"Italiano\"\n                - option \"日本語\"\n                - option \"한국어\"\n                - option \"Bahasa Melayu\"\n                - option \"Norsk\"\n                - option \"Nederlands\"\n                - option \"Polski\"\n                - option \"Português (Brasil)\"\n                - option \"Português (Portugal)\"\n                - option \"Русский\"\n                - option \"Svenska\"\n                - option \"ภาษาไทย\"\n                - option \"Filipino\"\n                - option \"Türkçe\"\n                - option \"中文(简体)\"\n                - option \"中文(台灣)\"\n                - option \"বাংলা\"\n                - option \"ગુજરાતી\"\n                - option \"हिन्दी\"\n                - option \"Hrvatski\"\n                - option \"Magyar\"\n                - option \"ಕನ್ನಡ\"\n                - option \"മലയാളം\"\n                - option \"मराठी\"\n                - option \"नेपाली\"\n                - option \"ਪੰਜਾਬੀ\"\n                - option \"සිංහල\"\n                - option \"Slovenčina\"\n                - option \"தமிழ்\"\n                - option \"తెలుగు\"\n                - option \"اردو\"\n                - option \"Tiếng Việt\"\n                - option \"中文(香港)\"\n                - option \"Български\"\n                - option \"Français (Canada)\"\n                - option \"Română\"\n                - option \"Српски\"\n                - option \"Українська\"\n            - generic [ref=e236]: © 2026 Instagram from Meta\n  - button \"Messages Messages\" [ref=e238] [cursor=pointer]:\n    - generic [ref=e240]:\n      - img \"Messages\" [ref=e242]\n      - generic [ref=e245]: Messages",
+  "refs": {
+    "e4": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "generic"
+    },
+    "e12": {
+      "role": "generic"
+    },
+    "e17": {
+      "role": "link",
+      "name": "Instagram"
+    },
+    "e22": {
+      "role": "img",
+      "name": "Instagram"
+    },
+    "e25": {
+      "role": "generic"
+    },
+    "e30": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e35": {
+      "role": "img",
+      "name": "Home"
+    },
+    "e40": {
+      "role": "link",
+      "name": "Reels"
+    },
+    "e45": {
+      "role": "img",
+      "name": "Reels"
+    },
+    "e52": {
+      "role": "link",
+      "name": "Messages"
+    },
+    "e57": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e63": {
+      "role": "link",
+      "name": "Search"
+    },
+    "e68": {
+      "role": "img",
+      "name": "Search"
+    },
+    "e74": {
+      "role": "link",
+      "name": "Explore"
+    },
+    "e79": {
+      "role": "img",
+      "name": "Explore"
+    },
+    "e87": {
+      "role": "link",
+      "name": "Notifications"
+    },
+    "e92": {
+      "role": "img",
+      "name": "Notifications"
+    },
+    "e98": {
+      "role": "link",
+      "name": "New post"
+    },
+    "e103": {
+      "role": "img",
+      "name": "New post"
+    },
+    "e109": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e114": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e115": {
+      "role": "img",
+      "name": "socialbeei's profile picture"
+    },
+    "e116": {
+      "role": "generic"
+    },
+    "e119": {
+      "role": "link",
+      "name": "Settings"
+    },
+    "e124": {
+      "role": "img",
+      "name": "Settings"
+    },
+    "e127": {
+      "role": "link",
+      "name": "Also from Meta"
+    },
+    "e132": {
+      "role": "img",
+      "name": "Also from Meta"
+    },
+    "e135": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "main"
+    },
+    "e139": {
+      "role": "generic"
+    },
+    "e141": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e145": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e147": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e149": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e151": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e153": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e155": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e157": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e159": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e161": {
+      "role": "generic"
+    },
+    "e163": {
+      "role": "generic"
+    },
+    "e165": {
+      "role": "generic"
+    },
+    "e166": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e167": {
+      "role": "generic"
+    },
+    "e168": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e169": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e170": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e172": {
+      "role": "generic"
+    },
+    "e174": {
+      "role": "generic"
+    },
+    "e175": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e176": {
+      "role": "generic"
+    },
+    "e177": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e178": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e179": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e180": {
+      "role": "contentinfo"
+    },
+    "e181": {
+      "role": "generic"
+    },
+    "e183": {
+      "role": "generic"
+    },
+    "e185": {
+      "role": "link",
+      "name": "Meta"
+    },
+    "e186": {
+      "role": "generic"
+    },
+    "e188": {
+      "role": "link",
+      "name": "About"
+    },
+    "e189": {
+      "role": "generic"
+    },
+    "e191": {
+      "role": "link",
+      "name": "Blog"
+    },
+    "e192": {
+      "role": "generic"
+    },
+    "e194": {
+      "role": "link",
+      "name": "Jobs"
+    },
+    "e195": {
+      "role": "generic"
+    },
+    "e197": {
+      "role": "link",
+      "name": "Help"
+    },
+    "e198": {
+      "role": "generic"
+    },
+    "e200": {
+      "role": "link",
+      "name": "API"
+    },
+    "e201": {
+      "role": "generic"
+    },
+    "e203": {
+      "role": "link",
+      "name": "Privacy"
+    },
+    "e204": {
+      "role": "generic"
+    },
+    "e206": {
+      "role": "link",
+      "name": "Terms"
+    },
+    "e207": {
+      "role": "generic"
+    },
+    "e209": {
+      "role": "link",
+      "name": "Locations"
+    },
+    "e210": {
+      "role": "generic"
+    },
+    "e212": {
+      "role": "link",
+      "name": "Instagram Lite"
+    },
+    "e213": {
+      "role": "generic"
+    },
+    "e215": {
+      "role": "link",
+      "name": "Meta AI"
+    },
+    "e216": {
+      "role": "generic"
+    },
+    "e218": {
+      "role": "link",
+      "name": "Threads"
+    },
+    "e219": {
+      "role": "generic"
+    },
+    "e221": {
+      "role": "link",
+      "name": "Contact Uploading & Non-Users"
+    },
+    "e222": {
+      "role": "generic"
+    },
+    "e224": {
+      "role": "link",
+      "name": "Meta Verified"
+    },
+    "e225": {
+      "role": "generic"
+    },
+    "e226": {
+      "role": "generic"
+    },
+    "e227": {
+      "role": "generic"
+    },
+    "e228": {
+      "role": "generic"
+    },
+    "e229": {
+      "role": "generic"
+    },
+    "e232": {
+      "role": "img",
+      "name": "Down chevron icon"
+    },
+    "e234": {
+      "role": "combobox",
+      "name": "Switch Display Language"
+    },
+    "e236": {
+      "role": "generic"
+    },
+    "e238": {
+      "role": "button",
+      "name": "Messages Messages"
+    },
+    "e240": {
+      "role": "generic"
+    },
+    "e242": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e245": {
+      "role": "generic"
+    }
+  }
+}
+[2026-03-14 13:39:18] ------------------------------
+[2026-03-14 13:39:23] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:39:23] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw comment-input Thanks! --submit --json
+[2026-03-14 13:39:23] STDERR:
+GatewayClientRequestError: Error: locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('aria-ref=comment-input')
+[2026-03-14 13:39:23] ------------------------------
+[2026-03-14 13:41:43] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:41:43] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:41:43] STDOUT:
+{
+  "targetId": "B45957FB7DDB8FA5B414590EC633ECAA",
+  "title": "",
+  "url": "https://www.instagram.com/",
+  "wsUrl": "ws://127.0.0.1:18800/devtools/page/B45957FB7DDB8FA5B414590EC633ECAA",
+  "type": "page"
+}
+[2026-03-14 13:41:43] ------------------------------
+[2026-03-14 13:41:45] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:41:45] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json
+[2026-03-14 13:41:45] STDOUT:
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "B45957FB7DDB8FA5B414590EC633ECAA",
+  "url": "https://www.instagram.com/",
+  "snapshot": "- generic [ref=e4]:\n  - generic [ref=e9]:\n    - generic [ref=e12]:\n      - link \"Instagram\" [ref=e17] [cursor=pointer]:\n        - /url: /\n        - img \"Instagram\" [ref=e22]\n      - generic [ref=e25]:\n        - link \"Home\" [ref=e30] [cursor=pointer]:\n          - /url: /\n          - img \"Home\" [ref=e35]\n        - link \"Reels\" [ref=e40] [cursor=pointer]:\n          - /url: /reels/\n          - img \"Reels\" [ref=e45]\n        - link \"Messages\" [ref=e52] [cursor=pointer]:\n          - /url: /direct/inbox/\n          - img \"Messages\" [ref=e57]\n        - link \"Search\" [ref=e63] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Search\" [ref=e68]\n        - link \"Explore\" [ref=e74] [cursor=pointer]:\n          - /url: /explore/\n          - img \"Explore\" [ref=e79]\n        - link \"Notifications\" [ref=e87] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Notifications\" [ref=e92]\n        - link \"New post\" [ref=e98] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"New post\" [ref=e103]\n        - link \"socialbeei's profile picture\" [ref=e109] [cursor=pointer]:\n          - /url: /socialbeei/\n          - link \"socialbeei's profile picture\" [ref=e114]:\n            - img \"socialbeei's profile picture\" [ref=e115]\n      - generic [ref=e116]:\n        - link \"Settings\" [ref=e119] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Settings\" [ref=e124]\n        - link \"Also from Meta\" [ref=e127] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Also from Meta\" [ref=e132]\n    - generic [ref=e135]:\n      - main [ref=e136]:\n        - generic [ref=e141]:\n          - generic [ref=e143]:\n            - generic [ref=e145]:\n              - status \"Loading...\" [ref=e146]\n              - generic [ref=e147]:\n                - status \"Loading...\" [ref=e148]\n                - status \"Loading...\" [ref=e149]\n            - status \"Loading...\" [ref=e150]\n          - generic [ref=e152]:\n            - generic [ref=e154]:\n              - status \"Loading...\" [ref=e155]\n              - generic [ref=e156]:\n                - status \"Loading...\" [ref=e157]\n                - status \"Loading...\" [ref=e158]\n            - status \"Loading...\" [ref=e159]\n      - contentinfo [ref=e160]:\n        - generic [ref=e161]:\n          - generic [ref=e163]:\n            - link \"Meta\" [ref=e165] [cursor=pointer]:\n              - /url: https://about.meta.com/\n              - generic [ref=e166]: Meta\n            - link \"About\" [ref=e168] [cursor=pointer]:\n              - /url: https://about.instagram.com/\n              - generic [ref=e169]: About\n            - link \"Blog\" [ref=e171] [cursor=pointer]:\n              - /url: https://about.instagram.com/blog/\n              - generic [ref=e172]: Blog\n            - link \"Jobs\" [ref=e174] [cursor=pointer]:\n              - /url: https://about.instagram.com/about-us/careers\n              - generic [ref=e175]: Jobs\n            - link \"Help\" [ref=e177] [cursor=pointer]:\n              - /url: https://help.instagram.com/\n              - generic [ref=e178]: Help\n            - link \"API\" [ref=e180] [cursor=pointer]:\n              - /url: https://developers.facebook.com/docs/instagram\n              - generic [ref=e181]: API\n            - link \"Privacy\" [ref=e183] [cursor=pointer]:\n              - /url: /legal/privacy/\n              - generic [ref=e184]: Privacy\n            - link \"Terms\" [ref=e186] [cursor=pointer]:\n              - /url: /legal/terms/\n              - generic [ref=e187]: Terms\n            - link \"Locations\" [ref=e189] [cursor=pointer]:\n              - /url: /explore/locations/\n              - generic [ref=e190]: Locations\n            - link \"Instagram Lite\" [ref=e192] [cursor=pointer]:\n              - /url: /web/lite/\n              - generic [ref=e193]: Instagram Lite\n            - link \"Meta AI\" [ref=e195] [cursor=pointer]:\n              - /url: https://www.meta.ai/?utm_source=foa_web_footer\n              - generic [ref=e196]: Meta AI\n            - link \"Threads\" [ref=e198] [cursor=pointer]:\n              - /url: https://www.threads.com/\n              - generic [ref=e199]: Threads\n            - link \"Contact Uploading & Non-Users\" [ref=e201] [cursor=pointer]:\n              - /url: https://www.facebook.com/help/instagram/261704639352628\n              - generic [ref=e202]: Contact Uploading & Non-Users\n            - link \"Meta Verified\" [ref=e204] [cursor=pointer]:\n              - /url: /accounts/meta_verified/?entrypoint=web_footer\n              - generic [ref=e205]: Meta Verified\n          - generic [ref=e206]:\n            - generic [ref=e207] [cursor=pointer]:\n              - generic [ref=e208]:\n                - generic [ref=e209]: English\n                - img \"Down chevron icon\" [ref=e212]\n              - combobox \"Switch Display Language\" [ref=e214]:\n                - option \"Afrikaans\"\n                - option \"العربية\"\n                - option \"Čeština\"\n                - option \"Dansk\"\n                - option \"Deutsch\"\n                - option \"Ελληνικά\"\n                - option \"English\" [selected]\n                - option \"English (UK)\"\n                - option \"Español (España)\"\n                - option \"Español\"\n                - option \"فارسی\"\n                - option \"Suomi\"\n                - option \"Français\"\n                - option \"עברית\"\n                - option \"Bahasa Indonesia\"\n                - option \"Italiano\"\n                - option \"日本語\"\n                - option \"한국어\"\n                - option \"Bahasa Melayu\"\n                - option \"Norsk\"\n                - option \"Nederlands\"\n                - option \"Polski\"\n                - option \"Português (Brasil)\"\n                - option \"Português (Portugal)\"\n                - option \"Русский\"\n                - option \"Svenska\"\n                - option \"ภาษาไทย\"\n                - option \"Filipino\"\n                - option \"Türkçe\"\n                - option \"中文(简体)\"\n                - option \"中文(台灣)\"\n                - option \"বাংলা\"\n                - option \"ગુજરાતી\"\n                - option \"हिन्दी\"\n                - option \"Hrvatski\"\n                - option \"Magyar\"\n                - option \"ಕನ್ನಡ\"\n                - option \"മലയാളം\"\n                - option \"मराठी\"\n                - option \"नेपाली\"\n                - option \"ਪੰਜਾਬੀ\"\n                - option \"සිංහල\"\n                - option \"Slovenčina\"\n                - option \"தமிழ்\"\n                - option \"తెలుగు\"\n                - option \"اردو\"\n                - option \"Tiếng Việt\"\n                - option \"中文(香港)\"\n                - option \"Български\"\n                - option \"Français (Canada)\"\n                - option \"Română\"\n                - option \"Српски\"\n                - option \"Українська\"\n            - generic [ref=e216]: © 2026 Instagram from Meta\n  - button \"Messages Messages\" [ref=e218] [cursor=pointer]:\n    - generic [ref=e220]:\n      - img \"Messages\" [ref=e222]\n      - generic [ref=e225]: Messages",
+  "refs": {
+    "e4": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "generic"
+    },
+    "e12": {
+      "role": "generic"
+    },
+    "e17": {
+      "role": "link",
+      "name": "Instagram"
+    },
+    "e22": {
+      "role": "img",
+      "name": "Instagram"
+    },
+    "e25": {
+      "role": "generic"
+    },
+    "e30": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e35": {
+      "role": "img",
+      "name": "Home"
+    },
+    "e40": {
+      "role": "link",
+      "name": "Reels"
+    },
+    "e45": {
+      "role": "img",
+      "name": "Reels"
+    },
+    "e52": {
+      "role": "link",
+      "name": "Messages"
+    },
+    "e57": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e63": {
+      "role": "link",
+      "name": "Search"
+    },
+    "e68": {
+      "role": "img",
+      "name": "Search"
+    },
+    "e74": {
+      "role": "link",
+      "name": "Explore"
+    },
+    "e79": {
+      "role": "img",
+      "name": "Explore"
+    },
+    "e87": {
+      "role": "link",
+      "name": "Notifications"
+    },
+    "e92": {
+      "role": "img",
+      "name": "Notifications"
+    },
+    "e98": {
+      "role": "link",
+      "name": "New post"
+    },
+    "e103": {
+      "role": "img",
+      "name": "New post"
+    },
+    "e109": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e114": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e115": {
+      "role": "img",
+      "name": "socialbeei's profile picture"
+    },
+    "e116": {
+      "role": "generic"
+    },
+    "e119": {
+      "role": "link",
+      "name": "Settings"
+    },
+    "e124": {
+      "role": "img",
+      "name": "Settings"
+    },
+    "e127": {
+      "role": "link",
+      "name": "Also from Meta"
+    },
+    "e132": {
+      "role": "img",
+      "name": "Also from Meta"
+    },
+    "e135": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "main"
+    },
+    "e141": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "generic"
+    },
+    "e145": {
+      "role": "generic"
+    },
+    "e146": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e147": {
+      "role": "generic"
+    },
+    "e148": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e149": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e150": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e152": {
+      "role": "generic"
+    },
+    "e154": {
+      "role": "generic"
+    },
+    "e155": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e156": {
+      "role": "generic"
+    },
+    "e157": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e158": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e159": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e160": {
+      "role": "contentinfo"
+    },
+    "e161": {
+      "role": "generic"
+    },
+    "e163": {
+      "role": "generic"
+    },
+    "e165": {
+      "role": "link",
+      "name": "Meta"
+    },
+    "e166": {
+      "role": "generic"
+    },
+    "e168": {
+      "role": "link",
+      "name": "About"
+    },
+    "e169": {
+      "role": "generic"
+    },
+    "e171": {
+      "role": "link",
+      "name": "Blog"
+    },
+    "e172": {
+      "role": "generic"
+    },
+    "e174": {
+      "role": "link",
+      "name": "Jobs"
+    },
+    "e175": {
+      "role": "generic"
+    },
+    "e177": {
+      "role": "link",
+      "name": "Help"
+    },
+    "e178": {
+      "role": "generic"
+    },
+    "e180": {
+      "role": "link",
+      "name": "API"
+    },
+    "e181": {
+      "role": "generic"
+    },
+    "e183": {
+      "role": "link",
+      "name": "Privacy"
+    },
+    "e184": {
+      "role": "generic"
+    },
+    "e186": {
+      "role": "link",
+      "name": "Terms"
+    },
+    "e187": {
+      "role": "generic"
+    },
+    "e189": {
+      "role": "link",
+      "name": "Locations"
+    },
+    "e190": {
+      "role": "generic"
+    },
+    "e192": {
+      "role": "link",
+      "name": "Instagram Lite"
+    },
+    "e193": {
+      "role": "generic"
+    },
+    "e195": {
+      "role": "link",
+      "name": "Meta AI"
+    },
+    "e196": {
+      "role": "generic"
+    },
+    "e198": {
+      "role": "link",
+      "name": "Threads"
+    },
+    "e199": {
+      "role": "generic"
+    },
+    "e201": {
+      "role": "link",
+      "name": "Contact Uploading & Non-Users"
+    },
+    "e202": {
+      "role": "generic"
+    },
+    "e204": {
+      "role": "link",
+      "name": "Meta Verified"
+    },
+    "e205": {
+      "role": "generic"
+    },
+    "e206": {
+      "role": "generic"
+    },
+    "e207": {
+      "role": "generic"
+    },
+    "e208": {
+      "role": "generic"
+    },
+    "e209": {
+      "role": "generic"
+    },
+    "e212": {
+      "role": "img",
+      "name": "Down chevron icon"
+    },
+    "e214": {
+      "role": "combobox",
+      "name": "Switch Display Language"
+    },
+    "e216": {
+      "role": "generic"
+    },
+    "e218": {
+      "role": "button",
+      "name": "Messages Messages"
+    },
+    "e220": {
+      "role": "generic"
+    },
+    "e222": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e225": {
+      "role": "generic"
+    }
+  }
+}
+[2026-03-14 13:41:45] ------------------------------
+[2026-03-14 13:41:47] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:41:47] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json
+[2026-03-14 13:41:47] STDOUT:
+{
+  "targetId": "F33217D5E97AEDF324A2A3BB8F413368",
+  "title": "",
+  "url": "https://www.instagram.com/",
+  "wsUrl": "ws://127.0.0.1:18800/devtools/page/F33217D5E97AEDF324A2A3BB8F413368",
+  "type": "page"
+}
+[2026-03-14 13:41:47] ------------------------------
+[2026-03-14 13:41:49] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:41:49] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json
+[2026-03-14 13:41:49] STDOUT:
+{
+  "ok": true,
+  "format": "ai",
+  "targetId": "F33217D5E97AEDF324A2A3BB8F413368",
+  "url": "https://www.instagram.com/",
+  "snapshot": "- generic [ref=e4]:\n  - generic [ref=e9]:\n    - generic [ref=e12]:\n      - link \"Instagram\" [ref=e17] [cursor=pointer]:\n        - /url: /\n        - img \"Instagram\" [ref=e22]\n      - generic [ref=e25]:\n        - link \"Home\" [ref=e30] [cursor=pointer]:\n          - /url: /\n          - img \"Home\" [ref=e35]\n        - link \"Reels\" [ref=e40] [cursor=pointer]:\n          - /url: /reels/\n          - img \"Reels\" [ref=e45]\n        - link \"Messages\" [ref=e52] [cursor=pointer]:\n          - /url: /direct/inbox/\n          - img \"Messages\" [ref=e57]\n        - link \"Search\" [ref=e63] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Search\" [ref=e68]\n        - link \"Explore\" [ref=e74] [cursor=pointer]:\n          - /url: /explore/\n          - img \"Explore\" [ref=e79]\n        - link \"Notifications\" [ref=e87] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Notifications\" [ref=e92]\n        - link \"New post\" [ref=e98] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"New post\" [ref=e103]\n        - link \"socialbeei's profile picture\" [ref=e109] [cursor=pointer]:\n          - /url: /socialbeei/\n          - link \"socialbeei's profile picture\" [ref=e114]:\n            - img \"socialbeei's profile picture\" [ref=e115]\n      - generic [ref=e116]:\n        - link \"Settings\" [ref=e119] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Settings\" [ref=e124]\n        - link \"Also from Meta\" [ref=e127] [cursor=pointer]:\n          - /url: \"#\"\n          - img \"Also from Meta\" [ref=e132]\n    - generic [ref=e135]:\n      - main [ref=e136]:\n        - generic [ref=e139]:\n          - generic [ref=e141]:\n            - status \"Loading...\" [ref=e143]\n            - status \"Loading...\" [ref=e145]\n            - status \"Loading...\" [ref=e147]\n            - status \"Loading...\" [ref=e149]\n            - status \"Loading...\" [ref=e151]\n            - status \"Loading...\" [ref=e153]\n            - status \"Loading...\" [ref=e155]\n            - status \"Loading...\" [ref=e157]\n            - status \"Loading...\" [ref=e159]\n          - generic [ref=e161]:\n            - generic [ref=e163]:\n              - generic [ref=e165]:\n                - status \"Loading...\" [ref=e166]\n                - generic [ref=e167]:\n                  - status \"Loading...\" [ref=e168]\n                  - status \"Loading...\" [ref=e169]\n              - status \"Loading...\" [ref=e170]\n            - generic [ref=e172]:\n              - generic [ref=e174]:\n                - status \"Loading...\" [ref=e175]\n                - generic [ref=e176]:\n                  - status \"Loading...\" [ref=e177]\n                  - status \"Loading...\" [ref=e178]\n              - status \"Loading...\" [ref=e179]\n      - contentinfo [ref=e180]:\n        - generic [ref=e181]:\n          - generic [ref=e183]:\n            - link \"Meta\" [ref=e185] [cursor=pointer]:\n              - /url: https://about.meta.com/\n              - generic [ref=e186]: Meta\n            - link \"About\" [ref=e188] [cursor=pointer]:\n              - /url: https://about.instagram.com/\n              - generic [ref=e189]: About\n            - link \"Blog\" [ref=e191] [cursor=pointer]:\n              - /url: https://about.instagram.com/blog/\n              - generic [ref=e192]: Blog\n            - link \"Jobs\" [ref=e194] [cursor=pointer]:\n              - /url: https://about.instagram.com/about-us/careers\n              - generic [ref=e195]: Jobs\n            - link \"Help\" [ref=e197] [cursor=pointer]:\n              - /url: https://help.instagram.com/\n              - generic [ref=e198]: Help\n            - link \"API\" [ref=e200] [cursor=pointer]:\n              - /url: https://developers.facebook.com/docs/instagram\n              - generic [ref=e201]: API\n            - link \"Privacy\" [ref=e203] [cursor=pointer]:\n              - /url: /legal/privacy/\n              - generic [ref=e204]: Privacy\n            - link \"Terms\" [ref=e206] [cursor=pointer]:\n              - /url: /legal/terms/\n              - generic [ref=e207]: Terms\n            - link \"Locations\" [ref=e209] [cursor=pointer]:\n              - /url: /explore/locations/\n              - generic [ref=e210]: Locations\n            - link \"Instagram Lite\" [ref=e212] [cursor=pointer]:\n              - /url: /web/lite/\n              - generic [ref=e213]: Instagram Lite\n            - link \"Meta AI\" [ref=e215] [cursor=pointer]:\n              - /url: https://www.meta.ai/?utm_source=foa_web_footer\n              - generic [ref=e216]: Meta AI\n            - link \"Threads\" [ref=e218] [cursor=pointer]:\n              - /url: https://www.threads.com/\n              - generic [ref=e219]: Threads\n            - link \"Contact Uploading & Non-Users\" [ref=e221] [cursor=pointer]:\n              - /url: https://www.facebook.com/help/instagram/261704639352628\n              - generic [ref=e222]: Contact Uploading & Non-Users\n            - link \"Meta Verified\" [ref=e224] [cursor=pointer]:\n              - /url: /accounts/meta_verified/?entrypoint=web_footer\n              - generic [ref=e225]: Meta Verified\n          - generic [ref=e226]:\n            - generic [ref=e227] [cursor=pointer]:\n              - generic [ref=e228]:\n                - generic [ref=e229]: English\n                - img \"Down chevron icon\" [ref=e232]\n              - combobox \"Switch Display Language\" [ref=e234]:\n                - option \"Afrikaans\"\n                - option \"العربية\"\n                - option \"Čeština\"\n                - option \"Dansk\"\n                - option \"Deutsch\"\n                - option \"Ελληνικά\"\n                - option \"English\" [selected]\n                - option \"English (UK)\"\n                - option \"Español (España)\"\n                - option \"Español\"\n                - option \"فارسی\"\n                - option \"Suomi\"\n                - option \"Français\"\n                - option \"עברית\"\n                - option \"Bahasa Indonesia\"\n                - option \"Italiano\"\n                - option \"日本語\"\n                - option \"한국어\"\n                - option \"Bahasa Melayu\"\n                - option \"Norsk\"\n                - option \"Nederlands\"\n                - option \"Polski\"\n                - option \"Português (Brasil)\"\n                - option \"Português (Portugal)\"\n                - option \"Русский\"\n                - option \"Svenska\"\n                - option \"ภาษาไทย\"\n                - option \"Filipino\"\n                - option \"Türkçe\"\n                - option \"中文(简体)\"\n                - option \"中文(台灣)\"\n                - option \"বাংলা\"\n                - option \"ગુજરાતી\"\n                - option \"हिन्दी\"\n                - option \"Hrvatski\"\n                - option \"Magyar\"\n                - option \"ಕನ್ನಡ\"\n                - option \"മലയാളം\"\n                - option \"मराठी\"\n                - option \"नेपाली\"\n                - option \"ਪੰਜਾਬੀ\"\n                - option \"සිංහල\"\n                - option \"Slovenčina\"\n                - option \"தமிழ்\"\n                - option \"తెలుగు\"\n                - option \"اردو\"\n                - option \"Tiếng Việt\"\n                - option \"中文(香港)\"\n                - option \"Български\"\n                - option \"Français (Canada)\"\n                - option \"Română\"\n                - option \"Српски\"\n                - option \"Українська\"\n            - generic [ref=e236]: © 2026 Instagram from Meta\n  - button \"Messages Messages\" [ref=e238] [cursor=pointer]:\n    - generic [ref=e240]:\n      - img \"Messages\" [ref=e242]\n      - generic [ref=e245]: Messages",
+  "refs": {
+    "e4": {
+      "role": "generic"
+    },
+    "e9": {
+      "role": "generic"
+    },
+    "e12": {
+      "role": "generic"
+    },
+    "e17": {
+      "role": "link",
+      "name": "Instagram"
+    },
+    "e22": {
+      "role": "img",
+      "name": "Instagram"
+    },
+    "e25": {
+      "role": "generic"
+    },
+    "e30": {
+      "role": "link",
+      "name": "Home"
+    },
+    "e35": {
+      "role": "img",
+      "name": "Home"
+    },
+    "e40": {
+      "role": "link",
+      "name": "Reels"
+    },
+    "e45": {
+      "role": "img",
+      "name": "Reels"
+    },
+    "e52": {
+      "role": "link",
+      "name": "Messages"
+    },
+    "e57": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e63": {
+      "role": "link",
+      "name": "Search"
+    },
+    "e68": {
+      "role": "img",
+      "name": "Search"
+    },
+    "e74": {
+      "role": "link",
+      "name": "Explore"
+    },
+    "e79": {
+      "role": "img",
+      "name": "Explore"
+    },
+    "e87": {
+      "role": "link",
+      "name": "Notifications"
+    },
+    "e92": {
+      "role": "img",
+      "name": "Notifications"
+    },
+    "e98": {
+      "role": "link",
+      "name": "New post"
+    },
+    "e103": {
+      "role": "img",
+      "name": "New post"
+    },
+    "e109": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e114": {
+      "role": "link",
+      "name": "socialbeei's profile picture"
+    },
+    "e115": {
+      "role": "img",
+      "name": "socialbeei's profile picture"
+    },
+    "e116": {
+      "role": "generic"
+    },
+    "e119": {
+      "role": "link",
+      "name": "Settings"
+    },
+    "e124": {
+      "role": "img",
+      "name": "Settings"
+    },
+    "e127": {
+      "role": "link",
+      "name": "Also from Meta"
+    },
+    "e132": {
+      "role": "img",
+      "name": "Also from Meta"
+    },
+    "e135": {
+      "role": "generic"
+    },
+    "e136": {
+      "role": "main"
+    },
+    "e139": {
+      "role": "generic"
+    },
+    "e141": {
+      "role": "generic"
+    },
+    "e143": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e145": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e147": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e149": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e151": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e153": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e155": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e157": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e159": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e161": {
+      "role": "generic"
+    },
+    "e163": {
+      "role": "generic"
+    },
+    "e165": {
+      "role": "generic"
+    },
+    "e166": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e167": {
+      "role": "generic"
+    },
+    "e168": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e169": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e170": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e172": {
+      "role": "generic"
+    },
+    "e174": {
+      "role": "generic"
+    },
+    "e175": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e176": {
+      "role": "generic"
+    },
+    "e177": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e178": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e179": {
+      "role": "status",
+      "name": "Loading..."
+    },
+    "e180": {
+      "role": "contentinfo"
+    },
+    "e181": {
+      "role": "generic"
+    },
+    "e183": {
+      "role": "generic"
+    },
+    "e185": {
+      "role": "link",
+      "name": "Meta"
+    },
+    "e186": {
+      "role": "generic"
+    },
+    "e188": {
+      "role": "link",
+      "name": "About"
+    },
+    "e189": {
+      "role": "generic"
+    },
+    "e191": {
+      "role": "link",
+      "name": "Blog"
+    },
+    "e192": {
+      "role": "generic"
+    },
+    "e194": {
+      "role": "link",
+      "name": "Jobs"
+    },
+    "e195": {
+      "role": "generic"
+    },
+    "e197": {
+      "role": "link",
+      "name": "Help"
+    },
+    "e198": {
+      "role": "generic"
+    },
+    "e200": {
+      "role": "link",
+      "name": "API"
+    },
+    "e201": {
+      "role": "generic"
+    },
+    "e203": {
+      "role": "link",
+      "name": "Privacy"
+    },
+    "e204": {
+      "role": "generic"
+    },
+    "e206": {
+      "role": "link",
+      "name": "Terms"
+    },
+    "e207": {
+      "role": "generic"
+    },
+    "e209": {
+      "role": "link",
+      "name": "Locations"
+    },
+    "e210": {
+      "role": "generic"
+    },
+    "e212": {
+      "role": "link",
+      "name": "Instagram Lite"
+    },
+    "e213": {
+      "role": "generic"
+    },
+    "e215": {
+      "role": "link",
+      "name": "Meta AI"
+    },
+    "e216": {
+      "role": "generic"
+    },
+    "e218": {
+      "role": "link",
+      "name": "Threads"
+    },
+    "e219": {
+      "role": "generic"
+    },
+    "e221": {
+      "role": "link",
+      "name": "Contact Uploading & Non-Users"
+    },
+    "e222": {
+      "role": "generic"
+    },
+    "e224": {
+      "role": "link",
+      "name": "Meta Verified"
+    },
+    "e225": {
+      "role": "generic"
+    },
+    "e226": {
+      "role": "generic"
+    },
+    "e227": {
+      "role": "generic"
+    },
+    "e228": {
+      "role": "generic"
+    },
+    "e229": {
+      "role": "generic"
+    },
+    "e232": {
+      "role": "img",
+      "name": "Down chevron icon"
+    },
+    "e234": {
+      "role": "combobox",
+      "name": "Switch Display Language"
+    },
+    "e236": {
+      "role": "generic"
+    },
+    "e238": {
+      "role": "button",
+      "name": "Messages Messages"
+    },
+    "e240": {
+      "role": "generic"
+    },
+    "e242": {
+      "role": "img",
+      "name": "Messages"
+    },
+    "e245": {
+      "role": "generic"
+    }
+  }
+}
+[2026-03-14 13:41:49] ------------------------------
+[2026-03-14 13:41:59] --- OPENCLAW CLI EXECUTION ---
+[2026-03-14 13:41:59] COMMAND: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw comment-input Thanks! --submit --json
+[2026-03-14 13:41:59] STDERR:
+GatewayClientRequestError: TimeoutError: locator.fill: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator('aria-ref=comment-input')
+[2026-03-14 13:41:59] ------------------------------

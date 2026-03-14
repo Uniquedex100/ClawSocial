@@ -1,0 +1,303 @@
+[2026-03-14 11:09:43] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on instagram today
+[2026-03-14 11:09:43] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=['read_comments', 'reply_comment']
+[2026-03-14 11:09:43] clawsocial.agent INFO  Reasoning produced 2 action proposals
+[2026-03-14 11:09:43] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:09:43] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:09:43] clawsocial.executor INFO  [DRY RUN] openclaw browser open --url https://www.instagram.com
+[2026-03-14 11:09:43] clawsocial.executor INFO  [DRY RUN] openclaw browser snapshot
+[2026-03-14 11:09:43] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:09:43] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:09:43] clawsocial.agent INFO  ━━━ Pipeline complete: f2c45dcbac30
+[2026-03-14 11:23:21] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:23:23] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=['read_comments', 'reply_comment']
+[2026-03-14 11:23:26] clawsocial.agent INFO  Reasoning produced 2 action proposals
+[2026-03-14 11:23:26] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:23:26] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:23:26] clawsocial.executor INFO  [DRY RUN] openclaw browser open https://www.instagram.com
+[2026-03-14 11:23:26] clawsocial.executor INFO  [DRY RUN] openclaw browser snapshot
+[2026-03-14 11:23:26] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:23:26] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:23:26] clawsocial.agent INFO  ━━━ Pipeline complete: eea0799a8a82
+[2026-03-14 11:23:44] clawsocial.agent INFO  ━━━ Pipeline start: Post this tweet on Twitter.
+[2026-03-14 11:23:46] clawsocial.intent WARNING  Gemini intent parsing failed (1 validation error for Intent
+time_scope
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type), falling back to keyword parser
+[2026-03-14 11:23:46] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=['publish_post']
+[2026-03-14 11:23:49] clawsocial.agent INFO  Reasoning produced 1 action proposals
+[2026-03-14 11:23:49] clawsocial.policy WARNING  [BLOCK] publish_post on twitter — Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-14 11:23:49] clawsocial INFO  [BLOCKED] action=publish_post platform=twitter | Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-14 11:23:49] clawsocial.agent INFO  ━━━ Pipeline complete: 3882b0cbba8d
+[2026-03-14 11:35:23] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:35:27] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:35:34] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:35:34] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:35:34] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:35:34] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:35:34] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:35:34] clawsocial.executor ERROR  Execution failed for 7b5cd2fd: 'IntentToken' object is not subscriptable
+[2026-03-14 11:35:34] clawsocial INFO  [SKIPPED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:35:34] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:35:34] clawsocial.agent INFO  ━━━ Pipeline complete: f44091017c85
+[2026-03-14 11:36:05] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:36:06] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:36:08] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:36:08] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:36:08] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:36:08] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:36:08] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:36:08] clawsocial.executor INFO  [DRY RUN] openclaw browser open https://www.instagram.com --intent-token token_id...
+[2026-03-14 11:36:08] clawsocial.executor INFO  [DRY RUN] openclaw browser snapshot --intent-token token_id...
+[2026-03-14 11:36:08] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:36:08] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:36:08] clawsocial.agent INFO  ━━━ Pipeline complete: d2c1abcfcf6c
+[2026-03-14 11:38:09] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:38:10] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:38:12] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:38:12] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:38:12] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:38:12] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:38:12] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:38:12] clawsocial.executor INFO  [DRY RUN] openclaw browser open https://www.instagram.com --intent-token token_id...
+[2026-03-14 11:38:12] clawsocial.executor INFO  [DRY RUN] openclaw browser snapshot --intent-token token_id...
+[2026-03-14 11:38:12] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:38:12] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:38:12] clawsocial.agent INFO  ━━━ Pipeline complete: 208e19afa0b9
+[2026-03-14 11:38:32] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:38:33] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:38:35] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:38:35] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:38:35] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:38:35] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:38:35] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:38:35] clawsocial.executor INFO  [DRY RUN] openclaw browser open https://www.instagram.com --intent-token token_id...
+[2026-03-14 11:38:35] clawsocial.executor INFO  [DRY RUN] openclaw browser snapshot --intent-token token_id...
+[2026-03-14 11:38:35] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:38:35] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:38:35] clawsocial.agent INFO  ━━━ Pipeline complete: dcc20fcfb2e8
+[2026-03-14 11:39:41] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:39:43] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:39:44] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:39:44] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:39:44] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:39:44] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:39:44] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:39:44] clawsocial.executor INFO  [DRY RUN] openclaw browser open https://www.instagram.com --intent-token token_id...
+[2026-03-14 11:39:44] clawsocial.executor INFO  [DRY RUN] openclaw browser snapshot --intent-token token_id...
+[2026-03-14 11:39:44] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:39:44] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:39:44] clawsocial.agent INFO  ━━━ Pipeline complete: ba8576f1c43c
+[2026-03-14 11:40:30] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:40:32] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:40:33] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:40:33] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:40:33] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:40:33] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:40:33] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:40:33] clawsocial.executor INFO  [DRY RUN] openclaw browser open https://www.instagram.com --intent-token token_id...
+[2026-03-14 11:40:33] clawsocial.executor INFO  [DRY RUN] openclaw browser snapshot --intent-token token_id...
+[2026-03-14 11:40:33] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:40:33] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:40:33] clawsocial.agent INFO  ━━━ Pipeline complete: 8b507123fc94
+[2026-03-14 11:41:19] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:41:19] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:41:21] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:41:21] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:41:21] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:41:21] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:41:21] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:41:21] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --intent-token token_id='1dc1e2d0c9c14ca0ac759cb87c6278dc' plan_hash='4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36' plan_id='f775e17f-11c8-46ab-98de-03ecdb3c11f5' signature='c7f1c29325adfda2f53953a6c4770a8120d60a1fbe96e387cca4dad372cabbb075bbf941a5abf49420bd6e4f8c14e4ea42c0ef84380211b2c718cce669ed1104' issued_at=1773468681.342935 expires_at=1773468741.342949 policy={} composite_identity='' client_info=None policy_validation=None step_proofs=[{'path': '/steps/[0]/action', 'hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'kind': 'step', 'proof': [{'position': 'R', 'sibling_hash': '486b0fd87196c6677bd7ac62ed02c52a2354456a8e77e9a25507692282f67a64'}, {'position': 'R', 'sibling_hash': 'f32330f3872408e6474a14bd544ddca89ab31d23d1174ac89cfb55425333c627'}, {'position': 'L', 'sibling_hash': '3c1bc13a9186e6d5b443a319898c03a64d09b46c827eaaff2fee577de1ca555a'}, {'position': 'R', 'sibling_hash': '10971ef9009d296fa1cb121b21eccdddcda53ec00796aedeb27270f5260f2918'}, {'position': 'R', 'sibling_hash': '5b5ef1d0c4220461a8b2f64ba8de287e000a88326b8e42162261087f07f040ee'}]}, {'path': '/steps/[1]/action', 'hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'kind': 'step', 'proof': [{'position': 'L', 'sibling_hash': '1f381bc91d5098b01a4c7bad1c8ca713e4bd6ac4e5b8078287bc0a4bc0a5d716'}, {'position': 'R', 'sibling_hash': 'b6aeea7149d16c31ed4d57b94c99246572a5919aee757aabb33a9a29789557bc'}, {'position': 'R', 'sibling_hash': '1576051e24c62b6b805386fe3813678686df71831a54364fd553dfa6d130f903'}, {'position': 'L', 'sibling_hash': 'cb7030958a9019419f788451d768c803fa67429b5a7a05a022d4462ce442aa3c'}, {'position': 'R', 'sibling_hash': '5b5ef1d0c4220461a8b2f64ba8de287e000a88326b8e42162261087f07f040ee'}]}, {'path': '/steps/[2]/action', 'hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'kind': 'step', 'proof': [{'position': 'R', 'sibling_hash': '4cd0d79374333f7ddbe60cf32c6936bb5dafdbe661bcc4c2c9cff69f3ce6df99'}, {'position': 'L', 'sibling_hash': 'ce3361ffff49d19f9a4a607160095a32db8a25dff128800a9afab395909e88ca'}, {'position': 'L', 'sibling_hash': '4a60498bd33a193d1461f6885060cfa29f596001da7401e7b7ac8c688c211ed3'}, {'position': 'L', 'sibling_hash': 'cb7030958a9019419f788451d768c803fa67429b5a7a05a022d4462ce442aa3c'}, {'position': 'R', 'sibling_hash': '5b5ef1d0c4220461a8b2f64ba8de287e000a88326b8e42162261087f07f040ee'}]}, {'path': '/', 'hash': '9d7a9e97a22850ed50a88f0c4aa8dc12377ad7b806000b1ac9a8002c6214a34c', 'kind': 'object'}, {'path': '/goal', 'hash': '81730bad67c3f3d6780b18125ee2e4ee92751ceb5d3eaf80fd7af9b16ab6f8bb', 'kind': 'leaf'}, {'path': '/steps', 'hash': '9880f16024800b21777e85eab8097357d107ef918838cb6791d89567b05f6bc4', 'kind': 'array'}] total_steps=3 raw_token={'plan': {'goal': 'Reply to comments on Instagram today.', 'steps': [{'action': 'openclaw', 'tool': 'browser', 'inputs': {'command': 'open'}}, {'action': 'openclaw', 'tool': 'browser', 'inputs': {'command': 'snapshot'}}, {'action': 'openclaw', 'tool': 'browser', 'inputs': {'command': 'type', 'submit': True}}]}, 'token': {'plan_hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'issued_at': 1773468680, 'expires_at': 1773468740, 'policy': {'global': {'metadata': {'allow': ['*'], 'deny': [], 'metadata': {'api_key_domain': 'gmail.com', 'api_key_tier': 'pro', 'plan_id': 'f775e17f-11c8-46ab-98de-03ecdb3c11f5', 'sdk_type': 'customer', 'sdk_version': 'customer-1.0.0'}}, 'digest': '8f69372d3cb34e4ab7204daf4cf8b4fbb6f78985fdaa7085d8f2a6f81a0085fa'}}, 'identity': '20f6db063c6731987735ca83d4920a39ef9f7e17111488379b079205bd896918', 'public_key': '188b1bb659699b44456d659fb7e96b2cc4bb0320be71ed9a8a5a55da80e4bfff', 'signature': 'c7f1c29325adfda2f53953a6c4770a8120d60a1fbe96e387cca4dad372cabbb075bbf941a5abf49420bd6e4f8c14e4ea42c0ef84380211b2c718cce669ed1104', 'version': 'IAP-0.1'}, 'plan_hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'merkle_root': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'intent_reference': '1dc1e2d0c9c14ca0ac759cb87c6278dc', 'composite_identity': ''} https://www.instagram.com --json (token: True)
+[2026-03-14 11:41:22] clawsocial.executor ERROR  Execution failed for 40bd74ab: OpenClaw CLI error (rc=1): error: unknown option '--intent-token'
+[2026-03-14 11:41:22] clawsocial INFO  [SKIPPED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:41:22] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --intent-token token_id='1dc1e2d0c9c14ca0ac759cb87c6278dc' plan_hash='4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36' plan_id='f775e17f-11c8-46ab-98de-03ecdb3c11f5' signature='c7f1c29325adfda2f53953a6c4770a8120d60a1fbe96e387cca4dad372cabbb075bbf941a5abf49420bd6e4f8c14e4ea42c0ef84380211b2c718cce669ed1104' issued_at=1773468681.342935 expires_at=1773468741.342949 policy={} composite_identity='' client_info=None policy_validation=None step_proofs=[{'path': '/steps/[0]/action', 'hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'kind': 'step', 'proof': [{'position': 'R', 'sibling_hash': '486b0fd87196c6677bd7ac62ed02c52a2354456a8e77e9a25507692282f67a64'}, {'position': 'R', 'sibling_hash': 'f32330f3872408e6474a14bd544ddca89ab31d23d1174ac89cfb55425333c627'}, {'position': 'L', 'sibling_hash': '3c1bc13a9186e6d5b443a319898c03a64d09b46c827eaaff2fee577de1ca555a'}, {'position': 'R', 'sibling_hash': '10971ef9009d296fa1cb121b21eccdddcda53ec00796aedeb27270f5260f2918'}, {'position': 'R', 'sibling_hash': '5b5ef1d0c4220461a8b2f64ba8de287e000a88326b8e42162261087f07f040ee'}]}, {'path': '/steps/[1]/action', 'hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'kind': 'step', 'proof': [{'position': 'L', 'sibling_hash': '1f381bc91d5098b01a4c7bad1c8ca713e4bd6ac4e5b8078287bc0a4bc0a5d716'}, {'position': 'R', 'sibling_hash': 'b6aeea7149d16c31ed4d57b94c99246572a5919aee757aabb33a9a29789557bc'}, {'position': 'R', 'sibling_hash': '1576051e24c62b6b805386fe3813678686df71831a54364fd553dfa6d130f903'}, {'position': 'L', 'sibling_hash': 'cb7030958a9019419f788451d768c803fa67429b5a7a05a022d4462ce442aa3c'}, {'position': 'R', 'sibling_hash': '5b5ef1d0c4220461a8b2f64ba8de287e000a88326b8e42162261087f07f040ee'}]}, {'path': '/steps/[2]/action', 'hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'kind': 'step', 'proof': [{'position': 'R', 'sibling_hash': '4cd0d79374333f7ddbe60cf32c6936bb5dafdbe661bcc4c2c9cff69f3ce6df99'}, {'position': 'L', 'sibling_hash': 'ce3361ffff49d19f9a4a607160095a32db8a25dff128800a9afab395909e88ca'}, {'position': 'L', 'sibling_hash': '4a60498bd33a193d1461f6885060cfa29f596001da7401e7b7ac8c688c211ed3'}, {'position': 'L', 'sibling_hash': 'cb7030958a9019419f788451d768c803fa67429b5a7a05a022d4462ce442aa3c'}, {'position': 'R', 'sibling_hash': '5b5ef1d0c4220461a8b2f64ba8de287e000a88326b8e42162261087f07f040ee'}]}, {'path': '/', 'hash': '9d7a9e97a22850ed50a88f0c4aa8dc12377ad7b806000b1ac9a8002c6214a34c', 'kind': 'object'}, {'path': '/goal', 'hash': '81730bad67c3f3d6780b18125ee2e4ee92751ceb5d3eaf80fd7af9b16ab6f8bb', 'kind': 'leaf'}, {'path': '/steps', 'hash': '9880f16024800b21777e85eab8097357d107ef918838cb6791d89567b05f6bc4', 'kind': 'array'}] total_steps=3 raw_token={'plan': {'goal': 'Reply to comments on Instagram today.', 'steps': [{'action': 'openclaw', 'tool': 'browser', 'inputs': {'command': 'open'}}, {'action': 'openclaw', 'tool': 'browser', 'inputs': {'command': 'snapshot'}}, {'action': 'openclaw', 'tool': 'browser', 'inputs': {'command': 'type', 'submit': True}}]}, 'token': {'plan_hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'issued_at': 1773468680, 'expires_at': 1773468740, 'policy': {'global': {'metadata': {'allow': ['*'], 'deny': [], 'metadata': {'api_key_domain': 'gmail.com', 'api_key_tier': 'pro', 'plan_id': 'f775e17f-11c8-46ab-98de-03ecdb3c11f5', 'sdk_type': 'customer', 'sdk_version': 'customer-1.0.0'}}, 'digest': '8f69372d3cb34e4ab7204daf4cf8b4fbb6f78985fdaa7085d8f2a6f81a0085fa'}}, 'identity': '20f6db063c6731987735ca83d4920a39ef9f7e17111488379b079205bd896918', 'public_key': '188b1bb659699b44456d659fb7e96b2cc4bb0320be71ed9a8a5a55da80e4bfff', 'signature': 'c7f1c29325adfda2f53953a6c4770a8120d60a1fbe96e387cca4dad372cabbb075bbf941a5abf49420bd6e4f8c14e4ea42c0ef84380211b2c718cce669ed1104', 'version': 'IAP-0.1'}, 'plan_hash': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'merkle_root': '4f036adf639d59893876451f654bf59d2630a58186732af308db21e1f80d5b36', 'intent_reference': '1dc1e2d0c9c14ca0ac759cb87c6278dc', 'composite_identity': ''} https://www.instagram.com --json (token: True)
+[2026-03-14 11:41:23] clawsocial.executor ERROR  Execution failed for e044a1df: OpenClaw CLI error (rc=1): error: unknown option '--intent-token'
+[2026-03-14 11:41:23] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:41:23] clawsocial.agent INFO  ━━━ Pipeline complete: 724c121e35d7
+[2026-03-14 11:43:28] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:43:29] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:43:31] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:43:31] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:43:31] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:43:31] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:43:31] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:43:31] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 11:43:43] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 11:43:46] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:43:46] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 11:43:48] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 11:43:50] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw comment-input Thanks! --submit --json (token: True)
+[2026-03-14 11:44:00] clawsocial.executor ERROR  Execution failed for ba9474ce: OpenClaw CLI error (rc=1): GatewayClientRequestError: TimeoutError: locator.fill: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator('aria-ref=comment-input')
+[2026-03-14 11:44:00] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:44:00] clawsocial.agent INFO  ━━━ Pipeline complete: 1e58f8ee485c
+[2026-03-14 11:46:51] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 11:46:51] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:46:52] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:46:52] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:46:52] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:46:52] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:46:52] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:46:52] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 11:46:55] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 11:46:57] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:46:57] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 11:46:59] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 11:47:01] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw comment-input Thanks! --submit --json (token: True)
+[2026-03-14 11:47:11] clawsocial.executor ERROR  Execution failed for efb92b96: OpenClaw CLI error (rc=1): GatewayClientRequestError: TimeoutError: locator.fill: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator('aria-ref=comment-input')
+[2026-03-14 11:47:11] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:47:11] clawsocial.agent INFO  ━━━ Pipeline complete: 3c51bdc2f596
+[2026-03-14 11:48:28] clawsocial.agent INFO  ━━━ Pipeline start: text someone hello on instagram
+[2026-03-14 11:48:28] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:48:30] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:48:30] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:48:30] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 0 action proposals
+[2026-03-14 11:48:30] clawsocial.agent INFO  ━━━ Pipeline complete: 1d891d774a41
+[2026-03-14 11:49:10] clawsocial.agent INFO  ━━━ Pipeline start: send some direct messages to someone today
+[2026-03-14 11:49:10] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:49:12] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:49:12] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:49:12] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 0 action proposals
+[2026-03-14 11:49:12] clawsocial.agent INFO  ━━━ Pipeline complete: 5a109cd59c46
+[2026-03-14 11:54:15] clawsocial.agent INFO  ━━━ Pipeline start: reply to comments on instagram
+[2026-03-14 11:54:15] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 11:54:16] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 11:54:16] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 11:54:16] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 11:54:16] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 11:54:16] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 11:54:16] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 11:54:18] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 11:54:20] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 11:54:20] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 11:54:23] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 11:54:25] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw comment-input Thanks! --submit --json (token: True)
+[2026-03-14 11:54:35] clawsocial.executor ERROR  Execution failed for 478b5c21: OpenClaw CLI error (rc=1): GatewayClientRequestError: TimeoutError: locator.fill: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator('aria-ref=comment-input')
+[2026-03-14 11:54:35] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 11:54:35] clawsocial.agent INFO  ━━━ Pipeline complete: 929fd530bfa1
+[2026-03-14 12:00:47] clawsocial.agent INFO  ━━━ Pipeline start: Search for #devclub on Instagram and like the top 3 posts.
+[2026-03-14 12:00:49] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 12:00:50] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 12:00:50] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 12:00:50] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 12:00:50] clawsocial.policy WARNING  [BLOCK] publish_post on instagram — Action not in allowed list: publish_post
+[2026-03-14 12:00:50] clawsocial INFO  [BLOCKED] action=publish_post platform=instagram | Action not in allowed list: publish_post
+[2026-03-14 12:00:50] clawsocial.agent INFO  ━━━ Pipeline complete: a4cd8ec484dd
+[2026-03-14 12:01:04] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 12:01:04] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 12:01:05] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 12:01:05] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 12:01:05] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 12:01:05] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 12:01:05] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 12:01:05] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 12:01:08] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 12:01:10] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 12:01:10] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 12:01:13] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 12:01:17] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw comment-input Thanks! --submit --json (token: True)
+[2026-03-14 12:01:27] clawsocial.executor ERROR  Execution failed for 00a625a9: OpenClaw CLI error (rc=1): GatewayClientRequestError: TimeoutError: locator.fill: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator('aria-ref=comment-input')
+[2026-03-14 12:01:27] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 12:01:27] clawsocial.agent INFO  ━━━ Pipeline complete: a01246736adb
+[2026-03-14 13:21:54] clawsocial.agent INFO  ━━━ Pipeline start: reply to the comments on instagram
+[2026-03-14 13:21:59] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 13:22:13] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 13:22:13] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 13:22:13] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 13:22:13] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 13:22:13] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 13:22:13] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:22:29] clawsocial.executor ERROR  Execution failed for a172b6c8: OpenClaw CLI error (rc=1): Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:22:29] clawsocial INFO  [SKIPPED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 13:22:29] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:22:45] clawsocial.executor ERROR  Execution failed for fb2c1471: OpenClaw CLI error (rc=1): Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:22:45] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 13:22:45] clawsocial.agent INFO  ━━━ Pipeline complete: 4f1b02e69a70
+[2026-03-14 13:24:37] clawsocial.agent INFO  ━━━ Pipeline start: reply to the comments on instagram
+[2026-03-14 13:24:37] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 13:24:39] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 13:24:39] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 13:24:39] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 13:24:39] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 13:24:39] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 13:24:39] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:24:55] clawsocial.executor ERROR  Execution failed for 9b25b949: OpenClaw CLI error (rc=1): Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:24:55] clawsocial INFO  [SKIPPED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 13:24:55] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:25:10] clawsocial.executor ERROR  Execution failed for b242bc28: OpenClaw CLI error (rc=1): Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:25:10] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 13:25:10] clawsocial.agent INFO  ━━━ Pipeline complete: c1b00fc89a71
+[2026-03-14 13:29:59] clawsocial.agent INFO  ━━━ Pipeline start: reply to the comments on instagram
+[2026-03-14 13:29:59] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 13:30:01] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 13:30:01] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 13:30:01] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 13:30:01] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 13:30:01] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 13:30:01] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:30:17] clawsocial.executor ERROR  Execution failed for ba5459bb: OpenClaw CLI error (rc=1): Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:30:17] clawsocial INFO  [SKIPPED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 13:30:17] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:30:33] clawsocial.executor ERROR  Execution failed for 1df03987: OpenClaw CLI error (rc=1): Error: gateway timeout after 15000ms
+Gateway target: http://localhost:18789
+Source: env OPENCLAW_GATEWAY_URL
+Config: /home/dinu/.openclaw/openclaw.json
+[2026-03-14 13:30:33] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 13:30:33] clawsocial.agent INFO  ━━━ Pipeline complete: a76c82f2dfa2
+[2026-03-14 13:39:03] clawsocial.agent INFO  ━━━ Pipeline start: reply to the comments on instagram
+[2026-03-14 13:39:08] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 13:39:09] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 13:39:09] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 13:39:09] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 13:39:09] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 13:39:09] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 13:39:09] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:39:11] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 13:39:13] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 13:39:13] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:39:15] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 13:39:18] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw comment-input Thanks! --submit --json (token: True)
+[2026-03-14 13:39:23] clawsocial.executor ERROR  Execution failed for 458e9ab4: OpenClaw CLI error (rc=1): GatewayClientRequestError: Error: locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('aria-ref=comment-input')
+[2026-03-14 13:39:23] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 13:39:23] clawsocial.agent INFO  ━━━ Pipeline complete: 4c0f1abb96ef
+[2026-03-14 13:41:40] clawsocial.agent INFO  ━━━ Pipeline start: reply to the comments on instagram
+[2026-03-14 13:41:40] clawsocial.intent INFO  Capturing plan with ArmorIQ...
+[2026-03-14 13:41:41] clawsocial.intent INFO  Received ArmorIQ intent token
+[2026-03-14 13:41:41] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 13:41:41] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 13:41:41] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 13:41:41] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 13:41:41] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:41:43] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 13:41:45] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 13:41:45] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: True)
+[2026-03-14 13:41:47] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: True)
+[2026-03-14 13:41:49] clawsocial.executor INFO  CLI exec: node /home/dinu/Devclub/openclaw/openclaw.mjs --log-level debug browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw comment-input Thanks! --submit --json (token: True)
+[2026-03-14 13:41:59] clawsocial.executor ERROR  Execution failed for 4719182a: OpenClaw CLI error (rc=1): GatewayClientRequestError: TimeoutError: locator.fill: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator('aria-ref=comment-input')
+[2026-03-14 13:41:59] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 13:41:59] clawsocial.agent INFO  ━━━ Pipeline complete: 1b7107f1495b

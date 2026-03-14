@@ -95,12 +95,13 @@ class Policy(BaseModel):
 # ── Action Proposal ─────────────────────────────────────────────────────
 
 class ActionProposal(BaseModel):
-    """A single proposed action produced by the reasoning engine."""
+    """An action proposed by the reasoning layer."""
 
-    id: str = Field(default_factory=lambda: uuid.uuid4().hex[:8])
+    id: str = Field(default_factory=lambda: str(uuid.uuid4())[:8])
     action_type: ActionType
     platform: Platform
     content: Optional[str] = None
+    intent_token: Optional[str] = None
     metadata: dict = Field(default_factory=dict)
     reasoning: str = Field("", description="Why the engine chose this action")
 

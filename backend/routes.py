@@ -20,7 +20,7 @@ router = APIRouter()
 # ── Shared state ─────────────────────────────────────────────────────────
 
 _policy_engine = ArmorClaw()
-_agent = ClawSocialAgent(policy_engine=_policy_engine, dry_run=True)
+_agent = ClawSocialAgent(policy_engine=_policy_engine, dry_run=False)
 
 
 # ── Task endpoints ───────────────────────────────────────────────────────

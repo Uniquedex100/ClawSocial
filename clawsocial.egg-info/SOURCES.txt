@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+clawsocial.egg-info/PKG-INFO
+clawsocial.egg-info/SOURCES.txt
+clawsocial.egg-info/dependency_links.txt
+clawsocial.egg-info/requires.txt
+clawsocial.egg-info/top_level.txt
