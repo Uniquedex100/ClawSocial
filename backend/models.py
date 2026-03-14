@@ -22,7 +22,13 @@ class Platform(str, Enum):
 class ActionType(str, Enum):
     READ_COMMENTS = "read_comments"
     REPLY_COMMENT = "reply_comment"
+    LIKE_POST = "like_post"
     SCHEDULE_POST = "schedule_post"
+    SCHEDULE_ACTION = "schedule_action"
+    RUN_AUTOMATION = "run_automation"
+    MANAGE_WATCHLIST = "manage_watchlist"
+    SUMMARIZE_THREAD = "summarize_thread"
+    SUGGEST_REPLY = "suggest_reply"
     PUBLISH_POST = "publish_post"
     GENERATE_CAPTION = "generate_caption"
     SUGGEST_HASHTAGS = "suggest_hashtags"
@@ -74,11 +80,18 @@ class Policy(BaseModel):
     )
     max_posts_per_day: int = 3
     max_replies_per_hour: int = 20
+    max_batch_actions: int = 3
     allowed_actions: list[ActionType] = Field(
         default_factory=lambda: [
             ActionType.READ_COMMENTS,
             ActionType.REPLY_COMMENT,
+            ActionType.LIKE_POST,
             ActionType.SCHEDULE_POST,
+            ActionType.SCHEDULE_ACTION,
+            ActionType.RUN_AUTOMATION,
+            ActionType.MANAGE_WATCHLIST,
+            ActionType.SUMMARIZE_THREAD,
+            ActionType.SUGGEST_REPLY,
             ActionType.GENERATE_CAPTION,
             ActionType.SUGGEST_HASHTAGS,
         ],

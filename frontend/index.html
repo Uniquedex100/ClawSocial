@@ -19,16 +19,41 @@
             </div>
             
             <nav class="nav-menu">
-                <a href="#dashboard" class="nav-item active">
+                <a href="#dashboard" class="nav-item active" data-view="dashboard">
                     <i class="ri-dashboard-line"></i> Dashboard
                 </a>
-                <a href="#policy" class="nav-item">
+                <a href="#policy" class="nav-item" data-view="policy">
                     <i class="ri-shield-check-line"></i> ArmorClaw Policy
                 </a>
-                <a href="#logs" class="nav-item">
+                <a href="#history" class="nav-item" data-view="history">
+                    <i class="ri-bar-chart-box-line"></i> History & Stats
+                </a>
+                <a href="#logs" class="nav-item" data-view="logs">
                     <i class="ri-file-list-3-line"></i> Audit Logs
                 </a>
             </nav>
+
+            <div class="handle-card">
+                <div class="handle-card-title">
+                    <i class="ri-at-line"></i>
+                    <span>Command Target</span>
+                </div>
+                <div class="handle-card-body">
+                    <label class="handle-label" for="target-platform">Platform</label>
+                    <select id="target-platform" class="handle-input">
+                        <option value="twitter">Twitter / X</option>
+                        <option value="instagram">Instagram</option>
+                    </select>
+
+                    <label class="handle-label" for="target-handle">Handle</label>
+                    <input id="target-handle" class="handle-input" type="text" placeholder="narendramodi" />
+
+                    <button id="target-handle-save" class="btn btn-primary btn-sm handle-save-btn" type="button">
+                        Apply Target
+                    </button>
+                    <p id="target-handle-status" class="handle-status">No default handle set.</p>
+                </div>
+            </div>
 
             <div class="sys-status">
                 <div class="status-indicator online"></div>
@@ -54,6 +79,7 @@
                 </div>
             </header>
 
+            <section class="app-view active" id="view-dashboard">
             <div class="content-grid">
                 
                 <!-- Left Column -->
@@ -135,6 +161,26 @@
 
                 <!-- Right Column -->
                 <div class="col-side">
+                    <!-- Chat Thread -->
+                    <div class="glass-card chat-card">
+                        <div class="card-header">
+                            <h3><i class="ri-message-3-line"></i> OpenClaw Chat</h3>
+                            <button id="clear-chat" class="icon-btn-sm"><i class="ri-chat-delete-line"></i></button>
+                        </div>
+                        <div class="card-body chat-body" id="chat-thread">
+                            <div class="chat-message assistant">
+                                <div class="chat-head">
+                                    <div class="chat-avatar">OC</div>
+                                    <div class="chat-meta">
+                                        <div class="chat-role">OpenClaw</div>
+                                        <div class="chat-time">Just now</div>
+                                    </div>
+                                </div>
+                                <div class="chat-bubble">Ready. Send a command and I will report execution details here.</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Live Console -->
                     <div class="glass-card console-card">
                         <div class="card-header">
@@ -160,6 +206,91 @@
                 </div>
 
             </div>
+            </section>
+
+            <section class="app-view" id="view-policy" hidden>
+                <div class="single-view-grid">
+                    <div class="glass-card view-card">
+                        <div class="card-header">
+                            <h3><i class="ri-shield-check-line"></i> Active ArmorClaw Policy</h3>
+                            <button class="btn btn-outline btn-sm" id="policy-refresh-btn">Refresh</button>
+                        </div>
+                        <div class="card-body view-card-body">
+                            <div id="policy-structured" class="policy-structured-grid">
+                                <div class="empty-state">Loading policy...</div>
+                            </div>
+                            <details class="raw-json-wrap">
+                                <summary>View Raw JSON</summary>
+                                <pre id="policy-json" class="json-panel">Loading policy...</pre>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="glass-card view-card">
+                        <div class="card-header">
+                            <h3><i class="ri-edit-line"></i> Edit Policy (JSON)</h3>
+                            <button class="btn btn-primary btn-sm" id="policy-save-btn">Save Policy</button>
+                        </div>
+                        <div class="card-body view-card-body">
+                            <textarea id="policy-editor" class="editor-area" rows="14" spellcheck="false" placeholder="Policy JSON will appear here..."></textarea>
+                            <p id="policy-save-status" class="inline-status">Ready.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="app-view" id="view-logs" hidden>
+                <div class="single-view-grid">
+                    <div class="glass-card view-card">
+                        <div class="card-header">
+                            <h3><i class="ri-file-list-3-line"></i> Audit Logs</h3>
+                            <div class="quick-actions">
+                                <button class="btn btn-outline btn-sm" id="logs-refresh-btn">Refresh</button>
+                                <button class="btn btn-outline btn-sm" id="logs-export-btn">Export JSON</button>
+                                <button class="btn btn-primary btn-sm" id="logs-clear-btn">Clear Logs</button>
+                            </div>
+                        </div>
+                        <div class="card-body view-card-body">
+                            <div id="audit-logs-empty" class="empty-state">No logs yet. Execute a task to generate an audit trail.</div>
+                            <div id="audit-logs-list" class="audit-log-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="app-view" id="view-history" hidden>
+                <div class="single-view-grid">
+                    <div class="glass-card view-card">
+                        <div class="card-header">
+                            <h3><i class="ri-bar-chart-box-line"></i> Interaction Statistics</h3>
+                            <button class="btn btn-outline btn-sm" id="history-refresh-btn">Refresh</button>
+                        </div>
+                        <div class="card-body view-card-body">
+                            <div id="history-stats-grid" class="history-stats-grid">
+                                <article class="history-stat-card"><span>Total Interactions</span><strong id="stat-total-interactions">0</strong></article>
+                                <article class="history-stat-card"><span>Executed Actions</span><strong id="stat-executed-actions">0</strong></article>
+                                <article class="history-stat-card"><span>Blocked Actions</span><strong id="stat-blocked-actions">0</strong></article>
+                                <article class="history-stat-card"><span>Success Rate</span><strong id="stat-success-rate">0%</strong></article>
+                            </div>
+                            <div class="history-meta-row">
+                                <div><strong>Top Action:</strong> <span id="stat-top-action">-</span></div>
+                                <div><strong>Top Platform:</strong> <span id="stat-top-platform">-</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card view-card">
+                        <div class="card-header">
+                            <h3><i class="ri-history-line"></i> Interaction History</h3>
+                            <button class="btn btn-outline btn-sm" id="history-clear-btn">Clear Local History</button>
+                        </div>
+                        <div class="card-body view-card-body">
+                            <div id="interaction-history-empty" class="empty-state">No interactions yet. Run commands from dashboard.</div>
+                            <div id="interaction-history-list" class="interaction-history-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 

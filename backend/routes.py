@@ -33,6 +33,30 @@ async def submit_task(req: TaskRequest):
     return result
 
 
+@router.get("/automation/scheduled", tags=["Automation"])
+async def list_scheduled_actions():
+    """List in-memory scheduled Twitter actions."""
+    return _agent.executor.get_scheduled_actions()
+
+
+@router.get("/automation/watchlist", tags=["Automation"])
+async def list_watchlist_rules():
+    """List in-memory watchlist rules."""
+    return _agent.executor.get_watchlist_rules()
+
+
+@router.post("/automation/run-scheduled", response_model=TaskResult, tags=["Automation"])
+async def run_scheduled_actions():
+    """Run due scheduled Twitter actions now."""
+    return await _agent.run("run scheduled actions now on twitter")
+
+
+@router.post("/automation/run-watchlist", response_model=TaskResult, tags=["Automation"])
+async def run_watchlist_actions():
+    """Run watchlist automation rules now."""
+    return await _agent.run("run watchlist now")
+
+
 # ── Demo endpoints ───────────────────────────────────────────────────────
 
 

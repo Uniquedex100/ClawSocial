@@ -82,6 +82,14 @@ class ArmorClaw:
         # 5. Rate limit checks
         self._refresh_counters()
 
+        # 5a. Batch guardrail checks
+        batch_count = int(proposal.metadata.get("batch_count", 1) or 1)
+        if batch_count > self.policy.max_batch_actions:
+            return self._block(
+                proposal,
+                f"Batch guardrail exceeded: {batch_count}/{self.policy.max_batch_actions} actions in one request",
+            )
+
         if proposal.action_type in (ActionType.PUBLISH_POST, ActionType.POST_TWEET, ActionType.SCHEDULE_POST):
             if self._posts_today >= self.policy.max_posts_per_day:
                 return self._block(

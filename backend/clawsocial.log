@@ -312,3 +312,630 @@ Call log:
 [2026-03-14 18:08:56] clawsocial.executor ERROR  Execution failed for 8c51b8f2: All connection attempts failed
 [2026-03-14 18:08:56] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
 [2026-03-14 18:08:56] clawsocial.agent INFO  ━━━ Pipeline complete: 6756bd3cf5a9
+[2026-03-14 18:15:44] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 18:15:44] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 18:15:44] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 18:15:44] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 18:15:44] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 18:15:44] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 18:15:44] clawsocial.executor ERROR  Execution failed for ff4d689c: Client error '404 Not Found' for url 'http://localhost:18789/api/browser'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+[2026-03-14 18:15:44] clawsocial INFO  [SKIPPED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 18:15:45] clawsocial.executor ERROR  Execution failed for d2effdb2: Client error '404 Not Found' for url 'http://localhost:18789/api/browser'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+[2026-03-14 18:15:45] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 18:15:45] clawsocial.agent INFO  ━━━ Pipeline complete: cf7297cebaa4
+[2026-03-14 18:16:36] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 18:16:36] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 18:16:36] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 18:16:36] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 18:16:36] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 18:16:36] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 18:16:36] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:16:40] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:16:44] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 18:16:44] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:16:47] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:16:51] clawsocial.executor WARNING  Could not clearly identify comment input from snapshot. Trying fallback.
+[2026-03-14 18:16:51] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token f914cfc407266651246a49e78ee1abc55799662a3d4c5bf1 --browser-profile openclaw e50 Thanks! --submit --json (token: False)
+[2026-03-14 18:16:54] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 18:16:54] clawsocial.agent INFO  ━━━ Pipeline complete: 423a2a741460
+[2026-03-14 18:17:51] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 18:17:51] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 18:17:51] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 18:17:51] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 18:17:51] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 18:17:51] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 18:17:51] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:17:55] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:17:59] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 18:17:59] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:18:02] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:18:06] clawsocial.executor WARNING  Could not clearly identify comment input from snapshot. Trying fallback.
+[2026-03-14 18:18:06] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e50 Thanks! --submit --json (token: False)
+[2026-03-14 18:18:09] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 18:18:09] clawsocial.agent INFO  ━━━ Pipeline complete: 584338e74b62
+[2026-03-14 18:24:49] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 18:24:49] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 18:24:49] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 18:24:49] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 18:24:49] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 18:24:49] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 18:24:49] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:24:56] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:25:01] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 18:25:01] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:25:05] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:25:09] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e345 Thanks! --submit --json (token: False)
+[2026-03-14 18:25:12] clawsocial.executor ERROR  Failed to parse snapshot or find ref: OpenClaw CLI error (rc=1): GatewayClientRequestError: Error: Element "e345" not found or not visible. Run a new snapshot to see current page elements.
+[2026-03-14 18:25:12] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 18:25:12] clawsocial.agent INFO  ━━━ Pipeline complete: 566785f0b0ef
+[2026-03-14 18:34:51] clawsocial.agent INFO  ━━━ Pipeline start: reply to my latest comment on instagram
+[2026-03-14 18:34:51] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 18:34:51] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 18:34:51] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 18:34:51] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 18:34:51] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 18:34:51] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:34:59] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:35:04] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 18:35:04] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:35:08] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:35:12] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e341 Thanks! --submit --json (token: False)
+[2026-03-14 18:35:15] clawsocial.executor ERROR  Failed to parse snapshot or find ref: OpenClaw CLI error (rc=1): GatewayClientRequestError: Error: Element "e341" not found or not visible. Run a new snapshot to see current page elements.
+[2026-03-14 18:35:15] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 18:35:15] clawsocial.agent INFO  ━━━ Pipeline complete: 5c9f51a505fe
+[2026-03-14 18:43:26] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 18:43:26] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 18:43:26] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 18:43:26] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 18:43:26] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 18:43:26] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 18:43:26] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:43:33] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:43:37] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 18:43:37] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:43:42] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:43:46] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e351 Thanks! --submit --json (token: False)
+[2026-03-14 18:43:50] clawsocial.executor ERROR  Failed to parse snapshot or find ref: OpenClaw CLI error (rc=1): GatewayClientRequestError: Error: Element "e351" not found or not visible. Run a new snapshot to see current page elements.
+[2026-03-14 18:43:50] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 18:43:50] clawsocial.agent INFO  ━━━ Pipeline complete: 49cd18fe31e8
+[2026-03-14 18:47:16] clawsocial.agent INFO  ━━━ Pipeline start: reply to my latest comment on instagram
+[2026-03-14 18:47:16] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 18:47:16] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 18:47:16] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 18:47:16] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 18:47:16] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 18:47:16] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:47:25] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:47:30] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 18:47:30] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 18:47:34] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 18:47:38] clawsocial.executor WARNING  Could not clearly identify comment input from snapshot. Trying fallback.
+[2026-03-14 18:47:38] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 18:47:38] clawsocial.agent INFO  ━━━ Pipeline complete: 8f96615bca3c
+[2026-03-14 18:48:20] clawsocial.policy INFO  Policy updated at runtime
+[2026-03-14 18:58:42] clawsocial.policy INFO  Policy updated at runtime
+[2026-03-14 18:58:53] clawsocial.policy INFO  Policy updated at runtime
+[2026-03-14 18:59:02] clawsocial.policy INFO  Policy updated at runtime
+[2026-03-14 19:00:16] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 19:00:16] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:00:16] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 19:00:16] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 19:00:16] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 19:00:16] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 19:00:16] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:00:26] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:00:32] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 19:00:32] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:00:35] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:00:39] clawsocial.executor WARNING  Could not clearly identify comment input from snapshot. Trying fallback.
+[2026-03-14 19:00:39] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 19:00:39] clawsocial.agent INFO  ━━━ Pipeline complete: d3d0e522d670
+[2026-03-14 19:09:54] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 19:09:54] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:09:54] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 19:09:54] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 19:09:54] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 19:09:54] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 19:09:54] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:10:07] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:10:11] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 19:10:11] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:10:18] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:10:21] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 19:10:21] clawsocial.agent INFO  ━━━ Pipeline complete: 32ada9177ffd
+[2026-03-14 19:17:09] clawsocial.policy INFO  Policy updated at runtime
+[2026-03-14 19:18:24] clawsocial.agent INFO  ━━━ Pipeline start: comment on the first post you see in instagram saying looking good
+[2026-03-14 19:18:24] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:18:24] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 19:18:24] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 19:18:24] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 19:18:24] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 19:18:24] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:18:33] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:18:38] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 19:18:38] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:18:42] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:18:46] clawsocial.executor WARNING  Could not clearly identify comment input from snapshot. Trying fallback.
+[2026-03-14 19:18:46] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 19:18:46] clawsocial.agent INFO  ━━━ Pipeline complete: ddf629b2450f
+[2026-03-14 19:32:51] clawsocial.policy INFO  Policy updated at runtime
+[2026-03-14 19:33:29] clawsocial.agent INFO  ━━━ Pipeline start: comment on the first post you see in instagram saying looking good
+[2026-03-14 19:33:29] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:33:29] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 19:33:29] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 19:33:29] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 19:33:29] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 19:33:29] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:33:42] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:33:46] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 19:33:46] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:33:53] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:33:59] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e294 --json (token: False)
+[2026-03-14 19:34:07] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:34:11] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e1580 looking good --submit --json (token: False)
+[2026-03-14 19:34:22] clawsocial.executor ERROR  Failed to parse snapshot or find ref: OpenClaw CLI error (rc=1): GatewayClientRequestError: TimeoutError: locator.press: Timeout 8000ms exceeded.
+Call log:
+[2m  - waiting for locator('aria-ref=e1580')[22m
+[2026-03-14 19:34:22] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 19:34:22] clawsocial.agent INFO  ━━━ Pipeline complete: f9645d1c38c5
+[2026-03-14 19:39:28] clawsocial.agent INFO  ━━━ Pipeline start: comment on the lates post saying looking good
+[2026-03-14 19:39:28] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:39:28] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 19:39:28] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 19:39:28] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 19:39:28] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 19:39:28] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:39:41] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:39:45] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 19:39:45] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:39:53] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:39:57] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e294 --json (token: False)
+[2026-03-14 19:40:00] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:40:04] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e1605 looking good --json (token: False)
+[2026-03-14 19:40:07] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:40:10] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e1608 --json (token: False)
+[2026-03-14 19:40:14] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 19:40:14] clawsocial.agent INFO  ━━━ Pipeline complete: c52761ecfc54
+[2026-03-14 19:40:43] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 19:40:43] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:40:43] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 19:40:43] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 19:40:43] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 19:40:43] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 19:40:43] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:40:54] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:40:58] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 19:40:58] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:41:05] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:41:09] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e294 --json (token: False)
+[2026-03-14 19:41:13] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:41:16] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e1573 Thanks! --json (token: False)
+[2026-03-14 19:41:20] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:41:23] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e1577 --json (token: False)
+[2026-03-14 19:41:26] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 19:41:26] clawsocial.agent INFO  ━━━ Pipeline complete: 170e192e1b7a
+[2026-03-14 19:42:45] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on my own instagram post
+[2026-03-14 19:42:45] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:42:45] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 19:42:45] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 19:42:45] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 19:42:45] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 19:42:45] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:42:56] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:43:00] clawsocial INFO  [EXECUTED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 19:43:00] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://www.instagram.com --json (token: False)
+[2026-03-14 19:43:06] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:43:09] clawsocial INFO  [EXECUTED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 19:43:09] clawsocial.agent INFO  ━━━ Pipeline complete: 1e73f93db53c
+[2026-03-14 19:46:42] clawsocial.agent INFO  ━━━ Pipeline start: Repost the latest tweet by prime minister modi
+[2026-03-14 19:46:42] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:46:42] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 19:46:42] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 19:46:42] clawsocial.policy WARNING  [BLOCK] post_tweet on twitter — Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-14 19:46:42] clawsocial INFO  [BLOCKED] action=post_tweet platform=twitter | Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-14 19:46:42] clawsocial.agent INFO  ━━━ Pipeline complete: 21545e9c8196
+[2026-03-14 19:46:54] clawsocial.agent INFO  ━━━ Pipeline start: Repost the latest tweet by prime minister modi
+[2026-03-14 19:46:54] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:46:54] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 19:46:54] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 19:46:54] clawsocial.policy WARNING  [BLOCK] post_tweet on twitter — Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-14 19:46:54] clawsocial INFO  [BLOCKED] action=post_tweet platform=twitter | Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-14 19:46:54] clawsocial.agent INFO  ━━━ Pipeline complete: a5d4480e5437
+[2026-03-14 19:47:26] clawsocial.policy INFO  Policy updated at runtime
+[2026-03-14 19:47:29] clawsocial.agent INFO  ━━━ Pipeline start: Repost the latest tweet by prime minister modi
+[2026-03-14 19:47:29] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:47:29] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 19:47:29] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 19:47:29] clawsocial.policy WARNING  [BLOCK] post_tweet on twitter — Action not in allowed list: post_tweet
+[2026-03-14 19:47:29] clawsocial INFO  [BLOCKED] action=post_tweet platform=twitter | Action not in allowed list: post_tweet
+[2026-03-14 19:47:29] clawsocial.agent INFO  ━━━ Pipeline complete: 88047d922a07
+[2026-03-14 19:48:24] clawsocial.agent INFO  ━━━ Pipeline start: Repost the latest tweet by prime minister modi
+[2026-03-14 19:48:24] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:48:24] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 19:48:24] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 19:48:24] clawsocial.policy WARNING  [BLOCK] post_tweet on twitter — Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-14 19:48:24] clawsocial INFO  [BLOCKED] action=post_tweet platform=twitter | Unauthorized platform: twitter. Allowed: ['instagram']
+[2026-03-14 19:48:24] clawsocial.agent INFO  ━━━ Pipeline complete: 4bfc3431ef52
+[2026-03-14 19:58:51] clawsocial.agent INFO  ━━━ Pipeline start: repost latest post on twitter
+[2026-03-14 19:58:51] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:58:51] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 19:58:51] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 19:58:51] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 19:58:51] clawsocial.executor ERROR  Execution failed for adb562c5: Missing or invalid Twitter account handle. Use format: @handle
+[2026-03-14 19:58:51] clawsocial INFO  [SKIPPED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 19:58:51] clawsocial.agent INFO  ━━━ Pipeline complete: 683c3f12c92c
+[2026-03-14 19:59:39] clawsocial.agent INFO  ━━━ Pipeline start: repost latest post on twitter by @narendramodi
+[2026-03-14 19:59:39] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 19:59:39] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 19:59:39] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 19:59:39] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 19:59:39] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi --json (token: False)
+[2026-03-14 19:59:51] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 19:59:56] clawsocial.executor ERROR  Execution failed for aea14e30: Could not find latest tweet URL for @narendramodi
+[2026-03-14 19:59:56] clawsocial INFO  [SKIPPED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 19:59:56] clawsocial.agent INFO  ━━━ Pipeline complete: ac459562d1d8
+[2026-03-14 20:02:54] clawsocial.agent INFO  ━━━ Pipeline start: repost latest tweet by prime minister modi
+[2026-03-14 20:02:54] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:02:54] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:02:54] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:02:54] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:02:54] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/search?q=prime+minister+modi&src=typed_query&f=user --json (token: False)
+[2026-03-14 20:03:04] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:03:08] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/Modiarmy --json (token: False)
+[2026-03-14 20:03:13] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:03:17] clawsocial.executor ERROR  Execution failed for 361d2b7f: Could not find latest tweet URL for @Modiarmy
+[2026-03-14 20:03:17] clawsocial INFO  [SKIPPED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:03:17] clawsocial.agent INFO  ━━━ Pipeline complete: 0c1ae0ca00b1
+[2026-03-14 20:04:22] clawsocial.agent INFO  ━━━ Pipeline start: repost latest tweet by @narendramodi
+[2026-03-14 20:04:22] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:04:22] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:04:22] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:04:22] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:04:22] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi --json (token: False)
+[2026-03-14 20:04:31] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:04:35] clawsocial.executor ERROR  Execution failed for 26f563a4: Could not find latest tweet URL for @narendramodi
+[2026-03-14 20:04:35] clawsocial INFO  [SKIPPED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:04:35] clawsocial.agent INFO  ━━━ Pipeline complete: 18cfd63e6342
+[2026-03-14 20:10:32] clawsocial.agent INFO  ━━━ Pipeline start: repost latest tweet by @narendramodi
+[2026-03-14 20:10:32] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:10:32] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:10:32] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:10:32] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:10:32] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi --json (token: False)
+[2026-03-14 20:10:39] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:10:42] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi/status/2032823748370510059 --json (token: False)
+[2026-03-14 20:10:47] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:10:51] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e270 --json (token: False)
+[2026-03-14 20:10:55] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:10:58] clawsocial INFO  [EXECUTED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:10:58] clawsocial.agent INFO  ━━━ Pipeline complete: 85bb63c2b2bc
+[2026-03-14 20:11:31] clawsocial.agent INFO  ━━━ Pipeline start: repost latest tweet by @narendramodi
+[2026-03-14 20:11:31] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:11:31] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:11:31] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:11:31] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:11:31] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi --json (token: False)
+[2026-03-14 20:11:41] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:11:45] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi/status/2032823748370510059 --json (token: False)
+[2026-03-14 20:11:49] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:11:53] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e270 --json (token: False)
+[2026-03-14 20:11:56] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:12:00] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e1133 --json (token: False)
+[2026-03-14 20:12:03] clawsocial INFO  [EXECUTED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:12:03] clawsocial.agent INFO  ━━━ Pipeline complete: 1c66b63461d7
+[2026-03-14 20:14:49] clawsocial.agent INFO  ━━━ Pipeline start: post tweet on twitter saying"I had a great day lets hope for the best"
+[2026-03-14 20:14:49] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:14:49] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:14:49] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:14:49] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:14:49] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://twitter.com --json (token: False)
+[2026-03-14 20:15:00] clawsocial INFO  [EXECUTED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:15:00] clawsocial.agent INFO  ━━━ Pipeline complete: 453ba9636f60
+[2026-03-14 20:15:48] clawsocial.agent INFO  ━━━ Pipeline start: post tweet on twitter saying"I had a great day lets hope for the best"
+[2026-03-14 20:15:48] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:15:48] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:15:48] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:15:48] clawsocial.policy WARNING  [BLOCK] post_tweet on twitter — Rate limit exceeded: 3/3 posts today
+[2026-03-14 20:15:48] clawsocial INFO  [BLOCKED] action=post_tweet platform=twitter | Rate limit exceeded: 3/3 posts today
+[2026-03-14 20:15:48] clawsocial.agent INFO  ━━━ Pipeline complete: 168bf54b6399
+[2026-03-14 20:16:11] clawsocial.policy INFO  Policy updated at runtime
+[2026-03-14 20:16:16] clawsocial.agent INFO  ━━━ Pipeline start: post tweet on twitter saying"I had a great day lets hope for the best"
+[2026-03-14 20:16:16] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:16:16] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:16:16] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:16:16] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:16:16] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://twitter.com --json (token: False)
+[2026-03-14 20:16:23] clawsocial INFO  [EXECUTED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:16:23] clawsocial.agent INFO  ━━━ Pipeline complete: b221be1ec765
+[2026-03-14 20:17:40] clawsocial.agent INFO  ━━━ Pipeline start: repost the latest tweet by @muktesharma
+[2026-03-14 20:17:40] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:17:40] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:17:40] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:17:40] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:17:40] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma --json (token: False)
+[2026-03-14 20:17:51] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:17:55] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma/status/1925685057848545400 --json (token: False)
+[2026-03-14 20:18:00] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:18:03] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e231 --json (token: False)
+[2026-03-14 20:18:06] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:18:09] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e1988 --json (token: False)
+[2026-03-14 20:18:12] clawsocial INFO  [EXECUTED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:18:12] clawsocial.agent INFO  ━━━ Pipeline complete: ef16edbedee4
+[2026-03-14 20:18:29] clawsocial.agent INFO  ━━━ Pipeline start: like the latest tweet by @muktesharma
+[2026-03-14 20:18:29] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:18:29] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:18:29] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:18:29] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:18:29] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://twitter.com --json (token: False)
+[2026-03-14 20:18:33] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser open --token *** --browser-profile openclaw https://twitter.com --json (token: False)
+[2026-03-14 20:18:36] clawsocial INFO  [EXECUTED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:18:36] clawsocial.agent INFO  ━━━ Pipeline complete: 178c8af8188b
+[2026-03-14 20:18:50] clawsocial.agent INFO  ━━━ Pipeline start: like the latest tweet by @muktesharma
+[2026-03-14 20:18:50] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:18:50] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:18:50] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:18:50] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:18:50] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://twitter.com --json (token: False)
+[2026-03-14 20:18:59] clawsocial INFO  [EXECUTED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:18:59] clawsocial.agent INFO  ━━━ Pipeline complete: f10fbf674089
+[2026-03-14 20:19:10] clawsocial.agent INFO  ━━━ Pipeline start: like the latest tweet by @muktesharma
+[2026-03-14 20:19:10] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:19:10] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:19:10] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:19:10] clawsocial.policy INFO  [ALLOW] post_tweet on twitter
+[2026-03-14 20:19:10] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://twitter.com --json (token: False)
+[2026-03-14 20:19:19] clawsocial INFO  [EXECUTED] action=post_tweet platform=twitter | Policy checks passed
+[2026-03-14 20:19:19] clawsocial.agent INFO  ━━━ Pipeline complete: e6d204395d7c
+[2026-03-14 20:26:15] clawsocial.agent INFO  ━━━ Pipeline start: like the latest tweet by @muktesharma
+[2026-03-14 20:26:15] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:26:15] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:26:15] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:26:15] clawsocial.policy INFO  [ALLOW] like_post on twitter
+[2026-03-14 20:26:15] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma --json (token: False)
+[2026-03-14 20:26:26] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:26:30] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma/status/1925685057848545400 --json (token: False)
+[2026-03-14 20:26:35] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:26:39] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e242 --json (token: False)
+[2026-03-14 20:26:42] clawsocial INFO  [EXECUTED] action=like_post platform=twitter | Policy checks passed
+[2026-03-14 20:26:42] clawsocial.agent INFO  ━━━ Pipeline complete: 134d88d1d2a3
+[2026-03-14 20:27:24] clawsocial.agent INFO  ━━━ Pipeline start: comment on the latest tweet by @ muktesharma saying Great update
+[2026-03-14 20:27:24] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:27:24] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:27:24] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:27:24] clawsocial.policy INFO  [ALLOW] reply_comment on twitter
+[2026-03-14 20:27:24] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/search?q=%40+muktesharma+saying+Great+update&src=typed_query&f=user --json (token: False)
+[2026-03-14 20:27:30] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:27:33] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/thedrogbaba --json (token: False)
+[2026-03-14 20:27:38] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:27:41] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/TheDrogBABA/status/1973704125125898442 --json (token: False)
+[2026-03-14 20:27:49] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:27:54] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:27:58] clawsocial.executor ERROR  Execution failed for c5a4be8f: Could not find reply input field on tweet dialog
+[2026-03-14 20:27:58] clawsocial INFO  [SKIPPED] action=reply_comment platform=twitter | Policy checks passed
+[2026-03-14 20:27:58] clawsocial.agent INFO  ━━━ Pipeline complete: afe808daa06b
+[2026-03-14 20:28:23] clawsocial.agent INFO  ━━━ Pipeline start: comment on the latest tweet by @muktesharma saying Great update
+[2026-03-14 20:28:23] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:28:23] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:28:23] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:28:23] clawsocial.policy INFO  [ALLOW] reply_comment on twitter
+[2026-03-14 20:28:23] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma --json (token: False)
+[2026-03-14 20:28:31] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:28:35] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma/status/1925685057848545400 --json (token: False)
+[2026-03-14 20:28:40] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:28:43] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e220 --json (token: False)
+[2026-03-14 20:28:47] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:28:50] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e2099 Great update --json (token: False)
+[2026-03-14 20:28:53] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e2060 --json (token: False)
+[2026-03-14 20:28:56] clawsocial INFO  [EXECUTED] action=reply_comment platform=twitter | Policy checks passed
+[2026-03-14 20:28:56] clawsocial.agent INFO  ━━━ Pipeline complete: e57b4b4cbb8a
+[2026-03-14 20:29:33] clawsocial.agent INFO  ━━━ Pipeline start: comment on the latest tweet by @muktesharma saying Great update
+[2026-03-14 20:29:33] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:29:33] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:29:33] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:29:33] clawsocial.policy INFO  [ALLOW] reply_comment on twitter
+[2026-03-14 20:29:33] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma --json (token: False)
+[2026-03-14 20:29:39] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:29:42] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma/status/1925685057848545400 --json (token: False)
+[2026-03-14 20:29:47] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:29:50] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e220 --json (token: False)
+[2026-03-14 20:29:54] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:29:57] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e2099 Great update --json (token: False)
+[2026-03-14 20:29:59] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e2060 --json (token: False)
+[2026-03-14 20:30:01] clawsocial INFO  [EXECUTED] action=reply_comment platform=twitter | Policy checks passed
+[2026-03-14 20:30:01] clawsocial.agent INFO  ━━━ Pipeline complete: 85c75cffe8b1
+[2026-03-14 20:30:15] clawsocial.agent INFO  ━━━ Pipeline start: comment on the latest tweet by @muktesharma saying Great update
+[2026-03-14 20:30:15] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:30:15] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:30:15] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:30:15] clawsocial.policy INFO  [ALLOW] reply_comment on twitter
+[2026-03-14 20:30:15] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma --json (token: False)
+[2026-03-14 20:30:23] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:30:27] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/muktesharma/status/1925685057848545400 --json (token: False)
+[2026-03-14 20:30:31] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:30:34] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e220 --json (token: False)
+[2026-03-14 20:30:36] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:30:38] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e2099 Great update --json (token: False)
+[2026-03-14 20:30:40] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e2060 --json (token: False)
+[2026-03-14 20:30:42] clawsocial INFO  [EXECUTED] action=reply_comment platform=twitter | Policy checks passed
+[2026-03-14 20:30:42] clawsocial.agent INFO  ━━━ Pipeline complete: 307782f4867f
+[2026-03-14 20:31:25] clawsocial.agent INFO  ━━━ Pipeline start: comment on the latest tweet by @narendramodi saying Great update
+[2026-03-14 20:31:25] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:31:25] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:31:25] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:31:25] clawsocial.policy INFO  [ALLOW] reply_comment on twitter
+[2026-03-14 20:31:25] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi --json (token: False)
+[2026-03-14 20:31:35] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:31:39] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi/status/2032823748370510059 --json (token: False)
+[2026-03-14 20:31:43] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:31:47] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e259 --json (token: False)
+[2026-03-14 20:31:50] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:31:54] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e1141 Great update --json (token: False)
+[2026-03-14 20:31:57] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e1102 --json (token: False)
+[2026-03-14 20:32:00] clawsocial INFO  [EXECUTED] action=reply_comment platform=twitter | Policy checks passed
+[2026-03-14 20:32:00] clawsocial.agent INFO  ━━━ Pipeline complete: 925ff95bd898
+[2026-03-14 20:32:39] clawsocial.agent INFO  ━━━ Pipeline start: comment on the latest tweet by @narendramodi saying Great update
+[2026-03-14 20:32:39] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:32:39] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:32:39] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:32:39] clawsocial.policy INFO  [ALLOW] reply_comment on twitter
+[2026-03-14 20:32:39] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi --json (token: False)
+[2026-03-14 20:32:50] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:32:54] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi/status/2032823748370510059 --json (token: False)
+[2026-03-14 20:32:59] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:33:03] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e259 --json (token: False)
+[2026-03-14 20:33:06] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:33:09] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e1157 Great update --json (token: False)
+[2026-03-14 20:33:12] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e1118 --json (token: False)
+[2026-03-14 20:33:15] clawsocial INFO  [EXECUTED] action=reply_comment platform=twitter | Policy checks passed
+[2026-03-14 20:33:15] clawsocial.agent INFO  ━━━ Pipeline complete: 644760d83b78
+[2026-03-14 20:35:22] clawsocial.agent INFO  ━━━ Pipeline start: comment on the latest tweet by @narendramodi saying Great update
+[2026-03-14 20:35:22] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:35:22] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:35:22] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:35:22] clawsocial.policy INFO  [ALLOW] reply_comment on twitter
+[2026-03-14 20:35:22] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi --json (token: False)
+[2026-03-14 20:35:32] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:35:37] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi/status/2032823748370510059 --json (token: False)
+[2026-03-14 20:35:42] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:35:46] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e259 --json (token: False)
+[2026-03-14 20:35:50] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:35:53] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser type --token *** --browser-profile openclaw e1158 Great update --json (token: False)
+[2026-03-14 20:35:56] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:36:00] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e1214 --json (token: False)
+[2026-03-14 20:36:03] clawsocial INFO  [EXECUTED] action=reply_comment platform=twitter | Policy checks passed
+[2026-03-14 20:36:03] clawsocial.agent INFO  ━━━ Pipeline complete: c0b85f46a813
+[2026-03-14 20:38:10] clawsocial.agent INFO  ━━━ Pipeline start: ike latest post by virat kohli
+[2026-03-14 20:38:10] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:38:10] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 20:38:10] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:38:10] clawsocial.policy WARNING  [BLOCK] publish_post on instagram — Action not in allowed list: publish_post
+[2026-03-14 20:38:10] clawsocial INFO  [BLOCKED] action=publish_post platform=instagram | Action not in allowed list: publish_post
+[2026-03-14 20:38:10] clawsocial.agent INFO  ━━━ Pipeline complete: d7d0114f82cc
+[2026-03-14 20:38:19] clawsocial.agent INFO  ━━━ Pipeline start: like latest post by virat kohli
+[2026-03-14 20:38:19] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:38:19] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 20:38:19] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:38:19] clawsocial.policy WARNING  [BLOCK] publish_post on instagram — Action not in allowed list: publish_post
+[2026-03-14 20:38:19] clawsocial INFO  [BLOCKED] action=publish_post platform=instagram | Action not in allowed list: publish_post
+[2026-03-14 20:38:19] clawsocial.agent INFO  ━━━ Pipeline complete: 9732db211d13
+[2026-03-14 20:38:46] clawsocial.agent INFO  ━━━ Pipeline start: like latest post by virat kohli
+[2026-03-14 20:38:46] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:38:46] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 20:38:46] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:38:46] clawsocial.policy WARNING  [BLOCK] publish_post on instagram — Action not in allowed list: publish_post
+[2026-03-14 20:38:46] clawsocial INFO  [BLOCKED] action=publish_post platform=instagram | Action not in allowed list: publish_post
+[2026-03-14 20:38:46] clawsocial.agent INFO  ━━━ Pipeline complete: ad099633561a
+[2026-03-14 20:38:55] clawsocial.agent INFO  ━━━ Pipeline start: like latest post by virat kohli on instagram
+[2026-03-14 20:38:55] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:38:55] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 20:38:55] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:38:55] clawsocial.policy WARNING  [BLOCK] publish_post on instagram — Action not in allowed list: publish_post
+[2026-03-14 20:38:55] clawsocial INFO  [BLOCKED] action=publish_post platform=instagram | Action not in allowed list: publish_post
+[2026-03-14 20:38:55] clawsocial.agent INFO  ━━━ Pipeline complete: c556bab8a24f
+[2026-03-14 20:39:05] clawsocial.agent INFO  ━━━ Pipeline start: like latest tweet by virat kohli
+[2026-03-14 20:39:05] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:39:05] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:39:05] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:39:05] clawsocial.policy INFO  [ALLOW] like_post on twitter
+[2026-03-14 20:39:05] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/search?q=virat+kohli&src=typed_query&f=user --json (token: False)
+[2026-03-14 20:39:15] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:39:19] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/imvkohli --json (token: False)
+[2026-03-14 20:39:23] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:39:27] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/imVkohli/status/2030694104628363607 --json (token: False)
+[2026-03-14 20:39:32] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:39:36] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e252 --json (token: False)
+[2026-03-14 20:39:39] clawsocial INFO  [EXECUTED] action=like_post platform=twitter | Policy checks passed
+[2026-03-14 20:39:39] clawsocial.agent INFO  ━━━ Pipeline complete: 0b1cb0aab35c
+[2026-03-14 20:52:47] clawsocial.agent INFO  ━━━ Pipeline start: like latest 3 tweets by @narendramodi
+[2026-03-14 20:52:47] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:52:47] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:52:47] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:52:47] clawsocial.policy INFO  [ALLOW] like_post on twitter
+[2026-03-14 20:52:47] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi --json (token: False)
+[2026-03-14 20:53:01] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:53:05] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi/status/2032823748370510059 --json (token: False)
+[2026-03-14 20:53:11] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:53:14] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e281 --json (token: False)
+[2026-03-14 20:53:18] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi/status/2032823438675710451 --json (token: False)
+[2026-03-14 20:53:23] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:53:26] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e294 --json (token: False)
+[2026-03-14 20:53:29] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser navigate --token *** --browser-profile openclaw https://x.com/narendramodi/status/2032823219535884683 --json (token: False)
+[2026-03-14 20:53:33] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser snapshot --token *** --browser-profile openclaw --format ai --json (token: False)
+[2026-03-14 20:53:35] clawsocial.executor INFO  CLI exec: openclaw --log-level debug browser click --token *** --browser-profile openclaw e281 --json (token: False)
+[2026-03-14 20:53:37] clawsocial INFO  [EXECUTED] action=like_post platform=twitter | Policy checks passed
+[2026-03-14 20:53:37] clawsocial.agent INFO  ━━━ Pipeline complete: 5ab99ce0acee
+[2026-03-14 20:55:12] clawsocial.agent INFO  ━━━ Pipeline start: schedule repost latest tweet by @narendramodi at 8:57 pm
+[2026-03-14 20:55:12] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:55:12] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:55:12] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:55:12] clawsocial.policy INFO  [ALLOW] schedule_action on twitter
+[2026-03-14 20:55:12] clawsocial INFO  [EXECUTED] action=schedule_action platform=twitter | Policy checks passed
+[2026-03-14 20:55:12] clawsocial.agent INFO  ━━━ Pipeline complete: 1a6efd6bbfb5
+[2026-03-14 20:55:45] clawsocial.agent INFO  ━━━ Pipeline start: schedule repost latest tweet by @narendramodi at 8:56 pm
+[2026-03-14 20:55:45] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 20:55:45] clawsocial INFO  [INTENT] content_publishing | platform=twitter | actions=[]
+[2026-03-14 20:55:45] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 20:55:45] clawsocial.policy INFO  [ALLOW] schedule_action on twitter
+[2026-03-14 20:55:45] clawsocial INFO  [EXECUTED] action=schedule_action platform=twitter | Policy checks passed
+[2026-03-14 20:55:45] clawsocial.agent INFO  ━━━ Pipeline complete: 39766fbfb1ca
+[2026-03-14 21:00:50] clawsocial.agent INFO  ━━━ Pipeline start: list watchlist
+[2026-03-14 21:00:50] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 21:00:50] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 21:00:50] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 21:00:50] clawsocial.policy INFO  [ALLOW] manage_watchlist on twitter
+[2026-03-14 21:00:50] clawsocial INFO  [EXECUTED] action=manage_watchlist platform=twitter | Policy checks passed
+[2026-03-14 21:00:50] clawsocial.agent INFO  ━━━ Pipeline complete: 54a4334d1d05
+[2026-03-14 21:01:04] clawsocial.agent INFO  ━━━ Pipeline start: add @narendramodi to watchlist for repost
+[2026-03-14 21:01:04] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 21:01:04] clawsocial INFO  [INTENT] content_publishing | platform=instagram | actions=[]
+[2026-03-14 21:01:04] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 21:01:04] clawsocial.policy INFO  [ALLOW] manage_watchlist on twitter
+[2026-03-14 21:01:04] clawsocial INFO  [EXECUTED] action=manage_watchlist platform=twitter | Policy checks passed
+[2026-03-14 21:01:04] clawsocial.agent INFO  ━━━ Pipeline complete: 0ba4fbe2d800
+[2026-03-14 21:01:18] clawsocial.agent INFO  ━━━ Pipeline start: list watchlist
+[2026-03-14 21:01:18] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 21:01:18] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 21:01:18] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 21:01:18] clawsocial.policy INFO  [ALLOW] manage_watchlist on twitter
+[2026-03-14 21:01:18] clawsocial INFO  [EXECUTED] action=manage_watchlist platform=twitter | Policy checks passed
+[2026-03-14 21:01:18] clawsocial.agent INFO  ━━━ Pipeline complete: 5eaa9994199b
+[2026-03-14 21:05:11] clawsocial.agent INFO  ━━━ Pipeline start: list watchlist
+[2026-03-14 21:05:11] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 21:05:11] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 21:05:11] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 21:05:11] clawsocial.policy INFO  [ALLOW] manage_watchlist on twitter
+[2026-03-14 21:05:11] clawsocial INFO  [EXECUTED] action=manage_watchlist platform=twitter | Policy checks passed
+[2026-03-14 21:05:11] clawsocial.agent INFO  ━━━ Pipeline complete: 88dc3a0d419f
+[2026-03-14 21:06:53] clawsocial.agent INFO  ━━━ Pipeline start: list watchlist
+[2026-03-14 21:06:53] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 21:06:53] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 21:06:53] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 21:06:53] clawsocial.policy INFO  [ALLOW] manage_watchlist on twitter
+[2026-03-14 21:06:53] clawsocial INFO  [EXECUTED] action=manage_watchlist platform=twitter | Policy checks passed
+[2026-03-14 21:06:53] clawsocial.agent INFO  ━━━ Pipeline complete: 210fdbcdf1c8
+[2026-03-14 21:07:11] clawsocial.agent INFO  ━━━ Pipeline start: add @PMOIndia to watchlist for like
+[2026-03-14 21:07:11] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 21:07:11] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 21:07:11] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 21:07:11] clawsocial.policy INFO  [ALLOW] manage_watchlist on twitter
+[2026-03-14 21:07:11] clawsocial INFO  [EXECUTED] action=manage_watchlist platform=twitter | Policy checks passed
+[2026-03-14 21:07:11] clawsocial.agent INFO  ━━━ Pipeline complete: e1ba8e003576
+[2026-03-14 21:07:18] clawsocial.agent INFO  ━━━ Pipeline start: list watchlist
+[2026-03-14 21:07:18] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 21:07:18] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 21:07:18] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 1 action proposals
+[2026-03-14 21:07:18] clawsocial.policy INFO  [ALLOW] manage_watchlist on twitter
+[2026-03-14 21:07:18] clawsocial INFO  [EXECUTED] action=manage_watchlist platform=twitter | Policy checks passed
+[2026-03-14 21:07:18] clawsocial.agent INFO  ━━━ Pipeline complete: bf25ead0d076
+[2026-03-14 21:14:25] clawsocial.agent INFO  ━━━ Pipeline start: send message to @naremdramodi on twitter
+[2026-03-14 21:14:25] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 21:14:25] clawsocial INFO  [INTENT] engagement_management | platform=twitter | actions=[]
+[2026-03-14 21:14:25] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 0 action proposals
+[2026-03-14 21:14:25] clawsocial.agent INFO  ━━━ Pipeline complete: 71398af6d046
+[2026-03-14 21:14:36] clawsocial.agent INFO  ━━━ Pipeline start: send dm to @naremdramodi on twitter
+[2026-03-14 21:14:36] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 21:14:36] clawsocial INFO  [INTENT] engagement_management | platform=twitter | actions=[]
+[2026-03-14 21:14:36] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 0 action proposals
+[2026-03-14 21:14:36] clawsocial.agent INFO  ━━━ Pipeline complete: 23c4ea392a9e
