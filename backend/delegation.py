@@ -67,6 +67,10 @@ class SubAgent:
             result.reason = f"[{self.name}] {result.reason} — outside delegated authority"
         return result
 
+    def record_execution(self, proposal: ActionProposal) -> None:
+        """Record successful delegated action execution for rate-limit accounting."""
+        self._armor.record_execution(proposal)
+
 
 # ── Pre-built sub-agents ─────────────────────────────────────────────────
 

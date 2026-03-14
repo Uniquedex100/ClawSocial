@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime, timedelta
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Optional
 
@@ -32,8 +32,8 @@ class ArmorClaw:
         # Rate-limit counters
         self._posts_today: int = 0
         self._replies_this_hour: int = 0
-        self._day_start: datetime = datetime.utcnow().replace(hour=0, minute=0, second=0)
-        self._hour_start: datetime = datetime.utcnow().replace(minute=0, second=0)
+        self._day_start: datetime = datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+        self._hour_start: datetime = datetime.now(UTC).replace(minute=0, second=0, microsecond=0)
 
         logger.info(
             "ArmorClaw initialised — allowed platforms: %s, allowed actions: %s",
@@ -126,7 +126,7 @@ class ArmorClaw:
         return PolicyResult(action_id=proposal.id, verdict=Verdict.BLOCK, reason=reason)
 
     def _refresh_counters(self) -> None:
-        now = datetime.utcnow()
+        now = datetime.now(UTC)
         day_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
         hour_start = now.replace(minute=0, second=0, microsecond=0)
 

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import uuid
-from datetime import datetime
+from datetime import UTC, datetime
 from enum import Enum
 from typing import Optional
 
@@ -131,7 +131,7 @@ class ExecutionResult(BaseModel):
 class ActionLog(BaseModel):
     """Full audit trail entry for a single action."""
 
-    timestamp: datetime = Field(default_factory=datetime.utcnow)
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(UTC))
     intent: str = ""
     action_id: str = ""
     action_type: str = ""

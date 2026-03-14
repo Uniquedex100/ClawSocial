@@ -2675,3 +2675,19 @@ GatewayClientRequestError: TimeoutError: locator.fill: Timeout 8000ms exceeded.
 Call log:
   - waiting for locator('aria-ref=comment-input')
 [2026-03-14 13:41:59] ------------------------------
+[2026-03-14 18:08:56] --- OPENCLAW HTTP EXECUTION ---
+[2026-03-14 18:08:56] POST http://localhost:18789/api/browser
+[2026-03-14 18:08:56] PAYLOAD:
+{
+  "command": "open",
+  "profile": "openclaw",
+  "url": "https://www.instagram.com"
+}
+[2026-03-14 18:08:56] --- OPENCLAW HTTP EXECUTION ---
+[2026-03-14 18:08:56] POST http://localhost:18789/api/browser
+[2026-03-14 18:08:56] PAYLOAD:
+{
+  "command": "open",
+  "profile": "openclaw",
+  "url": "https://www.instagram.com"
+}

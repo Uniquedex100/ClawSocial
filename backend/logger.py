@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import logging
 import sys
-from datetime import datetime
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Optional
 
@@ -61,7 +61,7 @@ def log_action(
 ) -> ActionLog:
     """Create and store a full audit-trail entry."""
     entry = ActionLog(
-        timestamp=datetime.utcnow(),
+        timestamp=datetime.now(UTC),
         intent=intent.intent,
         action_id=proposal.id,
         action_type=proposal.action_type.value,

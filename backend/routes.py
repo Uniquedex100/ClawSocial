@@ -2,10 +2,10 @@
 
 from __future__ import annotations
 
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from fastapi import APIRouter
 
 from agent import ClawSocialAgent
+from config import settings
 from delegation import (
     create_content_agent,
     create_engagement_agent,
@@ -19,7 +19,7 @@ router = APIRouter()
 
 # ── Shared state ─────────────────────────────────────────────────────────
 
-_policy_engine = ArmorClaw()
+_policy_engine = ArmorClaw(policy_file=settings.policy_file)
 _agent = ClawSocialAgent(policy_engine=_policy_engine, dry_run=False)
 
 

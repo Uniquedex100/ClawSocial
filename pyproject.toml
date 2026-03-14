@@ -19,6 +19,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest", "pytest-asyncio", "ruff"]
+armoriq = ["armoriq-sdk>=0.1.0"]
 
 [tool.setuptools]
 py-modules = [

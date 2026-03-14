@@ -9,10 +9,13 @@ from __future__ import annotations
 import logging
 from typing import Optional
 
-from armoriq_sdk import ArmorIQClient
+try:
+    from armoriq_sdk import ArmorIQClient
+except ImportError:  # pragma: no cover - exercised when SDK is unavailable
+    ArmorIQClient = None
 
 from config import settings
-from models import Intent, Platform, ActionType
+from models import Intent, Platform
 
 logger = logging.getLogger("clawsocial.intent")
 
@@ -22,6 +25,9 @@ logger = logging.getLogger("clawsocial.intent")
 _armoriq_client: Optional[ArmorIQClient] = None
 
 def get_armoriq_client() -> ArmorIQClient:
+    if ArmorIQClient is None:
+        raise ImportError("armoriq_sdk is not installed")
+
     global _armoriq_client
     if _armoriq_client is None:
         if not settings.armoriq_development_key:
@@ -70,6 +76,14 @@ def _basic_local_parse(instruction: str) -> Intent:
 
 async def capture_intent_armoriq(instruction: str, plan_dict: dict) -> tuple[Intent, str]:
     """Capture the plan with ArmorIQ and return the local Intent + cryptographic intent token."""
+    if ArmorIQClient is None:
+        logger.warning("armoriq_sdk not installed; using local fallback intent parsing")
+        return _basic_local_parse(instruction), ""
+
+    if not settings.armoriq_development_key:
+        logger.warning("ARMORIQ_DEVELOPMENT_KEY missing; using local fallback intent parsing")
+        return _basic_local_parse(instruction), ""
+
     client = get_armoriq_client()
 
     logger.info("Capturing plan with ArmorIQ...")

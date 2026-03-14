@@ -16,20 +16,16 @@ from typing import Optional
 
 from config import settings
 from delegation import SubAgent
-from intent_parser import get_armoriq_client
+from intent_parser import capture_intent_armoriq
 from logger import log_action, log_intent
 from models import (
-    ActionLog,
-    ActionProposal,
-    ActionType,
     ExecutionResult,
-    Intent,
-    PolicyResult,
     TaskResult,
     Verdict,
 )
 from openclaw_executor import OpenClawExecutor
 from policy_engine import ArmorClaw
+from reasoning_engine import build_action_proposals, generate_plan_for_armoriq
 
 logger = logging.getLogger("clawsocial.agent")
 
@@ -48,6 +44,15 @@ class ClawSocialAgent:
         self.executor = executor or OpenClawExecutor(dry_run=dry_run)
         self.use_llm = use_llm and bool(settings.llm_api_key)
 
+    async def _build_intent_and_proposals(self, instruction: str):
+        """Create intent, capture an intent token, and build local action proposals."""
+        plan_dict = generate_plan_for_armoriq(instruction)
+        intent, intent_token = await capture_intent_armoriq(instruction, plan_dict)
+        proposals = build_action_proposals(intent, instruction)
+        for proposal in proposals:
+            proposal.intent_token = intent_token
+        return intent, proposals
+
     async def run(self, instruction: str) -> TaskResult:
         """Execute the full pipeline from a natural-language instruction."""
 
@@ -56,24 +61,10 @@ class ClawSocialAgent:
         # ── 1 & 2. Intent Capture + Reasoning (via ArmorIQ SDK) ──────────
         logger.info("━━━ Pipeline start: %s", instruction)
         
-        # Build the plan payload for ArmorIQ
-        from reasoning_engine import generate_plan_for_armoriq, build_action_proposals
-        from intent_parser import capture_intent_armoriq
-        
-        plan_dict = generate_plan_for_armoriq(instruction)
-        
-        # Capture intent and get cryptographic token
-        intent, intent_token = await capture_intent_armoriq(instruction, plan_dict)
-        
+        intent, proposals = await self._build_intent_and_proposals(instruction)
+
         result.intent = intent
         log_intent(intent)
-
-        # Translate intention into our local ActionProposals
-        proposals = build_action_proposals(intent, instruction)
-        # Attach the token
-        for p in proposals:
-            p.intent_token = intent_token
-            
         result.proposals = proposals
         logger.info("ArmorIQ Plan captured. Generated %d action proposals", len(proposals))
 
@@ -104,19 +95,10 @@ class ClawSocialAgent:
 
         result = TaskResult(instruction=instruction)
 
-        # ── 1. Parse ─────────────────────────────────────────────────────
-        if self.use_llm:
-            intent = await parse_intent_llm(instruction)
-        else:
-            intent = parse_intent_keywords(instruction)
+        # ── 1 & 2. Intent capture + decomposition ───────────────────────
+        intent, proposals = await self._build_intent_and_proposals(instruction)
         result.intent = intent
         log_intent(intent)
-
-        # ── 2. Decompose ─────────────────────────────────────────────────
-        if self.use_llm:
-            proposals = await decompose_task_llm(intent)
-        else:
-            proposals = decompose_task(intent)
         result.proposals = proposals
 
         # ── 3. Sub-agent policy enforcement ──────────────────────────────
@@ -128,6 +110,8 @@ class ClawSocialAgent:
             exec_result: Optional[ExecutionResult] = None
             if pr.verdict == Verdict.ALLOW:
                 exec_result = await self.executor.execute(proposal)
+                if exec_result.success:
+                    subagent.record_execution(proposal)
                 result.execution_results.append(exec_result)
 
             entry = log_action(intent, proposal, pr, exec_result)

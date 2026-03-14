@@ -301,3 +301,14 @@ Call log:
   - waiting for locator('aria-ref=comment-input')
 [2026-03-14 13:41:59] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
 [2026-03-14 13:41:59] clawsocial.agent INFO  ━━━ Pipeline complete: 1b7107f1495b
+[2026-03-14 18:08:56] clawsocial.agent INFO  ━━━ Pipeline start: Reply to comments on Instagram today.
+[2026-03-14 18:08:56] clawsocial.intent WARNING  armoriq_sdk not installed; using local fallback intent parsing
+[2026-03-14 18:08:56] clawsocial INFO  [INTENT] engagement_management | platform=instagram | actions=[]
+[2026-03-14 18:08:56] clawsocial.agent INFO  ArmorIQ Plan captured. Generated 2 action proposals
+[2026-03-14 18:08:56] clawsocial.policy INFO  [ALLOW] read_comments on instagram
+[2026-03-14 18:08:56] clawsocial.policy INFO  [ALLOW] reply_comment on instagram
+[2026-03-14 18:08:56] clawsocial.executor ERROR  Execution failed for 67a7f104: All connection attempts failed
+[2026-03-14 18:08:56] clawsocial INFO  [SKIPPED] action=read_comments platform=instagram | Policy checks passed
+[2026-03-14 18:08:56] clawsocial.executor ERROR  Execution failed for 8c51b8f2: All connection attempts failed
+[2026-03-14 18:08:56] clawsocial INFO  [SKIPPED] action=reply_comment platform=instagram | Policy checks passed
+[2026-03-14 18:08:56] clawsocial.agent INFO  ━━━ Pipeline complete: 6756bd3cf5a9

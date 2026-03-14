@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     # ── App ──────────────────────────────────────────────────
     log_level: str = Field("INFO")
     log_file: str = Field("clawsocial.log")
-    policy_file: str = Field("default_policy.json")
+    policy_file: str = Field("backend/default_policy.json")
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
