@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Optional
@@ -73,7 +74,7 @@ class ArmorClaw:
         # 4. Content / blocked words check
         if proposal.content:
             for word in self.policy.blocked_words:
-                if word.lower() in proposal.content.lower():
+                if self._contains_blocked_word_variant(proposal.content, word):
                     return self._block(
                         proposal,
                         f"Content contains blocked word: '{word}'",
@@ -145,6 +146,28 @@ class ArmorClaw:
         if hour_start > self._hour_start:
             self._replies_this_hour = 0
             self._hour_start = hour_start
+
+    @staticmethod
+    def _contains_blocked_word_variant(content: str, blocked_word: str) -> bool:
+        """Match blocked words with light variant handling.
+
+        Examples:
+        - politics -> blocks politics, political
+        - religion -> blocks religion, religions
+        """
+        text = str(content or "").lower()
+        blocked = str(blocked_word or "").strip().lower()
+        if not blocked:
+            return False
+
+        # Keep exact substring behavior for compatibility.
+        if blocked in text:
+            return True
+
+        # Add a lightweight stem check for nearby variants.
+        stem = blocked[:-1] if blocked.endswith("s") and len(blocked) > 3 else blocked
+        pattern = rf"\b{re.escape(stem)}[a-z]*\b"
+        return re.search(pattern, text) is not None
 
     @staticmethod
     def _load_policy(path: str) -> Policy:

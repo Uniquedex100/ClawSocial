@@ -74,6 +74,27 @@ def test_blocks_blocked_word_content():
     assert "blocked word" in result.reason.lower()
 
 
+def test_blocks_blocked_word_variant_content():
+    engine = ArmorClaw(
+        policy=Policy(
+            platform_restrictions=[Platform.INSTAGRAM],
+            allowed_actions=[ActionType.REPLY_COMMENT],
+            forbidden_actions=[],
+            blocked_words=["politics"],
+        )
+    )
+    proposal = ActionProposal(
+        action_type=ActionType.REPLY_COMMENT,
+        platform=Platform.INSTAGRAM,
+        content="Football should support this political party agenda",
+    )
+
+    result = engine.validate(proposal)
+
+    assert result.verdict == Verdict.BLOCK
+    assert "blocked word" in result.reason.lower()
+
+
 def test_allows_valid_action():
     engine = ArmorClaw(
         policy=Policy(
